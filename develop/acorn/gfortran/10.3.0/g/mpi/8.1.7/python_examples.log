@@ -1,0 +1,34 @@
+build time -- 2022-05-13 01:24:40
+running test_examples
+test_field_read (examples.exampletest.TestExamples) ... Abort with message unexpected record in file /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_develop/src/Infrastructure/IO/PIO/ParallelIO/src/clib/pio_darray_int.c at line 1458
+Obtained 10 stack frames.
+/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_develop/DEFAULTINSTALLDIR/lib/libg/Unicos.gfortran.64.mpi.default/libesmf_fullylinked.so(print_trace+0x32) [0x14717cebcefe]
+/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_develop/DEFAULTINSTALLDIR/lib/libg/Unicos.gfortran.64.mpi.default/libesmf_fullylinked.so(piodie+0x74) [0x14717cebd001]
+/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_develop/DEFAULTINSTALLDIR/lib/libg/Unicos.gfortran.64.mpi.default/libesmf_fullylinked.so(pioassert+0x3d) [0x14717cebd050]
+/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_develop/DEFAULTINSTALLDIR/lib/libg/Unicos.gfortran.64.mpi.default/libesmf_fullylinked.so(pio_read_darray_nc_serial+0x1e5) [0x14717cef30f2]
+/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_develop/DEFAULTINSTALLDIR/lib/libg/Unicos.gfortran.64.mpi.default/libesmf_fullylinked.so(PIOc_read_darray+0x3e1) [0x14717cef095f]
+/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_develop/DEFAULTINSTALLDIR/lib/libg/Unicos.gfortran.64.mpi.default/libesmf_fullylinked.so(_ZN5ESMCI11PIO_Handler9arrayReadEPNS_5ArrayEPKcPiS5_+0x6c6) [0x14717ba4b30e]
+/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_develop/DEFAULTINSTALLDIR/lib/libg/Unicos.gfortran.64.mpi.default/libesmf_fullylinked.so(_ZN5ESMCI2IO4readEPi+0x36d) [0x14717b807e21]
+/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_develop/DEFAULTINSTALLDIR/lib/libg/Unicos.gfortran.64.mpi.default/libesmf_fullylinked.so(_ZN5ESMCI2IO4readERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE15ESMC_IOFmt_FlagPi+0xd4) [0x14717b807a02]
+/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_develop/DEFAULTINSTALLDIR/lib/libg/Unicos.gfortran.64.mpi.default/libesmf_fullylinked.so(c_esmc_ioread_+0x1f3) [0x14717b7fe457]
+/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_develop/DEFAULTINSTALLDIR/lib/libg/Unicos.gfortran.64.mpi.default/libesmf_fullylinked.so(__esmf_iomod_MOD_esmf_ioread+0x11f) [0x14717c569bdb]
+MPICH Notice [Rank 0] [job id ] [Fri May 13 01:50:29 2022] [nid001003] - Abort(-1) (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, -1) - process 0
+
+Traceback (most recent call last):
+  File "setup.py", line 278, in <module>
+    'test_regrid_from_file_parallel': TestRegridFromFileParallelCommand})
+  File "/usr/lib64/python3.6/distutils/core.py", line 148, in setup
+    dist.run_commands()
+  File "/usr/lib64/python3.6/distutils/dist.py", line 955, in run_commands
+    self.run_command(cmd)
+  File "/usr/lib64/python3.6/distutils/dist.py", line 974, in run_command
+    cmd_obj.run()
+  File "setup.py", line 15, in wrapper
+    return func(self)
+  File "setup.py", line 171, in run
+    AbstractESMFNoseCommand.run(self)
+  File "setup.py", line 49, in run
+    subprocess.check_call(cmd)
+  File "/usr/lib64/python3.6/subprocess.py", line 311, in check_call
+    raise CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command '['nosetests', '-vs', '--with-xunit', '-a', '!slow,!parallel', 'examples/exampletest.py']' returned non-zero exit status 255.
