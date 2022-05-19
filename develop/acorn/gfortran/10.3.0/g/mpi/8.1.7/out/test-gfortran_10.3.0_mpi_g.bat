@@ -1,4 +1,4 @@
-Wed May 18 18:05:09 UTC 2022
+Thu May 19 01:20:39 UTC 2022
 #!/bin/sh -l
 #PBS -N test-gfortran_10.3.0_mpi_g.bat
 #PBS -l walltime=1:00:00
@@ -43,7 +43,7 @@ cd ../src/addon/ESMPy
 
 export PATH=$PATH:$HOME/.local/bin
 python3 setup.py build 2>&1 | tee python_build.log
-ssh alogin01 /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_develop/runpython.sh 2>&1 | tee python_build.log
+ssh alogin02 /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_develop/runpython.sh 2>&1 | tee python_build.log
 python3 setup.py test 2>&1 | tee python_test.log
 python3 setup.py test_examples 2>&1 | tee python_examples.log
 python3 setup.py test_regrid_from_file 2>&1 | tee python_regrid.log
