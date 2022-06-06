@@ -1,4 +1,4 @@
-Sun Jun 5 01:22:32 UTC 2022
+Mon Jun 6 01:22:32 UTC 2022
  
 --------------------------------------------------------------
 ESMF_VERSION_STRING:    8.3.0
@@ -15,8 +15,8 @@ Changes not staged for commit:
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
 	build-gfortran_10.3.0_mpi_g.bat
-	build-gfortran_10.3.0_mpi_g.bat.e88594
-	build-gfortran_10.3.0_mpi_g.bat.o88594
+	build-gfortran_10.3.0_mpi_g.bat.e88610
+	build-gfortran_10.3.0_mpi_g.bat.o88610
 	getres-build.sh
 	getres-test.sh
 	nuopc-app-prototypes/
@@ -228,7 +228,7 @@ ESMF_TRACE_STATICLINKLIBS=-lesmftrace_static
 
 
 --------------------------------------------------------------
-Compiling on Sun Jun 5 01:19:05 UTC 2022 on nid001015
+Compiling on Mon Jun 6 01:19:06 UTC 2022 on nid001015
 Machine characteristics: Linux nid001015 5.3.18-150300.59.63-default #1 SMP Tue Apr 5 12:47:31 UTC 2022 (d77db66) x86_64 x86_64 x86_64 GNU/Linux
 ==============================================================
  
@@ -4171,18 +4171,14 @@ In file included from /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_
 /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:491:30: warning: comparison of integer expressions of different signedness: 'size_t' {aka 'long unsigned int'} and 'int' [-Wsign-compare]
   491 |       if (strlen(this->name) < nameLen) {
       |           ~~~~~~~~~~~~~~~~~~~^~~~~~~~~
-/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function 'int ESMCI::Clock::get(int, int*, char*, ESMCI::TimeInterval*, ESMCI::Time*, ESMCI::Time*, ESMCI::TimeInterval*, ESMC_R8*, ESMCI::Time*, ESMCI::Time*, ESMCI::Time*, ESMCI::TimeInterval*, ESMCI::TimeInterval*, ESMCI::Calendar**, ESMC_CalKind_Flag*, int*, ESMC_I8*, int*, ESMC_Direction*)':
-/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:433:30: warning: comparison of integer expressions of different signedness: 'size_t' {aka 'long unsigned int'} and 'int' [-Wsign-compare]
-  433 |       if (strlen(this->name) < nameLen) {
-      |           ~~~~~~~~~~~~~~~~~~~^~~~~~~~~
 /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function 'int ESMCI::Alarm::print(const char*) const':
 /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1675:17: warning: comparison of integer expressions of different signedness: 'int' and 'size_t' {aka 'long unsigned int'} [-Wsign-compare]
  1675 |       for(i=0; i<strlen(options) && i<ESMF_MAXSTR-1; i++) {
       |                ~^~~~~~~~~~~~~~~~
-/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function 'int ESMCI::Clock::print(const char*) const':
-/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1759:17: warning: comparison of integer expressions of different signedness: 'int' and 'size_t' {aka 'long unsigned int'} [-Wsign-compare]
- 1759 |       for(i=0; i<strlen(options) && i<ESMF_MAXSTR-1; i++) {
-      |                ~^~~~~~~~~~~~~~~~
+/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function 'int ESMCI::Clock::get(int, int*, char*, ESMCI::TimeInterval*, ESMCI::Time*, ESMCI::Time*, ESMCI::TimeInterval*, ESMC_R8*, ESMCI::Time*, ESMCI::Time*, ESMCI::Time*, ESMCI::TimeInterval*, ESMCI::TimeInterval*, ESMCI::Calendar**, ESMC_CalKind_Flag*, int*, ESMC_I8*, int*, ESMC_Direction*)':
+/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:433:30: warning: comparison of integer expressions of different signedness: 'size_t' {aka 'long unsigned int'} and 'int' [-Wsign-compare]
+  433 |       if (strlen(this->name) < nameLen) {
+      |           ~~~~~~~~~~~~~~~~~~~^~~~~~~~~
 /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In copy constructor 'ESMCI::Alarm::Alarm(const ESMCI::Alarm&)':
 /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1885:13: warning: implicitly-declared 'ESMCI::Alarm& ESMCI::Alarm::operator=(const ESMCI::Alarm&)' is deprecated [-Wdeprecated-copy]
  1885 |     *this = alarm;
@@ -4190,6 +4186,10 @@ In file included from /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_
 /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1871:7: note: because 'ESMCI::Alarm' has user-provided 'ESMCI::Alarm::Alarm(const ESMCI::Alarm&)'
  1871 |       Alarm::Alarm(
       |       ^~~~~
+/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function 'int ESMCI::Clock::print(const char*) const':
+/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1759:17: warning: comparison of integer expressions of different signedness: 'int' and 'size_t' {aka 'long unsigned int'} [-Wsign-compare]
+ 1759 |       for(i=0; i<strlen(options) && i<ESMF_MAXSTR-1; i++) {
+      |                ~^~~~~~~~~~~~~~~~
 /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C: In member function 'int ESMCI::Calendar::set(int, const char*, ESMC_CalKind_Flag)':
 /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C:679:21: warning: implicitly-declared 'ESMCI::Calendar& ESMCI::Calendar::operator=(const ESMCI::Calendar&)' is deprecated [-Wdeprecated-copy]
   679 |             *this = saveCalendar;
@@ -4252,15 +4252,6 @@ In file included from /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_
       |       ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   708 |               this->name);
       |               ~~~~~~~~~~~
-/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function 'int ESMCI::Clock::get(int, int*, char*, ESMCI::TimeInterval*, ESMCI::Time*, ESMCI::Time*, ESMCI::TimeInterval*, ESMC_R8*, ESMCI::Time*, ESMCI::Time*, ESMCI::Time*, ESMCI::TimeInterval*, ESMCI::TimeInterval*, ESMCI::Calendar**, ESMC_CalKind_Flag*, int*, ESMC_I8*, int*, ESMC_Direction*)':
-/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:442:37: warning: '%s' directive writing up to 255 bytes into a region of size 245 [-Wformat-overflow=]
-  442 |         sprintf(logMsg, "clock name %s, "
-      |                                     ^~
-/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:442:16: note: 'sprintf' output between 57 and 312 bytes into a destination of size 256
-  442 |         sprintf(logMsg, "clock name %s, "
-      |         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
-  443 |                 "length >= given character array; truncated.", this->name);
-      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function 'bool ESMCI::Alarm::willRingNext(ESMCI::TimeInterval*, int*) const':
 /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:873:30: warning: '%s' directive writing up to 255 bytes into a region of size 250 [-Wformat-overflow=]
   873 |       sprintf(logMsg, "alarm %s is not associated with any clock.", name);
@@ -4268,19 +4259,6 @@ In file included from /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_
 /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:873:14: note: 'sprintf' output between 41 and 296 bytes into a destination of size 256
   873 |       sprintf(logMsg, "alarm %s is not associated with any clock.", name);
       |       ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function 'int ESMCI::Clock::advance(ESMCI::TimeInterval*, char*, char*, int, int*)':
-/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:668:40: warning: '%s' directive writing up to 255 bytes into a region of size 246 [-Wformat-overflow=]
-  668 |             sprintf(logMsg, "For clock %s, "
-      |                                        ^~
-/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:668:20: note: 'sprintf' output between 98 and 373 bytes into a destination of size 256
-  668 |             sprintf(logMsg, "For clock %s, "
-      |             ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
-  669 |                     "trying to report %dth ringing alarm, but given "
-      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-  670 |                     "ringingAlarmList array can only hold %d.",
-      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-  671 |                     this->name, j+1, sizeofRingingAlarmList);
-      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function 'int ESMCI::Alarm::notSticky(ESMCI::TimeInterval*, int*)':
 /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1025:22: warning: '%s' directive writing up to 255 bytes into a region of size 250 [-Wformat-overflow=]
  1025 |               "Alarm %s: can only specify one type of ring duration, not both.",
@@ -4292,30 +4270,6 @@ In file included from /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_
       |               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  1026 |               name);
       |               ~~~~~
-/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function 'int ESMCI::Clock::getAlarmList(ESMC_AlarmList_Flag, char*, char*, int, int*, ESMCI::TimeInterval*)':
-/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1164:40: warning: '%s' directive writing up to 255 bytes into a region of size 246 [-Wformat-overflow=]
- 1164 |             sprintf(logMsg, "For clock %s, "
-      |                                        ^~
-/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1164:20: note: 'sprintf' output between 93 and 368 bytes into a destination of size 256
- 1164 |             sprintf(logMsg, "For clock %s, "
-      |             ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
- 1165 |                     "trying to return %dth requested alarm, but given "
-      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- 1166 |                     "alarmList array can only hold %d.",
-      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- 1167 |                     this->name, j+1, sizeofAlarmList);
-      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1139:38: warning: '%s' directive writing up to 255 bytes into a region of size 246 [-Wformat-overflow=]
- 1139 |           sprintf(logMsg, "For clock %s, unknown alarm list flag %d.",
-      |                                      ^~
-/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1139:27: note: using the range [-2147483648, 2147483647] for directive argument
- 1139 |           sprintf(logMsg, "For clock %s, unknown alarm list flag %d.",
-      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1139:18: note: 'sprintf' output between 39 and 304 bytes into a destination of size 256
- 1139 |           sprintf(logMsg, "For clock %s, unknown alarm list flag %d.",
-      |           ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- 1140 |                   this->name, alarmlistflag);
-      |                   ~~~~~~~~~~~~~~~~~~~~~~~~~~
 /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function 'bool ESMCI::Alarm::checkRingTime(int*)':
 /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1296:39: warning: '%s' directive writing up to 255 bytes into a region of size 243 [-Wformat-overflow=]
  1296 |         sprintf(logMsg, "Sticky alarm %s cannot be reversed since it has "
@@ -4350,40 +4304,52 @@ In file included from /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_
 /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1613:14: note: 'sprintf' output between 26 and 281 bytes into a destination of size 256
  1613 |       sprintf(logMsg, "Alarm %s: invalid ringTime.", name);
       |       ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function 'int ESMCI::Clock::addAlarm(ESMCI::Alarm*)':
-/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:2032:34: warning: '%s' directive writing up to 255 bytes into a region of size 246 [-Wformat-overflow=]
- 2032 |       sprintf(logMsg, "For clock %s, alarm list is full (%d alarms), "
-      |                                  ^~
-/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:2032:14: note: 'sprintf' output between 75 and 350 bytes into a destination of size 256
- 2032 |       sprintf(logMsg, "For clock %s, alarm list is full (%d alarms), "
-      |       ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- 2033 |               "re-allocating to hold %d alarms.",
-      |               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- 2034 |                 this->name, alarmListCapacity,
-      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- 2035 |                 alarmListCapacity+ESMF_ALARM_BLOCK_SIZE);
-      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:2024:34: warning: '%s' directive writing up to 255 bytes into a region of size 246 [-Wformat-overflow=]
- 2024 |       sprintf(logMsg, "For clock %s, given alarm is NULL.", this->name);
-      |                                  ^~
-/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:2024:14: note: 'sprintf' output between 33 and 288 bytes into a destination of size 256
- 2024 |       sprintf(logMsg, "For clock %s, given alarm is NULL.", this->name);
-      |       ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function 'int ESMCI::Clock::removeAlarm(ESMCI::Alarm*)':
-/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:2126:32: warning: '%s' directive writing up to 255 bytes into a region of size 246 [-Wformat-overflow=]
- 2126 |     sprintf(logMsg, "For clock %s, given alarm is not in clock's alarmList.",
-      |                                ^~
-/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:2126:12: note: 'sprintf' output between 53 and 308 bytes into a destination of size 256
- 2126 |     sprintf(logMsg, "For clock %s, given alarm is not in clock's alarmList.",
-      |     ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- 2127 |             this->name);
-      |             ~~~~~~~~~~~
-/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:2104:34: warning: '%s' directive writing up to 255 bytes into a region of size 246 [-Wformat-overflow=]
- 2104 |       sprintf(logMsg, "For clock %s, given alarm is NULL.", this->name);
-      |                                  ^~
-/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:2104:14: note: 'sprintf' output between 33 and 288 bytes into a destination of size 256
- 2104 |       sprintf(logMsg, "For clock %s, given alarm is NULL.", this->name);
-      |       ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function 'int ESMCI::Clock::get(int, int*, char*, ESMCI::TimeInterval*, ESMCI::Time*, ESMCI::Time*, ESMCI::TimeInterval*, ESMC_R8*, ESMCI::Time*, ESMCI::Time*, ESMCI::Time*, ESMCI::TimeInterval*, ESMCI::TimeInterval*, ESMCI::Calendar**, ESMC_CalKind_Flag*, int*, ESMC_I8*, int*, ESMC_Direction*)':
+/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:442:37: warning: '%s' directive writing up to 255 bytes into a region of size 245 [-Wformat-overflow=]
+  442 |         sprintf(logMsg, "clock name %s, "
+      |                                     ^~
+/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:442:16: note: 'sprintf' output between 57 and 312 bytes into a destination of size 256
+  442 |         sprintf(logMsg, "clock name %s, "
+      |         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+  443 |                 "length >= given character array; truncated.", this->name);
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function 'int ESMCI::Clock::advance(ESMCI::TimeInterval*, char*, char*, int, int*)':
+/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:668:40: warning: '%s' directive writing up to 255 bytes into a region of size 246 [-Wformat-overflow=]
+  668 |             sprintf(logMsg, "For clock %s, "
+      |                                        ^~
+/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:668:20: note: 'sprintf' output between 98 and 373 bytes into a destination of size 256
+  668 |             sprintf(logMsg, "For clock %s, "
+      |             ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+  669 |                     "trying to report %dth ringing alarm, but given "
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  670 |                     "ringingAlarmList array can only hold %d.",
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  671 |                     this->name, j+1, sizeofRingingAlarmList);
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function 'int ESMCI::Clock::getAlarmList(ESMC_AlarmList_Flag, char*, char*, int, int*, ESMCI::TimeInterval*)':
+/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1164:40: warning: '%s' directive writing up to 255 bytes into a region of size 246 [-Wformat-overflow=]
+ 1164 |             sprintf(logMsg, "For clock %s, "
+      |                                        ^~
+/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1164:20: note: 'sprintf' output between 93 and 368 bytes into a destination of size 256
+ 1164 |             sprintf(logMsg, "For clock %s, "
+      |             ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+ 1165 |                     "trying to return %dth requested alarm, but given "
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1166 |                     "alarmList array can only hold %d.",
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1167 |                     this->name, j+1, sizeofAlarmList);
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1139:38: warning: '%s' directive writing up to 255 bytes into a region of size 246 [-Wformat-overflow=]
+ 1139 |           sprintf(logMsg, "For clock %s, unknown alarm list flag %d.",
+      |                                      ^~
+/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1139:27: note: using the range [-2147483648, 2147483647] for directive argument
+ 1139 |           sprintf(logMsg, "For clock %s, unknown alarm list flag %d.",
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1139:18: note: 'sprintf' output between 39 and 304 bytes into a destination of size 256
+ 1139 |           sprintf(logMsg, "For clock %s, unknown alarm list flag %d.",
+      |           ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1140 |                   this->name, alarmlistflag);
+      |                   ~~~~~~~~~~~~~~~~~~~~~~~~~~
 /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C: In copy constructor 'ESMCI::Calendar::Calendar(const ESMCI::Calendar&)':
 /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C:3108:13: warning: implicitly-declared 'ESMCI::Calendar& ESMCI::Calendar::operator=(const ESMCI::Calendar&)' is deprecated [-Wdeprecated-copy]
  3108 |     *this = calendar;
@@ -4399,10 +4365,29 @@ In file included from /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_
 /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:624:5: warning: 'nonnull' argument 'this' compared to NULL [-Wnonnull-compare]
   624 |     if (this == ESMC_NULL_POINTER) {
       |     ^~
+/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function 'int ESMCI::Clock::addAlarm(ESMCI::Alarm*)':
+/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:2032:34: warning: '%s' directive writing up to 255 bytes into a region of size 246 [-Wformat-overflow=]
+ 2032 |       sprintf(logMsg, "For clock %s, alarm list is full (%d alarms), "
+      |                                  ^~
 /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function 'bool ESMCI::Alarm::isEnabled(int*) const':
 /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:660:5: warning: 'nonnull' argument 'this' compared to NULL [-Wnonnull-compare]
   660 |     if (this == ESMC_NULL_POINTER) {
       |     ^~
+/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:2032:14: note: 'sprintf' output between 75 and 350 bytes into a destination of size 256
+ 2032 |       sprintf(logMsg, "For clock %s, alarm list is full (%d alarms), "
+      |       ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 2033 |               "re-allocating to hold %d alarms.",
+      |               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 2034 |                 this->name, alarmListCapacity,
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 2035 |                 alarmListCapacity+ESMF_ALARM_BLOCK_SIZE);
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:2024:34: warning: '%s' directive writing up to 255 bytes into a region of size 246 [-Wformat-overflow=]
+ 2024 |       sprintf(logMsg, "For clock %s, given alarm is NULL.", this->name);
+      |                                  ^~
+/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:2024:14: note: 'sprintf' output between 33 and 288 bytes into a destination of size 256
+ 2024 |       sprintf(logMsg, "For clock %s, given alarm is NULL.", this->name);
+      |       ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function 'int ESMCI::Alarm::ringerOff()':
 /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:747:5: warning: 'nonnull' argument 'this' compared to NULL [-Wnonnull-compare]
   747 |     if (this == ESMC_NULL_POINTER) {
@@ -4431,13 +4416,60 @@ In file included from /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_
 /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1492:5: warning: 'nonnull' argument 'this' compared to NULL [-Wnonnull-compare]
  1492 |     if (this == ESMC_NULL_POINTER) {
       |     ^~
-/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function 'bool ESMCI::Clock::isStopTime(int*) const':
-/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:707:5: warning: 'nonnull' argument 'this' compared to NULL [-Wnonnull-compare]
-  707 |     if (this == ESMC_NULL_POINTER) {
-      |     ^~
 /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function 'int ESMCI::Alarm::writeRestart() const':
 /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1564:5: warning: 'nonnull' argument 'this' compared to NULL [-Wnonnull-compare]
  1564 |     if (this == ESMC_NULL_POINTER) {
+      |     ^~
+/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function 'int ESMCI::Clock::removeAlarm(ESMCI::Alarm*)':
+/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:2126:32: warning: '%s' directive writing up to 255 bytes into a region of size 246 [-Wformat-overflow=]
+ 2126 |     sprintf(logMsg, "For clock %s, given alarm is not in clock's alarmList.",
+      |                                ^~
+/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:2126:12: note: 'sprintf' output between 53 and 308 bytes into a destination of size 256
+ 2126 |     sprintf(logMsg, "For clock %s, given alarm is not in clock's alarmList.",
+      |     ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 2127 |             this->name);
+      |             ~~~~~~~~~~~
+/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:2104:34: warning: '%s' directive writing up to 255 bytes into a region of size 246 [-Wformat-overflow=]
+ 2104 |       sprintf(logMsg, "For clock %s, given alarm is NULL.", this->name);
+      |                                  ^~
+/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:2104:14: note: 'sprintf' output between 33 and 288 bytes into a destination of size 256
+ 2104 |       sprintf(logMsg, "For clock %s, given alarm is NULL.", this->name);
+      |       ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function 'int ESMCI::Alarm::print(const char*) const':
+/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1658:5: warning: 'nonnull' argument 'this' compared to NULL [-Wnonnull-compare]
+ 1658 |     if (this == ESMC_NULL_POINTER) {
+      |     ^~
+/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function 'int ESMCI::Alarm::get(int, int*, char*, ESMCI::Clock**, ESMCI::Time*, ESMCI::Time*, ESMCI::TimeInterval*, ESMCI::Time*, ESMCI::TimeInterval*, int*, int*, ESMCI::Time*, ESMCI::Time*, ESMCI::Time*, bool*, bool*, bool*, bool*)':
+/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:483:5: warning: 'nonnull' argument 'this' compared to NULL [-Wnonnull-compare]
+  483 |     if (this == ESMC_NULL_POINTER) {
+      |     ^~
+/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function 'int ESMCI::Alarm::ringerOn()':
+/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:699:5: warning: 'nonnull' argument 'this' compared to NULL [-Wnonnull-compare]
+  699 |     if (this == ESMC_NULL_POINTER) {
+      |     ^~
+/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function 'bool ESMCI::Alarm::willRingNext(ESMCI::TimeInterval*, int*) const':
+/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:861:5: warning: 'nonnull' argument 'this' compared to NULL [-Wnonnull-compare]
+  861 |     if (this == ESMC_NULL_POINTER) {
+      |     ^~
+/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function 'int ESMCI::Alarm::notSticky(ESMCI::TimeInterval*, int*)':
+/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1012:5: warning: 'nonnull' argument 'this' compared to NULL [-Wnonnull-compare]
+ 1012 |     if (this == ESMC_NULL_POINTER) {
+      |     ^~
+/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function 'bool ESMCI::Alarm::checkRingTime(int*)':
+/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1104:5: warning: 'nonnull' argument 'this' compared to NULL [-Wnonnull-compare]
+ 1104 |     if (this == ESMC_NULL_POINTER) {
+      |     ^~
+/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function 'int ESMCI::Alarm::validate(const char*) const':
+/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1604:5: warning: 'nonnull' argument 'this' compared to NULL [-Wnonnull-compare]
+ 1604 |     if (this == ESMC_NULL_POINTER) {
+      |     ^~
+/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function 'int ESMCI::Alarm::set(int, const char*, ESMCI::Clock**, ESMCI::Time*, ESMCI::TimeInterval*, ESMCI::Time*, ESMCI::TimeInterval*, int*, ESMCI::Time*, bool*, bool*, bool*)':
+/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:344:5: warning: 'nonnull' argument 'this' compared to NULL [-Wnonnull-compare]
+  344 |     if (this == ESMC_NULL_POINTER) {
+      |     ^~
+/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function 'bool ESMCI::Clock::isStopTime(int*) const':
+/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:707:5: warning: 'nonnull' argument 'this' compared to NULL [-Wnonnull-compare]
+  707 |     if (this == ESMC_NULL_POINTER) {
       |     ^~
 /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function 'int ESMCI::Clock::stopTimeEnable(ESMCI::Time*)':
 /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:752:5: warning: 'nonnull' argument 'this' compared to NULL [-Wnonnull-compare]
@@ -4459,10 +4491,6 @@ In file included from /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_
 /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:931:5: warning: 'nonnull' argument 'this' compared to NULL [-Wnonnull-compare]
   931 |     if (this == ESMC_NULL_POINTER) {
       |     ^~
-/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function 'int ESMCI::Alarm::print(const char*) const':
-/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1658:5: warning: 'nonnull' argument 'this' compared to NULL [-Wnonnull-compare]
- 1658 |     if (this == ESMC_NULL_POINTER) {
-      |     ^~
 /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function 'int ESMCI::Clock::getNextTime(ESMCI::Time*, ESMCI::TimeInterval*)':
 /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:968:5: warning: 'nonnull' argument 'this' compared to NULL [-Wnonnull-compare]
   968 |     if (this == ESMC_NULL_POINTER) {
@@ -4483,32 +4511,16 @@ In file included from /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_
 /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1742:5: warning: 'nonnull' argument 'this' compared to NULL [-Wnonnull-compare]
  1742 |     if (this == ESMC_NULL_POINTER) {
       |     ^~
-/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function 'int ESMCI::Alarm::get(int, int*, char*, ESMCI::Clock**, ESMCI::Time*, ESMCI::Time*, ESMCI::TimeInterval*, ESMCI::Time*, ESMCI::TimeInterval*, int*, int*, ESMCI::Time*, ESMCI::Time*, ESMCI::Time*, bool*, bool*, bool*, bool*)':
-/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:483:5: warning: 'nonnull' argument 'this' compared to NULL [-Wnonnull-compare]
-  483 |     if (this == ESMC_NULL_POINTER) {
-      |     ^~
 /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function 'int ESMCI::Clock::get(int, int*, char*, ESMCI::TimeInterval*, ESMCI::Time*, ESMCI::Time*, ESMCI::TimeInterval*, ESMC_R8*, ESMCI::Time*, ESMCI::Time*, ESMCI::Time*, ESMCI::TimeInterval*, ESMCI::TimeInterval*, ESMCI::Calendar**, ESMC_CalKind_Flag*, int*, ESMC_I8*, int*, ESMC_Direction*)':
 /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:425:5: warning: 'nonnull' argument 'this' compared to NULL [-Wnonnull-compare]
   425 |     if (this == ESMC_NULL_POINTER) {
-      |     ^~
-/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function 'int ESMCI::Alarm::ringerOn()':
-/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:699:5: warning: 'nonnull' argument 'this' compared to NULL [-Wnonnull-compare]
-  699 |     if (this == ESMC_NULL_POINTER) {
       |     ^~
 /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function 'int ESMCI::Clock::advance(ESMCI::TimeInterval*, char*, char*, int, int*)':
 /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:570:5: warning: 'nonnull' argument 'this' compared to NULL [-Wnonnull-compare]
   570 |     if (this == ESMC_NULL_POINTER) {
       |     ^~
-/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function 'bool ESMCI::Alarm::willRingNext(ESMCI::TimeInterval*, int*) const':
-/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:861:5: warning: 'nonnull' argument 'this' compared to NULL [-Wnonnull-compare]
-  861 |     if (this == ESMC_NULL_POINTER) {
-      |     ^~
 /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function 'int ESMCI::Clock::getAlarm(int, char*, ESMCI::Alarm**)':
 /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1012:5: warning: 'nonnull' argument 'this' compared to NULL [-Wnonnull-compare]
- 1012 |     if (this == ESMC_NULL_POINTER) {
-      |     ^~
-/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function 'int ESMCI::Alarm::notSticky(ESMCI::TimeInterval*, int*)':
-/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1012:5: warning: 'nonnull' argument 'this' compared to NULL [-Wnonnull-compare]
  1012 |     if (this == ESMC_NULL_POINTER) {
       |     ^~
 /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function 'int ESMCI::Clock::getAlarmList(ESMC_AlarmList_Flag, char*, char*, int, int*, ESMCI::TimeInterval*)':
@@ -4519,25 +4531,13 @@ In file included from /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_
 /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1570:5: warning: 'nonnull' argument 'this' compared to NULL [-Wnonnull-compare]
  1570 |     if (this == ESMC_NULL_POINTER) {
       |     ^~
-/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function 'bool ESMCI::Alarm::checkRingTime(int*)':
-/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1104:5: warning: 'nonnull' argument 'this' compared to NULL [-Wnonnull-compare]
- 1104 |     if (this == ESMC_NULL_POINTER) {
-      |     ^~
 /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function 'int ESMCI::Clock::syncToRealTime()':
 /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1318:5: warning: 'nonnull' argument 'this' compared to NULL [-Wnonnull-compare]
  1318 |     if (this == ESMC_NULL_POINTER) {
       |     ^~
-/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function 'int ESMCI::Alarm::validate(const char*) const':
-/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1604:5: warning: 'nonnull' argument 'this' compared to NULL [-Wnonnull-compare]
- 1604 |     if (this == ESMC_NULL_POINTER) {
-      |     ^~
 /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function 'int ESMCI::Clock::set(int, const char*, ESMCI::TimeInterval*, ESMCI::Time*, ESMCI::Time*, ESMCI::TimeInterval*, int*, ESMCI::Time*, ESMCI::Time*, ESMC_I8*, ESMC_Direction*)':
 /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:298:5: warning: 'nonnull' argument 'this' compared to NULL [-Wnonnull-compare]
   298 |     if (this == ESMC_NULL_POINTER) {
-      |     ^~
-/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function 'int ESMCI::Alarm::set(int, const char*, ESMCI::Clock**, ESMCI::Time*, ESMCI::TimeInterval*, ESMCI::Time*, ESMCI::TimeInterval*, int*, ESMCI::Time*, bool*, bool*, bool*)':
-/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:344:5: warning: 'nonnull' argument 'this' compared to NULL [-Wnonnull-compare]
-  344 |     if (this == ESMC_NULL_POINTER) {
       |     ^~
 /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function 'int ESMCI::Clock::addAlarm(ESMCI::Alarm*)':
 /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:2016:5: warning: 'nonnull' argument 'this' compared to NULL [-Wnonnull-compare]
@@ -4560,6 +4560,15 @@ In file included from /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_
 /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Time.C:1435:16: warning: 'sprintf' argument 3 overlaps destination object 'timeString' [-Wrestrict]
  1435 |         sprintf(timeString, "%s%012.9f", timeString, (s + fractionalSeconds));
       |         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C: In member function 'int ESMCI::Calendar::get(int, int*, char*, ESMC_CalKind_Flag*, int*, int, int*, ESMC_I4*, ESMC_I4*, ESMC_I4*, ESMC_I4*, ESMC_I4*)':
+/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C:904:44: warning: '%s' directive writing up to 255 bytes into a region of size 238 [-Wformat-overflow=]
+  904 |         sprintf(logMsg, "For calendar name %s, "
+      |                                            ^~
+/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C:904:16: note: 'sprintf' output between 64 and 319 bytes into a destination of size 256
+  904 |         sprintf(logMsg, "For calendar name %s, "
+      |         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  905 |                 "length >= given character array; truncated.", this->name);
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_TimeInterval.C: In member function 'int ESMCI::TimeInterval::getString(char*, const char*) const':
 /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_TimeInterval.C:3153:16: warning: 'sprintf' argument 3 overlaps destination object 'timeString' [-Wrestrict]
  3153 |         sprintf(timeString, "%s%dS", timeString, s);
@@ -4573,15 +4582,6 @@ In file included from /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_
 /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_TimeInterval.C:3142:16: warning: 'sprintf' argument 3 overlaps destination object 'timeString' [-Wrestrict]
  3142 |         sprintf(timeString, "%s%.9fS", timeString, (s + fractionalSeconds));
       |         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C: In member function 'int ESMCI::Calendar::get(int, int*, char*, ESMC_CalKind_Flag*, int*, int, int*, ESMC_I4*, ESMC_I4*, ESMC_I4*, ESMC_I4*, ESMC_I4*)':
-/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C:904:44: warning: '%s' directive writing up to 255 bytes into a region of size 238 [-Wformat-overflow=]
-  904 |         sprintf(logMsg, "For calendar name %s, "
-      |                                            ^~
-/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C:904:16: note: 'sprintf' output between 64 and 319 bytes into a destination of size 256
-  904 |         sprintf(logMsg, "For calendar name %s, "
-      |         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-  905 |                 "length >= given character array; truncated.", this->name);
-      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C: In member function 'int ESMCI::Calendar::convertToDate(ESMCI::BaseTime*, ESMC_I4*, ESMC_I8*, int*, int*, ESMC_I4*, ESMC_I8*, ESMC_R8*) const':
 /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C:1382:5: warning: 'nonnull' argument 'this' compared to NULL [-Wnonnull-compare]
  1382 |     if (this == ESMC_NULL_POINTER) {
@@ -4926,7 +4926,7 @@ In file included from /opt/cray/pe/gcc/10.3.0/snos/include/g++/backward/strstrea
                  from /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/include/ESMCI_VM.h:41,
                  from /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/include/ESMCI_Base.h:27,
                  from /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/Route/interface/../include/ESMCI_RHandle.h:39,
-                 from /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/Route/interface/ESMCI_RHandle_F.C:23:
+                 from /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/Route/interface/ESMC_RHandle.C:31:
 /opt/cray/pe/gcc/10.3.0/snos/include/g++/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
    32 | #warning \
       |  ^~~~~~~
@@ -4935,7 +4935,7 @@ In file included from /opt/cray/pe/gcc/10.3.0/snos/include/g++/backward/strstrea
                  from /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/include/ESMCI_VM.h:41,
                  from /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/include/ESMCI_Base.h:27,
                  from /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/Route/interface/../include/ESMCI_RHandle.h:39,
-                 from /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/Route/interface/ESMC_RHandle.C:31:
+                 from /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_release_8.3.0/src/Infrastructure/Route/interface/ESMCI_RHandle_F.C:23:
 /opt/cray/pe/gcc/10.3.0/snos/include/g++/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
    32 | #warning \
       |  ^~~~~~~
