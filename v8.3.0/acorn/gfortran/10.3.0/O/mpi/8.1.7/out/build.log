@@ -1,4 +1,4 @@
-Tue Jun 7 01:20:37 UTC 2022
+Tue Jun 7 15:05:48 UTC 2022
  
 --------------------------------------------------------------
 ESMF_VERSION_STRING:    8.3.0
@@ -13,8 +13,8 @@ Changes not staged for commit:
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
 	build-gfortran_10.3.0_mpi_O.bat
-	build-gfortran_10.3.0_mpi_O.bat.e88628
-	build-gfortran_10.3.0_mpi_O.bat.o88628
+	build-gfortran_10.3.0_mpi_O.bat.e88639
+	build-gfortran_10.3.0_mpi_O.bat.o88639
 	getres-build.sh
 	getres-test.sh
 	nuopc-app-prototypes/
@@ -226,8 +226,8 @@ ESMF_TRACE_STATICLINKLIBS=-lesmftrace_static
 
 
 --------------------------------------------------------------
-Compiling on Tue Jun 7 01:17:12 UTC 2022 on nid001007
-Machine characteristics: Linux nid001007 5.3.18-150300.59.63-default #1 SMP Tue Apr 5 12:47:31 UTC 2022 (d77db66) x86_64 x86_64 x86_64 GNU/Linux
+Compiling on Tue Jun 7 15:02:24 UTC 2022 on nid001002
+Machine characteristics: Linux nid001002 5.3.18-150300.59.63-default #1 SMP Tue Apr 5 12:47:31 UTC 2022 (d77db66) x86_64 x86_64 x86_64 GNU/Linux
 ==============================================================
  
 make[1]: Entering directory '/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_O_v8.3.0'
@@ -1432,17 +1432,17 @@ CC -c -std=c++11 -O -DNDEBUG -fPIC -DESMF_LOWERCASE_SINGLEUNDERSCORE -pthread  -
 In file included from /opt/cray/pe/gcc/10.3.0/snos/include/g++/backward/strstream:50,
                  from /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_O_v8.3.0/src/include/ESMCI_VMKernel.h:28,
                  from /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_O_v8.3.0/src/include/ESMCI_VM.h:41,
-                 from /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_O_v8.3.0/src/include/ESMCI_Base.h:27,
-                 from /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_O_v8.3.0/src/include/ESMCI_Comp.h:32,
-                 from /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_O_v8.3.0/src/Infrastructure/Trace/src/../include/ESMCI_Trace.h:17,
-                 from /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_O_v8.3.0/src/Infrastructure/Trace/src/ESMCI_TraceWrap.C:13:
+                 from /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_O_v8.3.0/src/Infrastructure/Trace/src/ESMCI_TraceClock.C:31:
 /opt/cray/pe/gcc/10.3.0/snos/include/g++/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
    32 | #warning \
       |  ^~~~~~~
 In file included from /opt/cray/pe/gcc/10.3.0/snos/include/g++/backward/strstream:50,
                  from /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_O_v8.3.0/src/include/ESMCI_VMKernel.h:28,
                  from /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_O_v8.3.0/src/include/ESMCI_VM.h:41,
-                 from /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_O_v8.3.0/src/Infrastructure/Trace/src/ESMCI_TraceClock.C:31:
+                 from /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_O_v8.3.0/src/include/ESMCI_Base.h:27,
+                 from /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_O_v8.3.0/src/include/ESMCI_Comp.h:32,
+                 from /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_O_v8.3.0/src/Infrastructure/Trace/src/../include/ESMCI_Trace.h:17,
+                 from /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_O_v8.3.0/src/Infrastructure/Trace/src/ESMCI_TraceWrap.C:13:
 /opt/cray/pe/gcc/10.3.0/snos/include/g++/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
    32 | #warning \
       |  ^~~~~~~
@@ -1541,8 +1541,7 @@ In file included from /opt/cray/pe/gcc/10.3.0/snos/include/g++/backward/strstrea
                  from /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_O_v8.3.0/src/include/ESMCI_VMKernel.h:28,
                  from /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_O_v8.3.0/src/include/ESMCI_VM.h:41,
                  from /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_O_v8.3.0/src/Infrastructure/Base/src/../include/ESMCI_Base.h:27,
-                 from /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_O_v8.3.0/src/Infrastructure/Base/src/../include/ESMCI_Info.h:24,
-                 from /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_O_v8.3.0/src/Infrastructure/Base/src/ESMCI_Info.C:27:
+                 from /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_O_v8.3.0/src/Infrastructure/Base/src/ESMC_InfoCDefGeneric.C:36:
 /opt/cray/pe/gcc/10.3.0/snos/include/g++/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
    32 | #warning \
       |  ^~~~~~~
@@ -1550,7 +1549,8 @@ In file included from /opt/cray/pe/gcc/10.3.0/snos/include/g++/backward/strstrea
                  from /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_O_v8.3.0/src/include/ESMCI_VMKernel.h:28,
                  from /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_O_v8.3.0/src/include/ESMCI_VM.h:41,
                  from /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_O_v8.3.0/src/Infrastructure/Base/src/../include/ESMCI_Base.h:27,
-                 from /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_O_v8.3.0/src/Infrastructure/Base/src/ESMC_InfoCDefGeneric.C:36:
+                 from /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_O_v8.3.0/src/Infrastructure/Base/src/../include/ESMCI_Info.h:24,
+                 from /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_O_v8.3.0/src/Infrastructure/Base/src/ESMCI_Info.C:27:
 /opt/cray/pe/gcc/10.3.0/snos/include/g++/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
    32 | #warning \
       |  ^~~~~~~

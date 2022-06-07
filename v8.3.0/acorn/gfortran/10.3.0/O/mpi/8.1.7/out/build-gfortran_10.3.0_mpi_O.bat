@@ -1,4 +1,4 @@
-Tue Jun 7 01:22:39 UTC 2022
+Tue Jun 7 15:05:48 UTC 2022
 #!/bin/sh -l
 #PBS -N build-gfortran_10.3.0_mpi_O.bat
 #PBS -l walltime=1:00:00
@@ -24,6 +24,7 @@ export ESMF_MPIRUN=mpirun.unicos
 export ESMF_F90COMPILEOPTS="-fallow-argument-mismatch -fallow-invalid-boz"
 export ESMF_CXXLINKOPTS="-fPIC -lnetcdff -lnetcdff"
 export ESMF_NETCDF=nc-config
+export ESMF_COMM=mpi
 sed -i 's/aprun/mpiexec/' scripts/mpirun.unicos
 export ESMF_DIR=/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_O_v8.3.0
 export ESMF_COMPILER=gfortran
