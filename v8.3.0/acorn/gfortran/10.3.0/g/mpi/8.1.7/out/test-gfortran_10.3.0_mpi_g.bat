@@ -1,4 +1,4 @@
-Tue Jun 7 01:24:34 UTC 2022
+Tue Jun 7 15:06:20 UTC 2022
 #!/bin/sh -l
 #PBS -N test-gfortran_10.3.0_mpi_g.bat
 #PBS -l walltime=1:00:00
@@ -23,6 +23,7 @@ export ESMF_MPIRUN=mpirun.unicos
 export ESMF_F90COMPILEOPTS="-fallow-argument-mismatch -fallow-invalid-boz"
 export ESMF_CXXLINKOPTS="-fPIC -lnetcdff -lnetcdff"
 export ESMF_NETCDF=nc-config
+export ESMF_COMM=mpi
 sed -i 's/aprun/mpiexec/' scripts/mpirun.unicos
 export ESMF_DIR=/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_v8.3.0
 export ESMF_COMPILER=gfortran
@@ -43,7 +44,7 @@ cd ../src/addon/ESMPy
 
 export PATH=$PATH:$HOME/.local/bin
 python3 setup.py build 2>&1 | tee python_build.log
-ssh alogin02 /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_v8.3.0/runpython.sh 2>&1 | tee python_build.log
+ssh alogin01 /lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_g_v8.3.0/runpython.sh 2>&1 | tee python_build.log
 python3 setup.py test 2>&1 | tee python_test.log
 python3 setup.py test_examples 2>&1 | tee python_examples.log
 python3 setup.py test_regrid_from_file 2>&1 | tee python_regrid.log
