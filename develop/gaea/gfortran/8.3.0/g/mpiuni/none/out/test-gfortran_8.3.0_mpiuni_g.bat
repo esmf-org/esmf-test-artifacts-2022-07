@@ -1,4 +1,4 @@
-Thu Jun 9 00:32:38 EDT 2022
+Thu Jun 9 02:09:49 EDT 2022
 #!/bin/sh -l
 #SBATCH --account=nggps_emc
 #SBATCH -o test-gfortran_8.3.0_mpiuni_g.bat_%j.o
