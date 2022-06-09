@@ -1,4 +1,4 @@
-Thu Jun 9 02:37:41 CDT 2022
+Thu Jun 9 03:38:28 CDT 2022
 #!/bin/sh -l
 #SBATCH --account=da-cpu
 #SBATCH -o build-gfortran_8.3.0_openmpi_O.bat_%j.o
