@@ -1,7 +1,7 @@
-Thu Jun 16 15:02:13 MDT 2022
+Thu Jun 16 16:41:04 MDT 2022
 #!/bin/sh -l
 #PBS -N test-intel_20.0.1_mvapich2_g.bat
-#PBS -l walltime=2:00:00
+#PBS -l walltime=3:00:00
 #PBS -q medium
 #PBS -A UNUSED
 #PBS -l nodes=1:ppn=48
