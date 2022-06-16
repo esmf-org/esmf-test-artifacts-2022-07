@@ -1,4 +1,4 @@
-Thu Jun 16 13:05:45 MDT 2022
+Thu Jun 16 15:06:38 MDT 2022
 #!/bin/sh -l
 #PBS -N test-intel_20.0.1_mvapich2_O.bat
 #PBS -l walltime=2:00:00
