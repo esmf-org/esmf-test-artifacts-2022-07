@@ -1,4 +1,4 @@
-Thu Jun 16 16:35:30 MDT 2022
+Thu Jun 16 19:37:05 MDT 2022
 #!/bin/sh -l
 #PBS -N test-gfortran_9.3.0_mvapich2_g.bat
 #PBS -l walltime=3:00:00
