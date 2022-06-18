@@ -1,0 +1,15 @@
+Sat Jun 18 04:15:50 MDT 2022
+ 
+Installing ESMF:
+ 
+mkdir -p /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpiuni_g_develop/DEFAULTINSTALLDIR/include
+cp -f /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpiuni_g_develop/src/include/ESMC.h /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpiuni_g_develop/DEFAULTINSTALLDIR/include
+cp -f /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpiuni_g_develop/src/include/ESMC_*.h /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpiuni_g_develop/DEFAULTINSTALLDIR/include
+cp -f /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpiuni_g_develop/build_config/Linux.intel.default/ESMC_Conf.h /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpiuni_g_develop/DEFAULTINSTALLDIR/include
+mkdir -p /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpiuni_g_develop/DEFAULTINSTALLDIR/mod/modg/Linux.intel.64.mpiuni.default
+cp -f /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpiuni_g_develop/mod/modg/Linux.intel.64.mpiuni.default/*.mod /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpiuni_g_develop/DEFAULTINSTALLDIR/mod/modg/Linux.intel.64.mpiuni.default
+mkdir -p /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpiuni_g_develop/DEFAULTINSTALLDIR/lib/libg/Linux.intel.64.mpiuni.default
+cp -f /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpiuni_g_develop/lib/libg/Linux.intel.64.mpiuni.default/libesmf*.* /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpiuni_g_develop/DEFAULTINSTALLDIR/lib/libg/Linux.intel.64.mpiuni.default
+cp: cannot stat '/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpiuni_g_develop/lib/libg/Linux.intel.64.mpiuni.default/libesmf*.*': No such file or directory
+makefile:691: recipe for target 'install' failed
+make: *** [install] Error 1
