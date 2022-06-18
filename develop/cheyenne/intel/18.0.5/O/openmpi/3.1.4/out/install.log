@@ -1,0 +1,15 @@
+Sat Jun 18 04:34:56 MDT 2022
+ 
+Installing ESMF:
+ 
+mkdir -p /glade/scratch/dunlap/esmf-testing/intel_18.0.5_openmpi_O_develop/DEFAULTINSTALLDIR/include
+cp -f /glade/scratch/dunlap/esmf-testing/intel_18.0.5_openmpi_O_develop/src/include/ESMC.h /glade/scratch/dunlap/esmf-testing/intel_18.0.5_openmpi_O_develop/DEFAULTINSTALLDIR/include
+cp -f /glade/scratch/dunlap/esmf-testing/intel_18.0.5_openmpi_O_develop/src/include/ESMC_*.h /glade/scratch/dunlap/esmf-testing/intel_18.0.5_openmpi_O_develop/DEFAULTINSTALLDIR/include
+cp -f /glade/scratch/dunlap/esmf-testing/intel_18.0.5_openmpi_O_develop/build_config/Linux.intel.default/ESMC_Conf.h /glade/scratch/dunlap/esmf-testing/intel_18.0.5_openmpi_O_develop/DEFAULTINSTALLDIR/include
+mkdir -p /glade/scratch/dunlap/esmf-testing/intel_18.0.5_openmpi_O_develop/DEFAULTINSTALLDIR/mod/modO/Linux.intel.64.openmpi.default
+cp -f /glade/scratch/dunlap/esmf-testing/intel_18.0.5_openmpi_O_develop/mod/modO/Linux.intel.64.openmpi.default/*.mod /glade/scratch/dunlap/esmf-testing/intel_18.0.5_openmpi_O_develop/DEFAULTINSTALLDIR/mod/modO/Linux.intel.64.openmpi.default
+mkdir -p /glade/scratch/dunlap/esmf-testing/intel_18.0.5_openmpi_O_develop/DEFAULTINSTALLDIR/lib/libO/Linux.intel.64.openmpi.default
+cp -f /glade/scratch/dunlap/esmf-testing/intel_18.0.5_openmpi_O_develop/lib/libO/Linux.intel.64.openmpi.default/libesmf*.* /glade/scratch/dunlap/esmf-testing/intel_18.0.5_openmpi_O_develop/DEFAULTINSTALLDIR/lib/libO/Linux.intel.64.openmpi.default
+cp: cannot stat '/glade/scratch/dunlap/esmf-testing/intel_18.0.5_openmpi_O_develop/lib/libO/Linux.intel.64.openmpi.default/libesmf*.*': No such file or directory
+makefile:691: recipe for target 'install' failed
+make: *** [install] Error 1
