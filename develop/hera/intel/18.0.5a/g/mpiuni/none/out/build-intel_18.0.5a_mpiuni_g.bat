@@ -1,4 +1,4 @@
-Sun Jun 19 06:52:33 UTC 2022
+Mon Jun 20 06:05:23 UTC 2022
 #!/bin/sh -l
 #SBATCH --account=nems
 #SBATCH -o build-intel_18.0.5a_mpiuni_g.bat_%j.o
