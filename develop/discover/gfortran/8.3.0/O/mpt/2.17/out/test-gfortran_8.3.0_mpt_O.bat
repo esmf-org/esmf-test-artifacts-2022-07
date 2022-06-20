@@ -1,4 +1,4 @@
-Mon Jun 20 01:07:20 EDT 2022
+Mon Jun 20 01:29:56 EDT 2022
 #!/bin/sh -l
 #SBATCH --account=s2326
 #SBATCH -o test-gfortran_8.3.0_mpt_O.bat_%j.o
