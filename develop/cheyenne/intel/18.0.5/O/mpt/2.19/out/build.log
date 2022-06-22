@@ -1,4 +1,4 @@
-Tue Jun 21 02:58:54 MDT 2022
+Wed Jun 22 02:49:51 MDT 2022
  
 --------------------------------------------------------------
 ESMF_VERSION_STRING:    8.4.0 beta snapshot
@@ -218,8 +218,8 @@ ESMF_TRACE_STATICLINKLIBS=-lesmftrace_static
 
 
 --------------------------------------------------------------
-Compiling on Tue Jun 21 02:07:52 MDT 2022 on r3i0n14
-Machine characteristics: Linux r3i0n14 4.12.14-95.51-default #1 SMP Fri Apr 17 08:14:12 UTC 2020 (c6bab98) x86_64 x86_64 x86_64 GNU/Linux
+Compiling on Wed Jun 22 02:06:14 MDT 2022 on r3i0n35
+Machine characteristics: Linux r3i0n35 4.12.14-95.51-default #1 SMP Fri Apr 17 08:14:12 UTC 2020 (c6bab98) x86_64 x86_64 x86_64 GNU/Linux
 ==============================================================
  
 make[1]: Entering directory '/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop'
@@ -1346,15 +1346,15 @@ mpicxx -c -std=c++11 -O -DNDEBUG -fPIC -debug minimal -m64 -mcmodel=small -pthre
 mpicxx -c -std=c++11 -O -DNDEBUG -fPIC -debug minimal -m64 -mcmodel=small -pthread  -qopenmp -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/VM/src -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/VM/src/../include -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/build_config/Linux.intel.default -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Superstructure -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/stubs/pthread  -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include  -I/glade/u/apps/ch/opt/netcdf/4.6.3/intel/18.0.5/include -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/prologue/yaml-cpp/include -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.4.0b01-2-gf0d4ab211d"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpt -DESMF_DIR=/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop -D__SDIR__='"src/Infrastructure/VM/src"' -DESMF_CXXSTD=11 /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/VM/src/ESMCI_VMKernel.C -o /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/obj/objO/Linux.intel.64.mpt.default/ESMCI_VMKernel.o
 In file included from /usr/include/c++/4.8/backward/strstream(51),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/VM/src/../include/ESMCI_VMKernel.h(28),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/VM/src/../include/ESMCI_VM.h(41),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/VM/src/ESMCI_VM.C(40):
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/VM/src/ESMCI_VMKernel.C(13):
 /usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
 
 In file included from /usr/include/c++/4.8/backward/strstream(51),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/VM/src/../include/ESMCI_VMKernel.h(28),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/VM/src/ESMCI_VMKernel.C(13):
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/VM/src/../include/ESMCI_VM.h(41),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/VM/src/ESMCI_VM.C(40):
 /usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -1378,7 +1378,7 @@ mpicxx -c -std=c++11 -O -DNDEBUG -fPIC -debug minimal -m64 -mcmodel=small -pthre
 In file included from /usr/include/c++/4.8/backward/strstream(51),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/VM/interface/../include/ESMCI_VMKernel.h(28),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/VM/interface/../include/ESMCI_VM.h(41),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/VM/interface/ESMCI_VM_F.C(20):
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/VM/interface/ESMC_VM.C(32):
 /usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -1386,7 +1386,7 @@ In file included from /usr/include/c++/4.8/backward/strstream(51),
 In file included from /usr/include/c++/4.8/backward/strstream(51),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/VM/interface/../include/ESMCI_VMKernel.h(28),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/VM/interface/../include/ESMCI_VM.h(41),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/VM/interface/ESMC_VM.C(32):
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/VM/interface/ESMCI_VM_F.C(20):
 /usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -1550,8 +1550,7 @@ In file included from /usr/include/c++/4.8/backward/strstream(51),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VMKernel.h(28),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Base/src/../include/ESMCI_Base.h(27),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Base/src/../include/ESMCI_Info.h(24),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Base/src/ESMCI_Info.C(27):
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Base/src/ESMC_InfoCDefGeneric.C(36):
 /usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -1560,7 +1559,8 @@ In file included from /usr/include/c++/4.8/backward/strstream(51),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VMKernel.h(28),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Base/src/../include/ESMCI_Base.h(27),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Base/src/ESMC_InfoCDefGeneric.C(36):
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Base/src/../include/ESMCI_Info.h(24),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Base/src/ESMCI_Info.C(27):
 /usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -1925,7 +1925,7 @@ In file included from /usr/include/c++/4.8/backward/strstream(51),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_Base.h(27),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Route/interface/../include/ESMCI_RHandle.h(39),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Route/interface/ESMCI_RHandle_F.C(23):
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Route/interface/ESMC_RHandle.C(31):
 /usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -1935,7 +1935,7 @@ In file included from /usr/include/c++/4.8/backward/strstream(51),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_Base.h(27),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Route/interface/../include/ESMCI_RHandle.h(39),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Route/interface/ESMC_RHandle.C(31):
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Route/interface/ESMCI_RHandle_F.C(23):
 /usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -2296,7 +2296,7 @@ CMAKE_EXE_LINKER_FLAGS
 # General
 -------
 PIO Version:		2.5.7
-Configured On:		Tue Jun 21 02:30:59 MDT 2022
+Configured On:		Wed Jun 22 02:25:44 MDT 2022
 Host System:		x86_64-Linux-4.12.14-95.51-default
 Build Directory: 	/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/IO/PIO/Build
 Install Prefix:         /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/IO/PIO/Install
@@ -2431,8 +2431,9 @@ mpicxx -c -std=c++11 -O -DNDEBUG -fPIC -debug minimal -m64 -mcmodel=small -pthre
 In file included from /usr/include/c++/4.8/backward/strstream(51),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VMKernel.h(28),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/IO/src/../include/ESMCI_PIO_Handler.h(36),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/IO/src/ESMCI_PIO_Handler.C(24):
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_Base.h(27),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/IO/src/../include/ESMCI_IO_NetCDF.h(39),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/IO/src/ESMCI_IO_NetCDF.C(24):
 /usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -2450,9 +2451,18 @@ In file included from /usr/include/c++/4.8/backward/strstream(51),
 In file included from /usr/include/c++/4.8/backward/strstream(51),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VMKernel.h(28),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/IO/src/../include/ESMCI_PIO_Handler.h(36),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/IO/src/ESMCI_PIO_Handler.C(24):
+/usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
+  #warning \
+   ^
+
+In file included from /usr/include/c++/4.8/backward/strstream(51),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VMKernel.h(28),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_Base.h(27),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/IO/src/../include/ESMCI_IO_NetCDF.h(39),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/IO/src/ESMCI_IO_NetCDF.C(24):
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/IO/src/../include/ESMCI_IO_Handler.h(38),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/IO/src/ESMCI_IO_Handler.C(24):
 /usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -2473,16 +2483,6 @@ In file included from /usr/include/c++/4.8/backward/strstream(51),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_Base.h(27),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/IO/src/../include/ESMCI_IO_Gridspec.h(32),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/IO/src/ESMCI_IO_Gridspec.C(24):
-/usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
-  #warning \
-   ^
-
-In file included from /usr/include/c++/4.8/backward/strstream(51),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VMKernel.h(28),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_Base.h(27),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/IO/src/../include/ESMCI_IO_Handler.h(38),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/IO/src/ESMCI_IO_Handler.C(24):
 /usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -2513,6 +2513,14 @@ mpicxx -c -std=c++11 -O -DNDEBUG -fPIC -debug minimal -m64 -mcmodel=small -pthre
 In file included from /usr/include/c++/4.8/backward/strstream(51),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VMKernel.h(28),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/IO/interface/ESMCI_IO_F.C(23):
+/usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
+  #warning \
+   ^
+
+In file included from /usr/include/c++/4.8/backward/strstream(51),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VMKernel.h(28),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_Base.h(27),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/IO/interface/../include/ESMCI_IO_NetCDF.h(39),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/IO/interface/ESMCI_IO_NetCDF_F.C(21):
@@ -2526,14 +2534,6 @@ In file included from /usr/include/c++/4.8/backward/strstream(51),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_Base.h(27),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/IO/interface/../include/ESMCI_IO_Gridspec.h(32),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/IO/interface/ESMC_IO_Gridspec.C(20):
-/usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
-  #warning \
-   ^
-
-In file included from /usr/include/c++/4.8/backward/strstream(51),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VMKernel.h(28),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/IO/interface/ESMCI_IO_F.C(23):
 /usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -2618,8 +2618,8 @@ In file included from /usr/include/c++/4.8/backward/strstream(51),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VMKernel.h(28),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_Base.h(27),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_DistGrid.h(36),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Grid/interface/ESMCI_Grid_F.C(23):
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Grid/interface/../include/ESMCI_Grid.h(35),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Grid/interface/ESMC_Grid.C(26):
 /usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -2628,8 +2628,8 @@ In file included from /usr/include/c++/4.8/backward/strstream(51),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VMKernel.h(28),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_Base.h(27),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Grid/interface/../include/ESMCI_Grid.h(35),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Grid/interface/ESMC_Grid.C(26):
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_DistGrid.h(36),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Grid/interface/ESMCI_Grid_F.C(23):
 /usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -2704,7 +2704,7 @@ mpicxx -c -std=c++11 -O -DNDEBUG -fPIC -debug minimal -m64 -mcmodel=small -pthre
 In file included from /usr/include/c++/4.8/backward/strstream(51),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VMKernel.h(28),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/ESMCI_ClumpPnts.C(21):
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C(28):
 /usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -2713,14 +2713,6 @@ In file included from /usr/include/c++/4.8/backward/strstream(51),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VMKernel.h(28),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C(21):
-/usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
-  #warning \
-   ^
-
-In file included from /usr/include/c++/4.8/backward/strstream(51),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VMKernel.h(28),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C(28):
 /usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -2739,7 +2731,10 @@ In file included from /usr/include/c++/4.8/backward/strstream(51),
 In file included from /usr/include/c++/4.8/backward/strstream(51),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VMKernel.h(28),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/ESMCI_UGRID_Util.C(29):
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_Base.h(27),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_Grid.h(35),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/../include/ESMCI_Mesh_GToM_Glue.h(23),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Glue.C(23):
 /usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -2755,14 +2750,6 @@ In file included from /usr/include/c++/4.8/backward/strstream(51),
 In file included from /usr/include/c++/4.8/backward/strstream(51),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VMKernel.h(28),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/ESMCI_FileIO_Util.C(29):
-/usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
-  #warning \
-   ^
-
-In file included from /usr/include/c++/4.8/backward/strstream(51),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VMKernel.h(28),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/ESMCI_Mesh_FileIO.C(29):
 /usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
@@ -2771,9 +2758,7 @@ In file included from /usr/include/c++/4.8/backward/strstream(51),
 In file included from /usr/include/c++/4.8/backward/strstream(51),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VMKernel.h(28),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_Base.h(27),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_Array.h(38),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/ESMCI_Mesh_XGrid_Glue.C(29):
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/ESMCI_ClumpPnts.C(21):
 /usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -2781,10 +2766,7 @@ In file included from /usr/include/c++/4.8/backward/strstream(51),
 In file included from /usr/include/c++/4.8/backward/strstream(51),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VMKernel.h(28),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_Base.h(27),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_Grid.h(35),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/../include/ESMCI_Mesh_GToM_Glue.h(23),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Glue.C(23):
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/ESMCI_UGRID_Util.C(29):
 /usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -2792,15 +2774,7 @@ In file included from /usr/include/c++/4.8/backward/strstream(51),
 In file included from /usr/include/c++/4.8/backward/strstream(51),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VMKernel.h(28),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/ESMCI_MeshCXX.C(19):
-/usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
-  #warning \
-   ^
-
-In file included from /usr/include/c++/4.8/backward/strstream(51),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VMKernel.h(28),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C(33):
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/ESMCI_FileIO_Util.C(29):
 /usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -2818,6 +2792,49 @@ In file included from /usr/include/c++/4.8/backward/strstream(51),
   #warning \
    ^
 
+/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/ESMCI_MathUtil.C(3282): warning #47: incompatible redefinition of macro "DOT_PRODUCT3D" (declared at line 1061)
+  #define DOT_PRODUCT3D(a,b) (a[0]*b[0]+a[1]*b[1]+a[2]*b[2])
+          ^
+
+In file included from /usr/include/c++/4.8/backward/strstream(51),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VMKernel.h(28),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_Base.h(27),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_Array.h(38),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/ESMCI_Mesh_XGrid_Glue.C(29):
+/usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
+  #warning \
+   ^
+
+In file included from /usr/include/c++/4.8/backward/strstream(51),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VMKernel.h(28),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_Base.h(27),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_RHandle.h(39),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Field/include/ESMCI_Field.h(42),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/../include/ESMCI_Mesh.h(23),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/ESMCI_MeshCap.C(29):
+/usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
+  #warning \
+   ^
+
+In file included from /usr/include/c++/4.8/backward/strstream(51),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VMKernel.h(28),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C(33):
+/usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
+  #warning \
+   ^
+
+In file included from /usr/include/c++/4.8/backward/strstream(51),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VMKernel.h(28),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/ESMCI_MeshCXX.C(19):
+/usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
+  #warning \
+   ^
+
+mpicxx -c -std=c++11 -O -DNDEBUG -fPIC -debug minimal -m64 -mcmodel=small -pthread  -qopenmp -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/../include -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/build_config/Linux.intel.default -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Superstructure -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/stubs/pthread  -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include  -I/glade/u/apps/ch/opt/netcdf/4.6.3/intel/18.0.5/include -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.4.0b01-2-gf0d4ab211d"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpt -DESMF_DIR=/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop -D__SDIR__='"src/Infrastructure/Mesh/src"' -DESMF_CXXSTD=11 -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Moab -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Moab/parallel -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Moab/LocalDiscretization /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Search_EtoE.C -o /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/obj/objO/Linux.intel.64.mpt.default/ESMCI_MBMesh_Search_EtoE.o
 In file included from /usr/include/c++/4.8/backward/strstream(51),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VMKernel.h(28),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
@@ -2838,75 +2855,8 @@ In file included from /usr/include/c++/4.8/backward/strstream(51),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VMKernel.h(28),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_Base.h(27),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h(22),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/ESMCI_MBMesh_Redist.h(17),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/ESMCI_Rendez_Nearest.C(18):
-/usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
-  #warning \
-   ^
-
-In file included from /usr/include/c++/4.8/backward/strstream(51),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VMKernel.h(28),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_Base.h(27),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_Grid.h(35),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/ESMCI_MBMesh_GToM_Glue.C(25):
-/usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
-  #warning \
-   ^
-
-In file included from /usr/include/c++/4.8/backward/strstream(51),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VMKernel.h(28),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_Base.h(27),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_Grid.h(35),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Regrid_Glue.C(27):
-/usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
-  #warning \
-   ^
-
-In file included from /usr/include/c++/4.8/backward/strstream(51),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VMKernel.h(28),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_Base.h(27),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_RHandle.h(39),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Field/include/ESMCI_Field.h(42),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/ESMCI_Mesh.h(23),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/ESMCI_Mesh.C(13):
-/usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
-  #warning \
-   ^
-
-In file included from /usr/include/c++/4.8/backward/strstream(51),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VMKernel.h(28),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_Base.h(27),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h(22),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/ESMCI_MBMesh_BBox.h(18),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/ESMCI_MBMesh_BBox.C(16):
-/usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
-  #warning \
-   ^
-
-In file included from /usr/include/c++/4.8/backward/strstream(51),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VMKernel.h(28),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_Base.h(27),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h(22),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/ESMCI_MBMesh_Mapping.h(30),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Mapping.C(19):
-/usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
-  #warning \
-   ^
-
-In file included from /usr/include/c++/4.8/backward/strstream(51),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VMKernel.h(28),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_Base.h(27),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_RHandle.h(39),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Field/include/ESMCI_Field.h(42),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/../include/ESMCI_Mesh.h(23),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/ESMCI_MeshCap.C(29):
 /usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -2928,7 +2878,50 @@ In file included from /usr/include/c++/4.8/backward/strstream(51),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_RHandle.h(39),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Field/include/ESMCI_Field.h(42),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/ESMCI_Mesh.h(23),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/ESMCI_MeshDual.C(19):
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/ESMCI_Mesh.C(13):
+/usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
+  #warning \
+   ^
+
+In file included from /usr/include/c++/4.8/backward/strstream(51),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VMKernel.h(28),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_Base.h(27),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_Grid.h(35),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Regrid_Glue.C(27):
+/usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
+  #warning \
+   ^
+
+In file included from /usr/include/c++/4.8/backward/strstream(51),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VMKernel.h(28),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_Base.h(27),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h(22),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/ESMCI_MBMesh_Util.h(27),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Rendez_EtoP.C(17):
+/usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
+  #warning \
+   ^
+
+In file included from /usr/include/c++/4.8/backward/strstream(51),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VMKernel.h(28),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_Base.h(27),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h(22),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/ESMCI_MBMesh_Mapping.h(30),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Mapping.C(19):
+/usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
+  #warning \
+   ^
+
+In file included from /usr/include/c++/4.8/backward/strstream(51),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VMKernel.h(28),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_Base.h(27),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h(22),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/ESMCI_MBMesh_Redist.h(17),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/ESMCI_Rendez_Nearest.C(18):
 /usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -2944,9 +2937,27 @@ In file included from /usr/include/c++/4.8/backward/strstream(51),
   #warning \
    ^
 
-/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/ESMCI_MathUtil.C(3282): warning #47: incompatible redefinition of macro "DOT_PRODUCT3D" (declared at line 1061)
-  #define DOT_PRODUCT3D(a,b) (a[0]*b[0]+a[1]*b[1]+a[2]*b[2])
-          ^
+In file included from /usr/include/c++/4.8/backward/strstream(51),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VMKernel.h(28),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_Base.h(27),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h(22),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/ESMCI_MBMesh_BBox.h(18),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/ESMCI_MBMesh_BBox.C(16):
+/usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
+  #warning \
+   ^
+
+In file included from /usr/include/c++/4.8/backward/strstream(51),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VMKernel.h(28),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_Base.h(27),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h(22),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/ESMCI_MBMesh_Util.h(27),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redist.C(17):
+/usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
+  #warning \
+   ^
 
 In file included from /usr/include/c++/4.8/backward/strstream(51),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VMKernel.h(28),
@@ -2977,8 +2988,61 @@ In file included from /usr/include/c++/4.8/backward/strstream(51),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_Base.h(27),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h(22),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/ESMCI_MBMesh_Util.h(27),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redist.C(17):
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h(19),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h(22),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h(16),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Bilinear.C(16):
+/usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
+  #warning \
+   ^
+
+In file included from /usr/include/c++/4.8/backward/strstream(51),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VMKernel.h(28),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_Base.h(27),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_RHandle.h(39),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Field/include/ESMCI_Field.h(42),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/ESMCI_Mesh.h(23),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h(17),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C(18):
+/usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
+  #warning \
+   ^
+
+In file included from /usr/include/c++/4.8/backward/strstream(51),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VMKernel.h(28),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_Base.h(27),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h(22),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h(19),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h(22),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h(16),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/ESMCI_XGridUtil.C(12):
+/usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
+  #warning \
+   ^
+
+In file included from /usr/include/c++/4.8/backward/strstream(51),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VMKernel.h(28),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_Base.h(27),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_RHandle.h(39),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Field/include/ESMCI_Field.h(42),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/ESMCI_Mesh.h(23),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/ESMCI_MeshDual.C(19):
+/usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
+  #warning \
+   ^
+
+In file included from /usr/include/c++/4.8/backward/strstream(51),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VMKernel.h(28),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_Base.h(27),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h(22),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h(19),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h(22),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h(16),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Patch.C(16):
 /usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -3007,46 +3071,9 @@ In file included from /usr/include/c++/4.8/backward/strstream(51),
   #warning \
    ^
 
-mpicxx -c -std=c++11 -O -DNDEBUG -fPIC -debug minimal -m64 -mcmodel=small -pthread  -qopenmp -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/../include -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/build_config/Linux.intel.default -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Superstructure -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/stubs/pthread  -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include  -I/glade/u/apps/ch/opt/netcdf/4.6.3/intel/18.0.5/include -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.4.0b01-2-gf0d4ab211d"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpt -DESMF_DIR=/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop -D__SDIR__='"src/Infrastructure/Mesh/src"' -DESMF_CXXSTD=11 -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Moab -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Moab/parallel -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Moab/LocalDiscretization /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Search_EtoE.C -o /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/obj/objO/Linux.intel.64.mpt.default/ESMCI_MBMesh_Search_EtoE.o
-In file included from /usr/include/c++/4.8/backward/strstream(51),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VMKernel.h(28),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_Base.h(27),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_RHandle.h(39),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Field/include/ESMCI_Field.h(42),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/ESMCI_Mesh.h(23),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h(17),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C(18):
-/usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
-  #warning \
-   ^
-
-In file included from /usr/include/c++/4.8/backward/strstream(51),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VMKernel.h(28),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_Base.h(27),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h(22),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h(19),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h(22),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h(16),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Patch.C(16):
-/usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
-  #warning \
-   ^
-
 mpicxx -c -std=c++11 -O -DNDEBUG -fPIC -debug minimal -m64 -mcmodel=small -pthread  -qopenmp -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/../include -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/build_config/Linux.intel.default -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Superstructure -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/stubs/pthread  -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include  -I/glade/u/apps/ch/opt/netcdf/4.6.3/intel/18.0.5/include -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.4.0b01-2-gf0d4ab211d"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpt -DESMF_DIR=/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop -D__SDIR__='"src/Infrastructure/Mesh/src"' -DESMF_CXXSTD=11 -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Moab -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Moab/parallel -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Moab/LocalDiscretization /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Search_EtoP.C -o /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/obj/objO/Linux.intel.64.mpt.default/ESMCI_MBMesh_Search_EtoP.o
-In file included from /usr/include/c++/4.8/backward/strstream(51),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VMKernel.h(28),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_Base.h(27),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h(22),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/ESMCI_MBMesh_Util.h(27),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Rendez_EtoP.C(17):
-/usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
-  #warning \
-   ^
-
 mpicxx -c -std=c++11 -O -DNDEBUG -fPIC -debug minimal -m64 -mcmodel=small -pthread  -qopenmp -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/../include -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/build_config/Linux.intel.default -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Superstructure -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/stubs/pthread  -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include  -I/glade/u/apps/ch/opt/netcdf/4.6.3/intel/18.0.5/include -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.4.0b01-2-gf0d4ab211d"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpt -DESMF_DIR=/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop -D__SDIR__='"src/Infrastructure/Mesh/src"' -DESMF_CXXSTD=11 -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Moab -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Moab/parallel -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Moab/LocalDiscretization /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/ESMCI_MBMesh_ShapeFunc.C -o /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/obj/objO/Linux.intel.64.mpt.default/ESMCI_MBMesh_ShapeFunc.o
+mpicxx -c -std=c++11 -O -DNDEBUG -fPIC -debug minimal -m64 -mcmodel=small -pthread  -qopenmp -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/../include -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/build_config/Linux.intel.default -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Superstructure -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/stubs/pthread  -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include  -I/glade/u/apps/ch/opt/netcdf/4.6.3/intel/18.0.5/include -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.4.0b01-2-gf0d4ab211d"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpt -DESMF_DIR=/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop -D__SDIR__='"src/Infrastructure/Mesh/src"' -DESMF_CXXSTD=11 -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Moab -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Moab/parallel -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Moab/LocalDiscretization /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Util.C -o /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/obj/objO/Linux.intel.64.mpt.default/ESMCI_MBMesh_Util.o
 In file included from /usr/include/c++/4.8/backward/strstream(51),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VMKernel.h(28),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
@@ -3060,37 +3087,10 @@ In file included from /usr/include/c++/4.8/backward/strstream(51),
   #warning \
    ^
 
-mpicxx -c -std=c++11 -O -DNDEBUG -fPIC -debug minimal -m64 -mcmodel=small -pthread  -qopenmp -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/../include -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/build_config/Linux.intel.default -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Superstructure -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/stubs/pthread  -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include  -I/glade/u/apps/ch/opt/netcdf/4.6.3/intel/18.0.5/include -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.4.0b01-2-gf0d4ab211d"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpt -DESMF_DIR=/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop -D__SDIR__='"src/Infrastructure/Mesh/src"' -DESMF_CXXSTD=11 -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Moab -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Moab/parallel -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Moab/LocalDiscretization /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Util.C -o /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/obj/objO/Linux.intel.64.mpt.default/ESMCI_MBMesh_Util.o
-In file included from /usr/include/c++/4.8/backward/strstream(51),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VMKernel.h(28),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_Base.h(27),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h(22),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h(19),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h(22),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h(16),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/ESMCI_XGridUtil.C(12):
-/usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
-  #warning \
-   ^
-
 In file included from /usr/include/c++/4.8/backward/strstream(51),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VMKernel.h(28),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Search_EtoP.C(23):
-/usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
-  #warning \
-   ^
-
-In file included from /usr/include/c++/4.8/backward/strstream(51),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VMKernel.h(28),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_Base.h(27),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h(22),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h(19),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h(22),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h(16),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Bilinear.C(16):
 /usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -3148,20 +3148,6 @@ mpicxx -c -std=c++11 -O -DNDEBUG -fPIC -debug minimal -m64 -mcmodel=small -pthre
 mpicxx -c -std=c++11 -O -DNDEBUG -fPIC -debug minimal -m64 -mcmodel=small -pthread  -qopenmp -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/../include -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/build_config/Linux.intel.default -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Superstructure -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/stubs/pthread  -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include  -I/glade/u/apps/ch/opt/netcdf/4.6.3/intel/18.0.5/include -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.4.0b01-2-gf0d4ab211d"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpt -DESMF_DIR=/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop -D__SDIR__='"src/Infrastructure/Mesh/src/Legacy"' -DESMF_CXXSTD=11 -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/.. -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab/parallel -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab/LocalDiscretization /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshVTK.C -o /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/obj/objO/Linux.intel.64.mpt.default/ESMCI_MeshVTK.o
 mpicxx -c -std=c++11 -O -DNDEBUG -fPIC -debug minimal -m64 -mcmodel=small -pthread  -qopenmp -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/../include -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/build_config/Linux.intel.default -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Superstructure -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/stubs/pthread  -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include  -I/glade/u/apps/ch/opt/netcdf/4.6.3/intel/18.0.5/include -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.4.0b01-2-gf0d4ab211d"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpt -DESMF_DIR=/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop -D__SDIR__='"src/Infrastructure/Mesh/src/Legacy"' -DESMF_CXXSTD=11 -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/.. -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab/parallel -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab/LocalDiscretization /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/ESMCI_MEValues.C -o /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/obj/objO/Linux.intel.64.mpt.default/ESMCI_MEValues.o
 mpicxx -c -std=c++11 -O -DNDEBUG -fPIC -debug minimal -m64 -mcmodel=small -pthread  -qopenmp -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/../include -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/build_config/Linux.intel.default -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Superstructure -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/stubs/pthread  -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include  -I/glade/u/apps/ch/opt/netcdf/4.6.3/intel/18.0.5/include -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.4.0b01-2-gf0d4ab211d"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpt -DESMF_DIR=/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop -D__SDIR__='"src/Infrastructure/Mesh/src/Legacy"' -DESMF_CXXSTD=11 -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/.. -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab/parallel -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab/LocalDiscretization /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/ESMCI_Migrator.C -o /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/obj/objO/Linux.intel.64.mpt.default/ESMCI_Migrator.o
-mpicxx -c -std=c++11 -O -DNDEBUG -fPIC -debug minimal -m64 -mcmodel=small -pthread  -qopenmp -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/../include -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/build_config/Linux.intel.default -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Superstructure -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/stubs/pthread  -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include  -I/glade/u/apps/ch/opt/netcdf/4.6.3/intel/18.0.5/include -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.4.0b01-2-gf0d4ab211d"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpt -DESMF_DIR=/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop -D__SDIR__='"src/Infrastructure/Mesh/src/Legacy"' -DESMF_CXXSTD=11 -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/.. -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab/parallel -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab/LocalDiscretization /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/ESMCI_ParEnv.C -o /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/obj/objO/Linux.intel.64.mpt.default/ESMCI_ParEnv.o
-In file included from /usr/include/c++/4.8/backward/strstream(51),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VMKernel.h(28),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_Base.h(27),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_RHandle.h(39),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Field/include/ESMCI_Field.h(42),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/ESMCI_Mesh.h(23),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/Legacy/ESMCI_GeomRendezvous.h(18),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/ESMCI_GeomRendezvous.C(12):
-/usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
-  #warning \
-   ^
-
 In file included from /usr/include/c++/4.8/backward/strstream(51),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VMKernel.h(28),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
@@ -3181,12 +3167,39 @@ In file included from /usr/include/c++/4.8/backward/strstream(51),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_RHandle.h(39),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Field/include/ESMCI_Field.h(42),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/ESMCI_Mesh.h(23),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/ESMCI_HAdapt.C(13):
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h(17),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/ESMCI_BBox.C(15):
+/usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
+  #warning \
+   ^
+
+mpicxx -c -std=c++11 -O -DNDEBUG -fPIC -debug minimal -m64 -mcmodel=small -pthread  -qopenmp -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/../include -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/build_config/Linux.intel.default -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Superstructure -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/stubs/pthread  -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include  -I/glade/u/apps/ch/opt/netcdf/4.6.3/intel/18.0.5/include -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.4.0b01-2-gf0d4ab211d"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpt -DESMF_DIR=/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop -D__SDIR__='"src/Infrastructure/Mesh/src/Legacy"' -DESMF_CXXSTD=11 -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/.. -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab/parallel -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab/LocalDiscretization /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/ESMCI_ParEnv.C -o /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/obj/objO/Linux.intel.64.mpt.default/ESMCI_ParEnv.o
+In file included from /usr/include/c++/4.8/backward/strstream(51),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VMKernel.h(28),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_Base.h(27),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_RHandle.h(39),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Field/include/ESMCI_Field.h(42),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/ESMCI_Mesh.h(23),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/Legacy/ESMCI_GeomRendezvous.h(18),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/ESMCI_GeomRendezvous.C(12):
 /usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
 
 mpicxx -c -std=c++11 -O -DNDEBUG -fPIC -debug minimal -m64 -mcmodel=small -pthread  -qopenmp -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/../include -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/build_config/Linux.intel.default -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Superstructure -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/stubs/pthread  -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include  -I/glade/u/apps/ch/opt/netcdf/4.6.3/intel/18.0.5/include -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.4.0b01-2-gf0d4ab211d"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpt -DESMF_DIR=/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop -D__SDIR__='"src/Infrastructure/Mesh/src/Legacy"' -DESMF_CXXSTD=11 -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/.. -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab/parallel -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab/LocalDiscretization /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/ESMCI_ParLog.C -o /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/obj/objO/Linux.intel.64.mpt.default/ESMCI_ParLog.o
+In file included from /usr/include/c++/4.8/backward/strstream(51),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VMKernel.h(28),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_Base.h(27),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_RHandle.h(39),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Field/include/ESMCI_Field.h(42),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/ESMCI_Mesh.h(23),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/ESMCI_HAdapt.C(13):
+/usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
+  #warning \
+   ^
+
 In file included from /usr/include/c++/4.8/backward/strstream(51),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VMKernel.h(28),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
@@ -3211,34 +3224,6 @@ In file included from /usr/include/c++/4.8/backward/strstream(51),
   #warning \
    ^
 
-mpicxx -c -std=c++11 -O -DNDEBUG -fPIC -debug minimal -m64 -mcmodel=small -pthread  -qopenmp -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/../include -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/build_config/Linux.intel.default -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Superstructure -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/stubs/pthread  -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include  -I/glade/u/apps/ch/opt/netcdf/4.6.3/intel/18.0.5/include -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.4.0b01-2-gf0d4ab211d"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpt -DESMF_DIR=/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop -D__SDIR__='"src/Infrastructure/Mesh/src/Legacy"' -DESMF_CXXSTD=11 -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/.. -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab/parallel -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab/LocalDiscretization /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/ESMCI_Phedra.C -o /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/obj/objO/Linux.intel.64.mpt.default/ESMCI_Phedra.o
-mpicxx -c -std=c++11 -O -DNDEBUG -fPIC -debug minimal -m64 -mcmodel=small -pthread  -qopenmp -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/../include -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/build_config/Linux.intel.default -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Superstructure -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/stubs/pthread  -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include  -I/glade/u/apps/ch/opt/netcdf/4.6.3/intel/18.0.5/include -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.4.0b01-2-gf0d4ab211d"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpt -DESMF_DIR=/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop -D__SDIR__='"src/Infrastructure/Mesh/src/Legacy"' -DESMF_CXXSTD=11 -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/.. -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab/parallel -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab/LocalDiscretization /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/ESMCI_Polynomial.C -o /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/obj/objO/Linux.intel.64.mpt.default/ESMCI_Polynomial.o
-In file included from /usr/include/c++/4.8/backward/strstream(51),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VMKernel.h(28),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_Base.h(27),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_RHandle.h(39),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Field/include/ESMCI_Field.h(42),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/ESMCI_Mesh.h(23),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h(17),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/ESMCI_MEImprint.C(14):
-/usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
-  #warning \
-   ^
-
-In file included from /usr/include/c++/4.8/backward/strstream(51),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VMKernel.h(28),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_Base.h(27),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_RHandle.h(39),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Field/include/ESMCI_Field.h(42),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/ESMCI_Mesh.h(23),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h(17),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/ESMCI_BBox.C(15):
-/usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
-  #warning \
-   ^
-
 In file included from /usr/include/c++/4.8/backward/strstream(51),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VMKernel.h(28),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
@@ -3259,46 +3244,7 @@ In file included from /usr/include/c++/4.8/backward/strstream(51),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Field/include/ESMCI_Field.h(42),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/ESMCI_Mesh.h(23),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h(17),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshUtils.C(12):
-/usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
-  #warning \
-   ^
-
-mpicxx -c -std=c++11 -O -DNDEBUG -fPIC -debug minimal -m64 -mcmodel=small -pthread  -qopenmp -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/../include -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/build_config/Linux.intel.default -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Superstructure -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/stubs/pthread  -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include  -I/glade/u/apps/ch/opt/netcdf/4.6.3/intel/18.0.5/include -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.4.0b01-2-gf0d4ab211d"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpt -DESMF_DIR=/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop -D__SDIR__='"src/Infrastructure/Mesh/src/Legacy"' -DESMF_CXXSTD=11 -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/.. -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab/parallel -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab/LocalDiscretization /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/ESMCI_Quadrature.C -o /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/obj/objO/Linux.intel.64.mpt.default/ESMCI_Quadrature.o
-In file included from /usr/include/c++/4.8/backward/strstream(51),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VMKernel.h(28),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_Base.h(27),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_RHandle.h(39),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Field/include/ESMCI_Field.h(42),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/ESMCI_Mesh.h(23),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshNC.h(16),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshNC.C(12):
-/usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
-  #warning \
-   ^
-
-In file included from /usr/include/c++/4.8/backward/strstream(51),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VMKernel.h(28),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_Base.h(27),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_RHandle.h(39),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Field/include/ESMCI_Field.h(42),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/ESMCI_Mesh.h(23),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h(17),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshExodus.C(24):
-/usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
-  #warning \
-   ^
-
-In file included from /usr/include/c++/4.8/backward/strstream(51),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VMKernel.h(28),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_Base.h(27),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_RHandle.h(39),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Field/include/ESMCI_Field.h(42),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/ESMCI_Mesh.h(23),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshObjConn.C(17):
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/ESMCI_MEImprint.C(14):
 /usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -3323,8 +3269,60 @@ In file included from /usr/include/c++/4.8/backward/strstream(51),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_RHandle.h(39),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Field/include/ESMCI_Field.h(42),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/ESMCI_Mesh.h(23),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h(17),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshRefine.C(18):
+/usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
+  #warning \
+   ^
+
+mpicxx -c -std=c++11 -O -DNDEBUG -fPIC -debug minimal -m64 -mcmodel=small -pthread  -qopenmp -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/../include -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/build_config/Linux.intel.default -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Superstructure -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/stubs/pthread  -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include  -I/glade/u/apps/ch/opt/netcdf/4.6.3/intel/18.0.5/include -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.4.0b01-2-gf0d4ab211d"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpt -DESMF_DIR=/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop -D__SDIR__='"src/Infrastructure/Mesh/src/Legacy"' -DESMF_CXXSTD=11 -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/.. -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab/parallel -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab/LocalDiscretization /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/ESMCI_Phedra.C -o /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/obj/objO/Linux.intel.64.mpt.default/ESMCI_Phedra.o
+In file included from /usr/include/c++/4.8/backward/strstream(51),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VMKernel.h(28),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_Base.h(27),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_RHandle.h(39),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Field/include/ESMCI_Field.h(42),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/ESMCI_Mesh.h(23),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshNC.h(16),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshNC.C(12):
+/usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
+  #warning \
+   ^
+
+In file included from /usr/include/c++/4.8/backward/strstream(51),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VMKernel.h(28),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_Base.h(27),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_RHandle.h(39),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Field/include/ESMCI_Field.h(42),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/ESMCI_Mesh.h(23),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshPartition.h(15),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshPartition.C(12):
+/usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
+  #warning \
+   ^
+
+In file included from /usr/include/c++/4.8/backward/strstream(51),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VMKernel.h(28),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_Base.h(27),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_RHandle.h(39),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Field/include/ESMCI_Field.h(42),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/ESMCI_Mesh.h(23),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshObjConn.C(17):
+/usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
+  #warning \
+   ^
+
+In file included from /usr/include/c++/4.8/backward/strstream(51),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VMKernel.h(28),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_Base.h(27),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_RHandle.h(39),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Field/include/ESMCI_Field.h(42),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/ESMCI_Mesh.h(23),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshRead.h(17),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshRead.C(12):
 /usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -3342,6 +3340,21 @@ In file included from /usr/include/c++/4.8/backward/strstream(51),
   #warning \
    ^
 
+mpicxx -c -std=c++11 -O -DNDEBUG -fPIC -debug minimal -m64 -mcmodel=small -pthread  -qopenmp -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/../include -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/build_config/Linux.intel.default -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Superstructure -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/stubs/pthread  -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include  -I/glade/u/apps/ch/opt/netcdf/4.6.3/intel/18.0.5/include -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.4.0b01-2-gf0d4ab211d"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpt -DESMF_DIR=/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop -D__SDIR__='"src/Infrastructure/Mesh/src/Legacy"' -DESMF_CXXSTD=11 -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/.. -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab/parallel -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab/LocalDiscretization /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/ESMCI_Polynomial.C -o /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/obj/objO/Linux.intel.64.mpt.default/ESMCI_Polynomial.o
+mpicxx -c -std=c++11 -O -DNDEBUG -fPIC -debug minimal -m64 -mcmodel=small -pthread  -qopenmp -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/../include -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/build_config/Linux.intel.default -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Superstructure -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/stubs/pthread  -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include  -I/glade/u/apps/ch/opt/netcdf/4.6.3/intel/18.0.5/include -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.4.0b01-2-gf0d4ab211d"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpt -DESMF_DIR=/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop -D__SDIR__='"src/Infrastructure/Mesh/src/Legacy"' -DESMF_CXXSTD=11 -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/.. -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab/parallel -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab/LocalDiscretization /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/ESMCI_Quadrature.C -o /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/obj/objO/Linux.intel.64.mpt.default/ESMCI_Quadrature.o
+In file included from /usr/include/c++/4.8/backward/strstream(51),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VMKernel.h(28),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_Base.h(27),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_RHandle.h(39),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Field/include/ESMCI_Field.h(42),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/ESMCI_Mesh.h(23),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h(17),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshExodus.C(24):
+/usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
+  #warning \
+   ^
+
 mpicxx -c -std=c++11 -O -DNDEBUG -fPIC -debug minimal -m64 -mcmodel=small -pthread  -qopenmp -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/../include -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/build_config/Linux.intel.default -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Superstructure -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/stubs/pthread  -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include  -I/glade/u/apps/ch/opt/netcdf/4.6.3/intel/18.0.5/include -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.4.0b01-2-gf0d4ab211d"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpt -DESMF_DIR=/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop -D__SDIR__='"src/Infrastructure/Mesh/src/Legacy"' -DESMF_CXXSTD=11 -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/.. -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab/parallel -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab/LocalDiscretization /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/ESMCI_Rebalance.C -o /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/obj/objO/Linux.intel.64.mpt.default/ESMCI_Rebalance.o
 In file included from /usr/include/c++/4.8/backward/strstream(51),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VMKernel.h(28),
@@ -3351,7 +3364,7 @@ In file included from /usr/include/c++/4.8/backward/strstream(51),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Field/include/ESMCI_Field.h(42),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/ESMCI_Mesh.h(23),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h(17),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshRefine.C(18):
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshUtils.C(12):
 /usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -3370,20 +3383,8 @@ In file included from /usr/include/c++/4.8/backward/strstream(51),
   #warning \
    ^
 
-In file included from /usr/include/c++/4.8/backward/strstream(51),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VMKernel.h(28),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_Base.h(27),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_RHandle.h(39),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Field/include/ESMCI_Field.h(42),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/ESMCI_Mesh.h(23),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshRead.h(17),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshRead.C(12):
-/usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
-  #warning \
-   ^
-
 mpicxx -c -std=c++11 -O -DNDEBUG -fPIC -debug minimal -m64 -mcmodel=small -pthread  -qopenmp -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/../include -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/build_config/Linux.intel.default -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Superstructure -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/stubs/pthread  -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include  -I/glade/u/apps/ch/opt/netcdf/4.6.3/intel/18.0.5/include -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.4.0b01-2-gf0d4ab211d"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpt -DESMF_DIR=/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop -D__SDIR__='"src/Infrastructure/Mesh/src/Legacy"' -DESMF_CXXSTD=11 -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/.. -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab/parallel -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab/LocalDiscretization /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/ESMCI_SFuncAdaptor.C -o /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/obj/objO/Linux.intel.64.mpt.default/ESMCI_SFuncAdaptor.o
+mpicxx -c -std=c++11 -O -DNDEBUG -fPIC -debug minimal -m64 -mcmodel=small -pthread  -qopenmp -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/../include -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/build_config/Linux.intel.default -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Superstructure -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/stubs/pthread  -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include  -I/glade/u/apps/ch/opt/netcdf/4.6.3/intel/18.0.5/include -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.4.0b01-2-gf0d4ab211d"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpt -DESMF_DIR=/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop -D__SDIR__='"src/Infrastructure/Mesh/src/Legacy"' -DESMF_CXXSTD=11 -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/.. -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab/parallel -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab/LocalDiscretization /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/ESMCI_ShapeLagrange.C -o /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/obj/objO/Linux.intel.64.mpt.default/ESMCI_ShapeLagrange.o
 In file included from /usr/include/c++/4.8/backward/strstream(51),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VMKernel.h(28),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
@@ -3398,7 +3399,6 @@ In file included from /usr/include/c++/4.8/backward/strstream(51),
   #warning \
    ^
 
-mpicxx -c -std=c++11 -O -DNDEBUG -fPIC -debug minimal -m64 -mcmodel=small -pthread  -qopenmp -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/../include -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/build_config/Linux.intel.default -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Superstructure -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/stubs/pthread  -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include  -I/glade/u/apps/ch/opt/netcdf/4.6.3/intel/18.0.5/include -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.4.0b01-2-gf0d4ab211d"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpt -DESMF_DIR=/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop -D__SDIR__='"src/Infrastructure/Mesh/src/Legacy"' -DESMF_CXXSTD=11 -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/.. -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab/parallel -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab/LocalDiscretization /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/ESMCI_ShapeLagrange.C -o /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/obj/objO/Linux.intel.64.mpt.default/ESMCI_ShapeLagrange.o
 mpicxx -c -std=c++11 -O -DNDEBUG -fPIC -debug minimal -m64 -mcmodel=small -pthread  -qopenmp -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/../include -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/build_config/Linux.intel.default -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Superstructure -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/stubs/pthread  -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include  -I/glade/u/apps/ch/opt/netcdf/4.6.3/intel/18.0.5/include -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.4.0b01-2-gf0d4ab211d"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpt -DESMF_DIR=/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop -D__SDIR__='"src/Infrastructure/Mesh/src/Legacy"' -DESMF_CXXSTD=11 -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/.. -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab/parallel -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab/LocalDiscretization /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/ESMCI_SmallAlloc.C -o /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/obj/objO/Linux.intel.64.mpt.default/ESMCI_SmallAlloc.o
 mpicxx -c -std=c++11 -O -DNDEBUG -fPIC -debug minimal -m64 -mcmodel=small -pthread  -qopenmp -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/../include -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/build_config/Linux.intel.default -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Superstructure -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/stubs/pthread  -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include  -I/glade/u/apps/ch/opt/netcdf/4.6.3/intel/18.0.5/include -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.4.0b01-2-gf0d4ab211d"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpt -DESMF_DIR=/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop -D__SDIR__='"src/Infrastructure/Mesh/src/Legacy"' -DESMF_CXXSTD=11 -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/.. -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab/parallel -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab/LocalDiscretization /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/ESMCI_SparseMsg.C -o /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/obj/objO/Linux.intel.64.mpt.default/ESMCI_SparseMsg.o
 mpicxx -c -std=c++11 -O -DNDEBUG -fPIC -debug minimal -m64 -mcmodel=small -pthread  -qopenmp -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/../include -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/build_config/Linux.intel.default -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Superstructure -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/stubs/pthread  -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include  -I/glade/u/apps/ch/opt/netcdf/4.6.3/intel/18.0.5/include -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.4.0b01-2-gf0d4ab211d"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpt -DESMF_DIR=/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop -D__SDIR__='"src/Infrastructure/Mesh/src/Legacy"' -DESMF_CXXSTD=11 -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/.. -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab/parallel -I/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab/LocalDiscretization /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Legacy/ESMCI_WriteWeights.C -o /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/obj/objO/Linux.intel.64.mpt.default/ESMCI_WriteWeights.o
@@ -3510,49 +3510,11 @@ In file included from /usr/include/c++/4.8/backward/strstream(51),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VMKernel.h(28),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_Base.h(27),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h(22),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h(19),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h(22),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C(12):
-/usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
-  #warning \
-   ^
-
-In file included from /usr/include/c++/4.8/backward/strstream(51),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VMKernel.h(28),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_Base.h(27),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_RHandle.h(39),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Field/include/ESMCI_Field.h(42),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/ESMCI_Mesh.h(23),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h(17),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C(15):
-/usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
-  #warning \
-   ^
-
-In file included from /usr/include/c++/4.8/backward/strstream(51),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VMKernel.h(28),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_Base.h(27),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h(22),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h(19),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h(22),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h(16),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Regridding/ESMCI_ExtrapolationPoleLGC.C(14):
-/usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
-  #warning \
-   ^
-
-In file included from /usr/include/c++/4.8/backward/strstream(51),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VMKernel.h(28),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_Base.h(27),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h(22),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h(19),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h(22),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h(16),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C(12):
 /usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -3589,34 +3551,11 @@ In file included from /usr/include/c++/4.8/backward/strstream(51),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VMKernel.h(28),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_Base.h(27),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_RHandle.h(39),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Field/include/ESMCI_Field.h(42),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/ESMCI_Mesh.h(23),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_MeshRegrid.h(15),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Regridding/ESMCI_Extrap.C(13):
-/usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
-  #warning \
-   ^
-
-In file included from /usr/include/c++/4.8/backward/strstream(51),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VMKernel.h(28),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_Base.h(27),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h(22),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h(19),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h(22),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestNPntsLGC.C(12):
-/usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
-  #warning \
-   ^
-
-In file included from /usr/include/c++/4.8/backward/strstream(51),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VMKernel.h(28),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_Base.h(27),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h(22),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h(19),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Regridding/ESMCI_WMat.C(12):
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h(16),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Regridding/ESMCI_ExtrapolationPoleLGC.C(14):
 /usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -3637,10 +3576,11 @@ In file included from /usr/include/c++/4.8/backward/strstream(51),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VMKernel.h(28),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_Base.h(27),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h(22),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h(19),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h(22),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Regridding/ESMCI_Search.C(12):
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_RHandle.h(39),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Field/include/ESMCI_Field.h(42),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/ESMCI_Mesh.h(23),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h(17),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Regridding/ESMCI_PatchRecovery.C(15):
 /usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -3674,11 +3614,71 @@ In file included from /usr/include/c++/4.8/backward/strstream(51),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VMKernel.h(28),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_Base.h(27),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h(22),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h(19),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h(22),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C(12):
+/usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
+  #warning \
+   ^
+
+In file included from /usr/include/c++/4.8/backward/strstream(51),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VMKernel.h(28),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_Base.h(27),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h(22),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h(19),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h(22),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Regridding/ESMCI_Search.C(12):
+/usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
+  #warning \
+   ^
+
+In file included from /usr/include/c++/4.8/backward/strstream(51),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VMKernel.h(28),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_Base.h(27),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h(22),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h(19),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h(22),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h(16),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C(12):
+/usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
+  #warning \
+   ^
+
+In file included from /usr/include/c++/4.8/backward/strstream(51),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VMKernel.h(28),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_Base.h(27),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_RHandle.h(39),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Field/include/ESMCI_Field.h(42),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/ESMCI_Mesh.h(23),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h(17),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Regridding/ESMCI_PatchRecovery.C(15):
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_MeshRegrid.h(15),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Regridding/ESMCI_Extrap.C(13):
+/usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
+  #warning \
+   ^
+
+In file included from /usr/include/c++/4.8/backward/strstream(51),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VMKernel.h(28),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_Base.h(27),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h(22),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h(19),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Regridding/ESMCI_WMat.C(12):
+/usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
+  #warning \
+   ^
+
+In file included from /usr/include/c++/4.8/backward/strstream(51),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VMKernel.h(28),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_Base.h(27),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h(22),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h(19),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h(22),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestNPntsLGC.C(12):
 /usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -4372,8 +4372,9 @@ In file included from /usr/include/c++/4.8/backward/strstream(51),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VMKernel.h(28),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_Base.h(27),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_DistGrid.h(36),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/LocStream/interface/ESMCI_LocStream_F.C(27):
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_RHandle.h(39),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/LocStream/interface/../include/ESMCI_LocStream.h(42),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/LocStream/interface/ESMC_LocStream.C(27):
 /usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -4382,9 +4383,8 @@ In file included from /usr/include/c++/4.8/backward/strstream(51),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VMKernel.h(28),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_Base.h(27),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_RHandle.h(39),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/LocStream/interface/../include/ESMCI_LocStream.h(42),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/LocStream/interface/ESMC_LocStream.C(27):
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_DistGrid.h(36),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/LocStream/interface/ESMCI_LocStream_F.C(27):
 /usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -4671,7 +4671,9 @@ In file included from /usr/include/c++/4.8/backward/strstream(51),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VMKernel.h(28),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_Base.h(27),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Field/interface/ESMCI_Field_F.C(25):
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_RHandle.h(39),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Field/interface/../include/ESMCI_Field.h(42),
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Field/interface/ESMCI_Field.C(27):
 /usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -4680,9 +4682,7 @@ In file included from /usr/include/c++/4.8/backward/strstream(51),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VMKernel.h(28),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_Base.h(27),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_RHandle.h(39),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Field/interface/../include/ESMCI_Field.h(42),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Field/interface/ESMCI_Field.C(27):
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Field/interface/ESMCI_Field_F.C(25):
 /usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -4970,7 +4970,7 @@ In file included from /usr/include/c++/4.8/backward/strstream(51),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_Base.h(27),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Superstructure/Component/interface/../include/ESMCI_Comp.h(32),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Superstructure/Component/interface/ESMC_Comp.C(33):
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Superstructure/Component/interface/ESMCI_Comp.C(26):
 /usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -4980,7 +4980,7 @@ In file included from /usr/include/c++/4.8/backward/strstream(51),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_VM.h(41),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_Base.h(27),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Superstructure/Component/interface/../include/ESMCI_Comp.h(32),
-                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Superstructure/Component/interface/ESMCI_Comp.C(26):
+                 from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Superstructure/Component/interface/ESMC_Comp.C(33):
 /usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -5862,7 +5862,7 @@ In file included from /usr/include/c++/4.8/backward/strstream(51),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_Base.h(27),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_Comp.h(32),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Trace/preload/../include/ESMCI_Trace.h(17),
-                 from wrappers.C(8):
+                 from wrappers_io.C(22):
 /usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -5873,7 +5873,7 @@ In file included from /usr/include/c++/4.8/backward/strstream(51),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_Base.h(27),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_Comp.h(32),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Trace/preload/../include/ESMCI_Trace.h(17),
-                 from wrappers_io.C(22):
+                 from wrappers.C(8):
 /usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -5914,7 +5914,7 @@ In file included from /usr/include/c++/4.8/backward/strstream(51),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_Base.h(27),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_Comp.h(32),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Trace/preload/../include/ESMCI_Trace.h(17),
-                 from preload_io.C(33):
+                 from preload_mpi.C(31):
 /usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -5925,7 +5925,7 @@ In file included from /usr/include/c++/4.8/backward/strstream(51),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_Base.h(27),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/include/ESMCI_Comp.h(32),
                  from /glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop/src/Infrastructure/Trace/preload/../include/ESMCI_Trace.h(17),
-                 from preload_mpi.C(31):
+                 from preload_io.C(33):
 /usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -5939,6 +5939,6 @@ make[2]: Leaving directory '/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_
 make[1]: Leaving directory '/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop'
 make[1]: Entering directory '/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop'
 make[1]: Leaving directory '/glade/scratch/dunlap/esmf-testing/intel_18.0.5_mpt_O_develop'
-ESMF library built successfully on Tue Jun 21 02:58:11 MDT 2022
+ESMF library built successfully on Wed Jun 22 02:49:38 MDT 2022
 To verify, build and run the unit and system tests with: make check
  or the more extensive: make all_tests
