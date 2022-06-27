@@ -1,0 +1,14 @@
+Mon Jun 27 16:07:09 UTC 2022
+ 
+Installing ESMF:
+ 
+mkdir -p /lfs/h1/emc/ptmp/Mark.Potts/intel_19.1.3_mpi_O_develop/DEFAULTINSTALLDIR/include
+cp -f /lfs/h1/emc/ptmp/Mark.Potts/intel_19.1.3_mpi_O_develop/src/include/ESMC.h /lfs/h1/emc/ptmp/Mark.Potts/intel_19.1.3_mpi_O_develop/DEFAULTINSTALLDIR/include
+cp -f /lfs/h1/emc/ptmp/Mark.Potts/intel_19.1.3_mpi_O_develop/src/include/ESMC_*.h /lfs/h1/emc/ptmp/Mark.Potts/intel_19.1.3_mpi_O_develop/DEFAULTINSTALLDIR/include
+cp -f /lfs/h1/emc/ptmp/Mark.Potts/intel_19.1.3_mpi_O_develop/build_config/Unicos.intel.default/ESMC_Conf.h /lfs/h1/emc/ptmp/Mark.Potts/intel_19.1.3_mpi_O_develop/DEFAULTINSTALLDIR/include
+mkdir -p /lfs/h1/emc/ptmp/Mark.Potts/intel_19.1.3_mpi_O_develop/DEFAULTINSTALLDIR/mod/modO/Unicos.intel.64.mpi.default
+cp -f /lfs/h1/emc/ptmp/Mark.Potts/intel_19.1.3_mpi_O_develop/mod/modO/Unicos.intel.64.mpi.default/*.mod /lfs/h1/emc/ptmp/Mark.Potts/intel_19.1.3_mpi_O_develop/DEFAULTINSTALLDIR/mod/modO/Unicos.intel.64.mpi.default
+mkdir -p /lfs/h1/emc/ptmp/Mark.Potts/intel_19.1.3_mpi_O_develop/DEFAULTINSTALLDIR/lib/libO/Unicos.intel.64.mpi.default
+cp -f /lfs/h1/emc/ptmp/Mark.Potts/intel_19.1.3_mpi_O_develop/lib/libO/Unicos.intel.64.mpi.default/libesmf*.* /lfs/h1/emc/ptmp/Mark.Potts/intel_19.1.3_mpi_O_develop/DEFAULTINSTALLDIR/lib/libO/Unicos.intel.64.mpi.default
+cp: cannot stat '/lfs/h1/emc/ptmp/Mark.Potts/intel_19.1.3_mpi_O_develop/lib/libO/Unicos.intel.64.mpi.default/libesmf*.*': No such file or directory
+make: *** [makefile:701: install] Error 1
