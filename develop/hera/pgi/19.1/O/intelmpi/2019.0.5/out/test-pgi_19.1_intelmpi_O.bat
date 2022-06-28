@@ -1,4 +1,4 @@
-Mon Jun 27 10:37:09 UTC 2022
+Tue Jun 28 06:35:25 UTC 2022
 #!/bin/sh -l
 #SBATCH --account=nems
 #SBATCH -o test-pgi_19.1_intelmpi_O.bat_%j.o
