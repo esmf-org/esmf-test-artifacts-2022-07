@@ -1,13 +1,13 @@
 
 ===================================================================
 Build for = pgi_19.1_intelmpi_O_develop, mpi version 2019.0.5 on hera esmf_os: Linux
-Build time = 2022-06-29 06:38:00
-git hash = v8.4.0b01-2-gf0d4ab2
+Build time = 2022-06-30 06:32:44
+git hash = v8.4.0b01-4-g992fafa
 
-unit test results   	unit tests did not complete
-system test results 	system tests did not complete
-example test results 	No examples ran
-nuopc test results 	PASS 0 	FAIL 0
+unit test results   	-1 -1
+system test results 	-1 -1
+example test results 	-1 -1
+nuopc test results 	PASS -1 	FAIL -1
 
 
 ===================================================================
@@ -21,7 +21,7 @@ Currently Loaded Modules:
  
 --------------------------------------------------------------
 ESMF_VERSION_STRING:    8.4.0 beta snapshot
-v8.4.0b01-2-gf0d4ab211d
+v8.4.0b01-4-g992fafaac4
 --------------------------------------------------------------
 On branch develop
 Your branch is up to date with 'origin/develop'.
@@ -30,14 +30,14 @@ Untracked files:
   (use "git add <file>..." to include in what will be committed)
 
 	build-pgi_19.1_intelmpi_O.bat
-	build-pgi_19.1_intelmpi_O.bat_33275282.e
-	build-pgi_19.1_intelmpi_O.bat_33275282.o
+	build-pgi_19.1_intelmpi_O.bat_33299971.e
+	build-pgi_19.1_intelmpi_O.bat_33299971.o
 	getres-build.sh
 	getres-test.sh
 	nuopc-app-prototypes/
 	test-pgi_19.1_intelmpi_O.bat
-	test-pgi_19.1_intelmpi_O.bat_33275283.e
-	test-pgi_19.1_intelmpi_O.bat_33275283.o
+	test-pgi_19.1_intelmpi_O.bat_33299972.e
+	test-pgi_19.1_intelmpi_O.bat_33299972.o
 
 nothing added to commit but untracked files present (use "git add" to track)
 --------------------------------------------------------------
@@ -173,8 +173,8 @@ ESMF_BENCHMARK_THRESHOLD_MSEC: 500
  
 --------------------------------------------------------------
  * Other relevant environment variables *
-PATH:    /apps/intel/compilers_and_libraries_2019.5.281/linux/mpi/pgi64/bin:/apps/intel/compilers_and_libraries_2019.5.281/linux/mpi/pgi64/libfabric/bin:/apps/pgi/linux86-64-llvm/19.10/bin:/apps/cmake/3.20.1/bin:/apps/oneapi/intelpython/latest/bin/libfabric:/tds_scratch1/SYSADMIN/nesccmgmt/Gyorgy.Fekete/apps/gcs/bin:/home/regress/globus-cli/bin:/home/regress/globus-cli/Gyorgy.Fekete/bin:/home/role.esmfmaint/bin:/apps/oneapi/intelpython/latest/bin:/home/Gyorgy.Fekete/S1/miniconda3/condabin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ibutils/bin:/apps/local/bin:/apps/local/sbin:/apps/slurm/default/tools:/apps/slurm/default/bin:/apps/slurm/default/sbin:/apps/slurm/tools/sbank/bin
-LD_LIBRARY_PATH: /apps/intel/compilers_and_libraries_2019.5.281/linux/mpi/pgi64/lib/release:/apps/intel/compilers_and_libraries_2019.5.281/linux/mpi/pgi64/lib:/apps/intel/compilers_and_libraries_2019.5.281/linux/mpi/pgi64/libfabric/lib:/apps/pgi/linux86-64-llvm/19.10/lib:/apps/oneapi/intelpython/latest/lib/libfabric::/apps/slurm/default/lib
+PATH:    /apps/intel/compilers_and_libraries_2019.5.281/linux/mpi/pgi64/bin:/apps/intel/compilers_and_libraries_2019.5.281/linux/mpi/pgi64/libfabric/bin:/apps/pgi/linux86-64-llvm/19.10/bin:/apps/cmake/3.20.1/bin:/apps/oneapi/intelpython/latest/envs/2022.0.2/bin/libfabric:/apps/oneapi/intelpython/latest/envs/2022.0.2/bin:/apps/oneapi/intelpython/latest/envs/2022.0.2/condabin:/usr/lib64/qt-3.3/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/opt/ibutils/bin:/apps/local/bin:/apps/local/sbin:/apps/slurm/default/tools:/apps/slurm/default/bin:/apps/slurm/default/sbin:/apps/slurm/tools/sbank/bin
+LD_LIBRARY_PATH: /apps/intel/compilers_and_libraries_2019.5.281/linux/mpi/pgi64/lib/release:/apps/intel/compilers_and_libraries_2019.5.281/linux/mpi/pgi64/lib:/apps/intel/compilers_and_libraries_2019.5.281/linux/mpi/pgi64/libfabric/lib:/apps/pgi/linux86-64-llvm/19.10/lib:/apps/oneapi/intelpython/latest/envs/2022.0.2/lib/libfabric::/apps/slurm/default/lib
  
 --------------------------------------------------------------
  * Compilers, Linkers, Flags, and Libraries *
@@ -190,7 +190,7 @@ Fortran compiler flags:
 ESMF_F90COMPILER: mpipgf90
 ESMF_F90COMPILEOPTS: -O -fpic -Mallocatable=03 -lpthread
 ESMF_F90COMPILEPATHS: -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/mod/modO/Linux.pgi.64.intelmpi.default -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/include 
-ESMF_F90COMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v8.4.0b01-2-gf0d4ab211d' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=intelmpi -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop -DESMF_PGIVERSION_MAJOR=19 -DESMF_PGIVERSION_MINOR=10 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE
+ESMF_F90COMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v8.4.0b01-4-g992fafaac4' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=intelmpi -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop -DESMF_PGIVERSION_MAJOR=19 -DESMF_PGIVERSION_MINOR=10 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE
 ESMF_F90COMPILEFREECPP: 
 ESMF_F90COMPILEFREENOCPP: -Mfreeform
 ESMF_F90COMPILEFIXCPP: -Mpreprocess -Mnofreeform
@@ -207,7 +207,7 @@ C++ compiler flags:
 ESMF_CXXCOMPILER: mpipgc++
 ESMF_CXXCOMPILEOPTS: -std=c++11 -O -DNDEBUG -fpic -lpthread
 ESMF_CXXCOMPILEPATHS:  -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/include   -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/prologue/yaml-cpp/include
-ESMF_CXXCOMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v8.4.0b01-2-gf0d4ab211d' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=intelmpi -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop -D__SDIR__='' -DESMF_CXXSTD=11 -DESMF_PGIVERSION_MAJOR=19 -DESMF_PGIVERSION_MINOR=10 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE
+ESMF_CXXCOMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v8.4.0b01-4-g992fafaac4' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=intelmpi -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop -D__SDIR__='' -DESMF_CXXSTD=11 -DESMF_PGIVERSION_MAJOR=19 -DESMF_PGIVERSION_MINOR=10 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE
 
 C++ linker flags:
 ESMF_CXXLINKOPTS:   -lpthread -Wl,--no-as-needed
@@ -220,7 +220,7 @@ C compiler flags:
 ESMF_CCOMPILER: mpipgcc
 ESMF_CCOMPILEOPTS:  -O -DNDEBUG -fpic
 ESMF_CCOMPILEPATHS:  -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop/src/include  
-ESMF_CCOMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v8.4.0b01-2-gf0d4ab211d' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=intelmpi -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop -D__SDIR__=''
+ESMF_CCOMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v8.4.0b01-4-g992fafaac4' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=intelmpi -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_develop -D__SDIR__=''
 
 C linker flags:
 ESMF_CLINKOPTS:  
@@ -243,8 +243,8 @@ ESMF_TRACE_STATICLINKLIBS=-lesmftrace_static
 
 
 --------------------------------------------------------------
-Compiling on Wed Jun 29 06:38:24 UTC 2022 on h25c42
-Machine characteristics: Linux h25c42 3.10.0-1160.66.1.el7.x86_64 #1 SMP Wed May 18 16:02:34 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+Compiling on Thu Jun 30 06:32:59 UTC 2022 on h24c01
+Machine characteristics: Linux h24c01 3.10.0-1160.66.1.el7.x86_64 #1 SMP Wed May 18 16:02:34 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
 ==============================================================
 
 
