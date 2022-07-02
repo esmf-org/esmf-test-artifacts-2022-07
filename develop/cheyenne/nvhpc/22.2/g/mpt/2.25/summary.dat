@@ -1,13 +1,13 @@
 
 ===================================================================
 Build for = nvhpc_22.2_mpt_g_develop, mpi version 2.25 on cheyenne esmf_os: Linux
-Build time = 2022-07-01 02:46:00.092518
-git hash = v8.4.0b02
+Build time = 2022-07-02 02:43:15.399930
+git hash = v8.4.0b02-7-g9328c9b
 
-unit test results   	PASS 12777	FAIL 888
-system test results 	PASS 35 	FAIL 14
-example test results 	PASS 66 	FAIL 14
-nuopc test results 	PASS 10 	FAIL 40
+unit test results   	-1 -1
+system test results 	-1 -1
+example test results 	-1 -1
+nuopc test results 	PASS -1 	FAIL -1
 
 
 ===================================================================
@@ -22,7 +22,7 @@ Currently Loaded Modules:
  
 --------------------------------------------------------------
 ESMF_VERSION_STRING:    8.4.0 beta snapshot
-v8.4.0b02
+v8.4.0b02-7-g9328c9b05f
 --------------------------------------------------------------
 On branch develop
 Your branch is up to date with 'origin/develop'.
@@ -30,8 +30,8 @@ Your branch is up to date with 'origin/develop'.
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
 	build-nvhpc_22.2_mpt_g.bat
-	build-nvhpc_22.2_mpt_g.bat.e4831096
-	build-nvhpc_22.2_mpt_g.bat.o4831096
+	build-nvhpc_22.2_mpt_g.bat.e4842858
+	build-nvhpc_22.2_mpt_g.bat.o4842858
 	getres-build.sh
 	getres-test.sh
 	nuopc-app-prototypes/
@@ -189,7 +189,7 @@ Fortran compiler flags:
 ESMF_F90COMPILER: mpif90
 ESMF_F90COMPILEOPTS: -g -fpic -mcmodel=small -Mallocatable=03 -pthread  -mp
 ESMF_F90COMPILEPATHS: -I/glade/scratch/dunlap/esmf-testing/nvhpc_22.2_mpt_g_develop/mod/modg/Linux.nvhpc.64.mpt.default -I/glade/scratch/dunlap/esmf-testing/nvhpc_22.2_mpt_g_develop/src/include -I/glade/u/apps/ch/opt/netcdf/4.8.1/nvhpc/22.2/include -I/glade/u/apps/ch/opt/netcdf/4.8.1/nvhpc/22.2/include
-ESMF_F90COMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v8.4.0b02' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpt -DESMF_DIR=/glade/scratch/dunlap/esmf-testing/nvhpc_22.2_mpt_g_develop -DESMF_NO_F2018ASSUMEDTYPE
+ESMF_F90COMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v8.4.0b02-7-g9328c9b05f' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpt -DESMF_DIR=/glade/scratch/dunlap/esmf-testing/nvhpc_22.2_mpt_g_develop -DESMF_NO_F2018ASSUMEDTYPE
 ESMF_F90COMPILEFREECPP: 
 ESMF_F90COMPILEFREENOCPP: -Mfreeform
 ESMF_F90COMPILEFIXCPP: -Mpreprocess -Mnofreeform
@@ -206,7 +206,7 @@ C++ compiler flags:
 ESMF_CXXCOMPILER: mpicxx
 ESMF_CXXCOMPILEOPTS: -std=c++11 -g -fpic -mcmodel=small -pthread  -mp
 ESMF_CXXCOMPILEPATHS:  -I/glade/scratch/dunlap/esmf-testing/nvhpc_22.2_mpt_g_develop/src/include  -I/glade/u/apps/ch/opt/netcdf/4.8.1/nvhpc/22.2/include -I/glade/scratch/dunlap/esmf-testing/nvhpc_22.2_mpt_g_develop/src/prologue/yaml-cpp/include
-ESMF_CXXCOMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v8.4.0b02' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpt -DESMF_DIR=/glade/scratch/dunlap/esmf-testing/nvhpc_22.2_mpt_g_develop -D__SDIR__='' -DESMF_CXXSTD=11 -DESMF_NO_F2018ASSUMEDTYPE
+ESMF_CXXCOMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v8.4.0b02-7-g9328c9b05f' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpt -DESMF_DIR=/glade/scratch/dunlap/esmf-testing/nvhpc_22.2_mpt_g_develop -D__SDIR__='' -DESMF_CXXSTD=11 -DESMF_NO_F2018ASSUMEDTYPE
 
 C++ linker flags:
 ESMF_CXXLINKOPTS:   -mcmodel=small -pthread -Wl,--no-as-needed  -mp
@@ -219,7 +219,7 @@ C compiler flags:
 ESMF_CCOMPILER: mpicc
 ESMF_CCOMPILEOPTS:  -g -fpic
 ESMF_CCOMPILEPATHS:  -I/glade/scratch/dunlap/esmf-testing/nvhpc_22.2_mpt_g_develop/src/include  
-ESMF_CCOMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v8.4.0b02' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpt -DESMF_DIR=/glade/scratch/dunlap/esmf-testing/nvhpc_22.2_mpt_g_develop -D__SDIR__=''
+ESMF_CCOMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v8.4.0b02-7-g9328c9b05f' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpt -DESMF_DIR=/glade/scratch/dunlap/esmf-testing/nvhpc_22.2_mpt_g_develop -D__SDIR__=''
 
 C linker flags:
 ESMF_CLINKOPTS:  
@@ -242,8 +242,8 @@ ESMF_TRACE_STATICLINKLIBS=-lesmftrace_static
 
 
 --------------------------------------------------------------
-Compiling on Fri Jul 1 02:46:08 MDT 2022 on r1i4n9
-Machine characteristics: Linux r1i4n9 4.12.14-95.51-default #1 SMP Fri Apr 17 08:14:12 UTC 2020 (c6bab98) x86_64 x86_64 x86_64 GNU/Linux
+Compiling on Sat Jul 2 02:43:27 MDT 2022 on r2i5n14
+Machine characteristics: Linux r2i5n14 4.12.14-95.51-default #1 SMP Fri Apr 17 08:14:12 UTC 2020 (c6bab98) x86_64 x86_64 x86_64 GNU/Linux
 ==============================================================
 
 
