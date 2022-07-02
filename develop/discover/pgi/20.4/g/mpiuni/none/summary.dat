@@ -1,13 +1,13 @@
 
 ===================================================================
 Build for = pgi_20.4_mpiuni_g_develop, mpi version None on discover esmf_os: Linux
-Build time = 2022-07-01 01:50:55.640894
-git hash = v8.4.0b02
+Build time = 2022-07-02 02:35:52.010504
+git hash = v8.4.0b02-7-g9328c9b
 
-unit test results   	PASS 11516	FAIL 626
-system test results 	PASS 4 	FAIL 4
-example test results 	PASS 40 	FAIL 3
-nuopc test results 	PASS 0 	FAIL 50
+unit test results   	-1 -1
+system test results 	-1 -1
+example test results 	-1 -1
+nuopc test results 	PASS -1 	FAIL -1
 
 
 ===================================================================
@@ -21,7 +21,7 @@ Currently Loaded Modules:
  
 --------------------------------------------------------------
 ESMF_VERSION_STRING:    8.4.0 beta snapshot
-v8.4.0b02
+v8.4.0b02-7-g9328c9b05f
 --------------------------------------------------------------
 On branch develop
 Your branch is up to date with 'origin/develop'.
@@ -29,14 +29,14 @@ Your branch is up to date with 'origin/develop'.
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
 	build-pgi_20.4_mpiuni_g.bat
-	build-pgi_20.4_mpiuni_g.bat_60889586.e
-	build-pgi_20.4_mpiuni_g.bat_60889586.o
+	build-pgi_20.4_mpiuni_g.bat_60937639.e
+	build-pgi_20.4_mpiuni_g.bat_60937639.o
 	getres-build.sh
 	getres-test.sh
 	nuopc-app-prototypes/
 	test-pgi_20.4_mpiuni_g.bat
-	test-pgi_20.4_mpiuni_g.bat_60889587.e
-	test-pgi_20.4_mpiuni_g.bat_60889587.o
+	test-pgi_20.4_mpiuni_g.bat_60937640.e
+	test-pgi_20.4_mpiuni_g.bat_60937640.o
 
 nothing added to commit but untracked files present (use "git add" to track)
 --------------------------------------------------------------
@@ -182,7 +182,7 @@ Fortran compiler flags:
 ESMF_F90COMPILER: pgf90
 ESMF_F90COMPILEOPTS: -g -fpic -Mallocatable=03 -lpthread
 ESMF_F90COMPILEPATHS: -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_g_develop/mod/modg/Linux.pgi.64.mpiuni.default -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_g_develop/src/include 
-ESMF_F90COMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v8.4.0b02' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_g_develop -DESMF_MPIUNI -DESMF_PGIVERSION_MAJOR=20 -DESMF_PGIVERSION_MINOR=4 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE
+ESMF_F90COMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v8.4.0b02-7-g9328c9b05f' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_g_develop -DESMF_MPIUNI -DESMF_PGIVERSION_MAJOR=20 -DESMF_PGIVERSION_MINOR=4 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE
 ESMF_F90COMPILEFREECPP: 
 ESMF_F90COMPILEFREENOCPP: -Mfreeform
 ESMF_F90COMPILEFIXCPP: -Mpreprocess -Mnofreeform
@@ -199,7 +199,7 @@ C++ compiler flags:
 ESMF_CXXCOMPILER: pgc++
 ESMF_CXXCOMPILEOPTS: -std=c++11 -g -fpic -lpthread
 ESMF_CXXCOMPILEPATHS:  -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_g_develop/src/include   -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_g_develop/src/Infrastructure/stubs/mpiuni -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_g_develop/src/prologue/yaml-cpp/include
-ESMF_CXXCOMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v8.4.0b02' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_g_develop -D__SDIR__='' -DESMF_CXXSTD=11 -DESMF_MPIUNI -DESMF_PGIVERSION_MAJOR=20 -DESMF_PGIVERSION_MINOR=4 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE
+ESMF_CXXCOMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v8.4.0b02-7-g9328c9b05f' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_g_develop -D__SDIR__='' -DESMF_CXXSTD=11 -DESMF_MPIUNI -DESMF_PGIVERSION_MAJOR=20 -DESMF_PGIVERSION_MINOR=4 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE
 
 C++ linker flags:
 ESMF_CXXLINKOPTS:   -lpthread -Wl,--no-as-needed
@@ -212,7 +212,7 @@ C compiler flags:
 ESMF_CCOMPILER: pgcc
 ESMF_CCOMPILEOPTS:  -g -fpic
 ESMF_CCOMPILEPATHS:  -I/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_g_develop/src/include  
-ESMF_CCOMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v8.4.0b02' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_g_develop -D__SDIR__=''
+ESMF_CCOMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v8.4.0b02-7-g9328c9b05f' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/gpfsm/dnb04/projects/p98/mpotts/esmf/pgi_20.4_mpiuni_g_develop -D__SDIR__=''
 
 C linker flags:
 ESMF_CLINKOPTS:  
@@ -235,8 +235,8 @@ ESMF_TRACE_STATICLINKLIBS=-lesmftrace_static
 
 
 --------------------------------------------------------------
-Compiling on Fri Jul 1 01:51:52 EDT 2022 on borgk018
-Machine characteristics: Linux borgk018 4.4.180-94.100-default #1 SMP Tue Jul 9 19:57:20 UTC 2019 (1569ffb) x86_64 x86_64 x86_64 GNU/Linux
+Compiling on Sat Jul 2 02:36:05 EDT 2022 on borgk107
+Machine characteristics: Linux borgk107 4.4.180-94.100-default #1 SMP Tue Jul 9 19:57:20 UTC 2019 (1569ffb) x86_64 x86_64 x86_64 GNU/Linux
 ==============================================================
 
 
