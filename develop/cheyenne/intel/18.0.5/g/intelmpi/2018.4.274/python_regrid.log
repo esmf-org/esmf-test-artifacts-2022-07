@@ -1,0 +1,43 @@
+build time -- 2022-07-03 02:54:13.398215
+running test_regrid_from_file
+Traceback (most recent call last):
+  File "/glade/scratch/dunlap/esmf-testing/intel_18.0.5_intelmpi_g_develop/src/addon/ESMPy/src/ESMF/interface/loadESMF.py", line 134, in <module>
+    mode=ct.RTLD_GLOBAL)
+  File "/glade/u/apps/ch/opt/python/3.7.9/gnu/9.1.0/lib/python3.7/ctypes/__init__.py", line 364, in __init__
+    self._handle = _dlopen(self._name, mode)
+OSError: /glade/scratch/dunlap/esmf-testing/intel_18.0.5_intelmpi_g_develop/DEFAULTINSTALLDIR/lib/libg/Linux.intel.64.intelmpi.default/libesmf_fullylinked.so: cannot open shared object file: No such file or directory
+Traceback (most recent call last):
+  File "/glade/scratch/dunlap/esmf-testing/intel_18.0.5_intelmpi_g_develop/src/addon/ESMPy/src/ESMF/interface/loadESMF.py", line 134, in <module>
+    mode=ct.RTLD_GLOBAL)
+  File "/glade/u/apps/ch/opt/python/3.7.9/gnu/9.1.0/lib/python3.7/ctypes/__init__.py", line 364, in __init__
+    self._handle = _dlopen(self._name, mode)
+OSError: /glade/scratch/dunlap/esmf-testing/intel_18.0.5_intelmpi_g_develop/DEFAULTINSTALLDIR/lib/libg/Linux.intel.64.intelmpi.default/libesmf_fullylinked.so: cannot open shared object file: No such file or directory
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "src/ESMF/test/regrid_from_file/run_regrid_from_file.py", line 6, in <module>
+    import ESMF.api.constants as constants
+  File "/glade/scratch/dunlap/esmf-testing/intel_18.0.5_intelmpi_g_develop/src/addon/ESMPy/src/ESMF/__init__.py", line 69, in <module>
+    from ESMF.api.esmpymanager import *
+  File "/glade/scratch/dunlap/esmf-testing/intel_18.0.5_intelmpi_g_develop/src/addon/ESMPy/src/ESMF/api/esmpymanager.py", line 11, in <module>
+    from ESMF.interface.cbindings import *
+  File "/glade/scratch/dunlap/esmf-testing/intel_18.0.5_intelmpi_g_develop/src/addon/ESMPy/src/ESMF/interface/cbindings.py", line 13, in <module>
+    from ESMF.interface.loadESMF import _ESMF
+  File "/glade/scratch/dunlap/esmf-testing/intel_18.0.5_intelmpi_g_develop/src/addon/ESMPy/src/ESMF/interface/loadESMF.py", line 137, in <module>
+    raise ImportError('The ESMF shared library did not load properly.')
+ImportError: The ESMF shared library did not load properly.
+Traceback (most recent call last):
+  File "setup.py", line 278, in <module>
+    'test_regrid_from_file_parallel': TestRegridFromFileParallelCommand})
+  File "/glade/u/apps/ch/opt/python/3.7.9/gnu/9.1.0/lib/python3.7/distutils/core.py", line 148, in setup
+    dist.run_commands()
+  File "/glade/u/apps/ch/opt/python/3.7.9/gnu/9.1.0/lib/python3.7/distutils/dist.py", line 966, in run_commands
+    self.run_command(cmd)
+  File "/glade/u/apps/ch/opt/python/3.7.9/gnu/9.1.0/lib/python3.7/distutils/dist.py", line 985, in run_command
+    cmd_obj.run()
+  File "setup.py", line 197, in run
+    subprocess.check_call(cmd)
+  File "/glade/u/apps/ch/opt/python/3.7.9/gnu/9.1.0/lib/python3.7/subprocess.py", line 363, in check_call
+    raise CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command '['/glade/u/apps/ch/opt/python/3.7.9/gnu/9.1.0/bin/python3', 'src/ESMF/test/regrid_from_file/run_regrid_from_file.py']' returned non-zero exit status 1.

@@ -1,0 +1,37 @@
+build time -- 2022-07-03 02:54:13.398215
+running test_examples
+Traceback (most recent call last):
+  File "src/ESMF/interface/loadESMF.py", line 134, in <module>
+    mode=ct.RTLD_GLOBAL)
+  File "/glade/u/apps/ch/opt/python/3.7.9/gnu/9.1.0/lib/python3.7/ctypes/__init__.py", line 364, in __init__
+    self._handle = _dlopen(self._name, mode)
+OSError: /glade/scratch/dunlap/esmf-testing/intel_18.0.5_intelmpi_g_develop/DEFAULTINSTALLDIR/lib/libg/Linux.intel.64.intelmpi.default/libesmf_fullylinked.so: cannot open shared object file: No such file or directory
+Traceback (most recent call last):
+  File "src/ESMF/interface/loadESMF.py", line 134, in <module>
+    mode=ct.RTLD_GLOBAL)
+  File "/glade/u/apps/ch/opt/python/3.7.9/gnu/9.1.0/lib/python3.7/ctypes/__init__.py", line 364, in __init__
+    self._handle = _dlopen(self._name, mode)
+OSError: /glade/scratch/dunlap/esmf-testing/intel_18.0.5_intelmpi_g_develop/DEFAULTINSTALLDIR/lib/libg/Linux.intel.64.intelmpi.default/libesmf_fullylinked.so: cannot open shared object file: No such file or directory
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "setup.py", line 278, in <module>
+    'test_regrid_from_file_parallel': TestRegridFromFileParallelCommand})
+  File "/glade/u/apps/ch/opt/python/3.7.9/gnu/9.1.0/lib/python3.7/distutils/core.py", line 148, in setup
+    dist.run_commands()
+  File "/glade/u/apps/ch/opt/python/3.7.9/gnu/9.1.0/lib/python3.7/distutils/dist.py", line 966, in run_commands
+    self.run_command(cmd)
+  File "/glade/u/apps/ch/opt/python/3.7.9/gnu/9.1.0/lib/python3.7/distutils/dist.py", line 985, in run_command
+    cmd_obj.run()
+  File "setup.py", line 13, in wrapper
+    from ESMF.util.cache_data import cache_data_files
+  File "src/ESMF/__init__.py", line 69, in <module>
+    from ESMF.api.esmpymanager import *
+  File "src/ESMF/api/esmpymanager.py", line 11, in <module>
+    from ESMF.interface.cbindings import *
+  File "src/ESMF/interface/cbindings.py", line 13, in <module>
+    from ESMF.interface.loadESMF import _ESMF
+  File "src/ESMF/interface/loadESMF.py", line 137, in <module>
+    raise ImportError('The ESMF shared library did not load properly.')
+ImportError: The ESMF shared library did not load properly.
