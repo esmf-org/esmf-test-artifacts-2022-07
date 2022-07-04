@@ -1,4 +1,4 @@
-Sat Jul 2 04:51:16 GMT 2022
+Mon Jul 4 04:51:14 GMT 2022
  
 --------------------------------------------------------------
 ESMF_VERSION_STRING:    8.4.0 beta snapshot
@@ -11,8 +11,8 @@ Untracked files:
   (use "git add <file>..." to include in what will be committed)
 
 	build-intel_2020.2_mvapich2_O.bat
-	build-intel_2020.2_mvapich2_O.bat_6089155.e
-	build-intel_2020.2_mvapich2_O.bat_6089155.o
+	build-intel_2020.2_mvapich2_O.bat_6220971.e
+	build-intel_2020.2_mvapich2_O.bat_6220971.o
 	getres-build.sh
 	getres-test.sh
 	nuopc-app-prototypes/
@@ -220,15 +220,15 @@ ESMF_TRACE_STATICLINKLIBS=-lesmftrace_static
 
 
 --------------------------------------------------------------
-Compiling on Sat Jul 2 03:50:39 GMT 2022 on x157
-Machine characteristics: Linux x157 3.10.0-1160.53.1.el7.x86_64 #1 SMP Fri Jan 14 13:59:45 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+Compiling on Mon Jul 4 03:51:20 GMT 2022 on x707
+Machine characteristics: Linux x707 3.10.0-1160.53.1.el7.x86_64 #1 SMP Fri Jan 14 13:59:45 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
 ==============================================================
  
 make[1]: Entering directory `/mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/intel_2020.2_mvapich2_O_develop'
 Making directory /mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/intel_2020.2_mvapich2_O_develop/lib/libO/Linux.intel.64.mvapich2.default for library
 Making directory /mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/intel_2020.2_mvapich2_O_develop/src/include for include files
 Making directory /mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/intel_2020.2_mvapich2_O_develop/mod/modO/Linux.intel.64.mvapich2.default for *.mod files
-Making directory /mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/intel_2020.2_mvapich2_O_develop/obj/objO/Linux.intel.64.mvapich2.default for build-intel_2020.2_mvapich2_O.bat_6089155.o files
+Making directory /mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/intel_2020.2_mvapich2_O_develop/obj/objO/Linux.intel.64.mvapich2.default for build-intel_2020.2_mvapich2_O.bat_6220971.o files
 cd /mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/intel_2020.2_mvapich2_O_develop ;\
 make ACTION=tree_include tree
 make[2]: Entering directory `/mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/intel_2020.2_mvapich2_O_develop'
@@ -1351,13 +1351,13 @@ In file included from /misc/apps/spack/linux-centos7-x86_64/gcc-4.8.5/gcc-9.2.0-
                  from /mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/intel_2020.2_mvapich2_O_develop/src/Infrastructure/VM/src/ESMCI_VMKernel.C(13):
 In file included from /misc/apps/spack/linux-centos7-x86_64/gcc-4.8.5/gcc-9.2.0-wqdecm4rkyyhejagxwmnabt6lscgm45d/bin/../include/c++/9.2.0/backward/strstream(50),
                  from /mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/intel_2020.2_mvapich2_O_develop/src/Infrastructure/VM/src/../include/ESMCI_VMKernel.h(28),
-                 from /mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/intel_2020.2_mvapich2_O_develop/src/Infrastructure/VM/src/../include/ESMCI_VM.h(41),
-                 from /mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/intel_2020.2_mvapich2_O_develop/src/Infrastructure/VM/src/ESMCI_VM.C(40):
 /misc/apps/spack/linux-centos7-x86_64/gcc-4.8.5/gcc-9.2.0-wqdecm4rkyyhejagxwmnabt6lscgm45d/bin/../include/c++/9.2.0/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this
           warning use -Wno-deprecated.
   #warning \
    ^
 
+                 from /mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/intel_2020.2_mvapich2_O_develop/src/Infrastructure/VM/src/../include/ESMCI_VM.h(41),
+                 from /mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/intel_2020.2_mvapich2_O_develop/src/Infrastructure/VM/src/ESMCI_VM.C(40):
 /misc/apps/spack/linux-centos7-x86_64/gcc-4.8.5/gcc-9.2.0-wqdecm4rkyyhejagxwmnabt6lscgm45d/bin/../include/c++/9.2.0/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this
           warning use -Wno-deprecated.
   #warning \
@@ -1563,7 +1563,8 @@ In file included from /misc/apps/spack/linux-centos7-x86_64/gcc-4.8.5/gcc-9.2.0-
                  from /mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/intel_2020.2_mvapich2_O_develop/src/include/ESMCI_VMKernel.h(28),
                  from /mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/intel_2020.2_mvapich2_O_develop/src/include/ESMCI_VM.h(41),
                  from /mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/intel_2020.2_mvapich2_O_develop/src/Infrastructure/Base/src/../include/ESMCI_Base.h(27),
-                 from /mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/intel_2020.2_mvapich2_O_develop/src/Infrastructure/Base/src/ESMC_InfoCDefGeneric.C(36):
+                 from /mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/intel_2020.2_mvapich2_O_develop/src/Infrastructure/Base/src/../include/ESMCI_Info.h(24),
+                 from /mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/intel_2020.2_mvapich2_O_develop/src/Infrastructure/Base/src/ESMCI_Info.C(27):
 /misc/apps/spack/linux-centos7-x86_64/gcc-4.8.5/gcc-9.2.0-wqdecm4rkyyhejagxwmnabt6lscgm45d/bin/../include/c++/9.2.0/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this
           warning use -Wno-deprecated.
   #warning \
@@ -1573,8 +1574,7 @@ In file included from /misc/apps/spack/linux-centos7-x86_64/gcc-4.8.5/gcc-9.2.0-
                  from /mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/intel_2020.2_mvapich2_O_develop/src/include/ESMCI_VMKernel.h(28),
                  from /mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/intel_2020.2_mvapich2_O_develop/src/include/ESMCI_VM.h(41),
                  from /mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/intel_2020.2_mvapich2_O_develop/src/Infrastructure/Base/src/../include/ESMCI_Base.h(27),
-                 from /mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/intel_2020.2_mvapich2_O_develop/src/Infrastructure/Base/src/../include/ESMCI_Info.h(24),
-                 from /mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/intel_2020.2_mvapich2_O_develop/src/Infrastructure/Base/src/ESMCI_Info.C(27):
+                 from /mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/intel_2020.2_mvapich2_O_develop/src/Infrastructure/Base/src/ESMC_InfoCDefGeneric.C(36):
 /misc/apps/spack/linux-centos7-x86_64/gcc-4.8.5/gcc-9.2.0-wqdecm4rkyyhejagxwmnabt6lscgm45d/bin/../include/c++/9.2.0/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this
           warning use -Wno-deprecated.
   #warning \
@@ -2266,3 +2266,5 @@ cp -fp ../Install/lib/* /mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/intel_2020.2_mvapich2_
 -- Check for working C compiler: /apps/mvapich2/2.3-intel/bin/mpicc - skipped
 -- Detecting C compile features
 -- Detecting C compile features - done
+make[1]: *** [build_libs] Killed
+make[1]: Leaving directory `/mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/intel_2020.2_mvapich2_O_develop'
