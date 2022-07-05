@@ -1,13 +1,13 @@
 
 ===================================================================
 Build for = gfortran_10.3.0_mpi_O_develop, mpi version 8.1.7 on acorn esmf_os: Unicos
-Build time = 16:20:53
-git hash = v8.4.0b02
+Build time = 12:45:28
+git hash = v8.4.0b02-7-g9328c9b
 
-unit test results   	unit tests did not complete
-system test results 	system tests did not complete
-example test results 	No examples ran
-nuopc test results 	PASS 0 	FAIL 50
+unit test results   	Build did not complete successfully
+system test results 	Build did not complete successfully
+example test results 	Build did not complete successfully
+nuopc test results 	PASS Build did not complete successfully 	FAIL Build did not complete successfully
 
 
 ===================================================================
@@ -27,7 +27,7 @@ Currently Loaded Modules:
  
 --------------------------------------------------------------
 ESMF_VERSION_STRING:    8.4.0 beta snapshot
-v8.4.0b02
+v8.4.0b02-7-g9328c9b05f
 --------------------------------------------------------------
 On branch develop
 Your branch is up to date with 'origin/develop'.
@@ -39,21 +39,28 @@ Changes not staged for commit:
 
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
-	available.tmp
 	build-gfortran_10.3.0_mpi_O.bat
-	build-gfortran_10.3.0_mpi_O.bat.e93521
-	build-gfortran_10.3.0_mpi_O.bat.e93985
-	build-gfortran_10.3.0_mpi_O.bat.o93521
-	build-gfortran_10.3.0_mpi_O.bat.o93985
+	build-gfortran_10.3.0_mpi_O.bat.e94150
+	build-gfortran_10.3.0_mpi_O.bat.e94187
+	build-gfortran_10.3.0_mpi_O.bat.e94207
+	build-gfortran_10.3.0_mpi_O.bat.e94215
+	build-gfortran_10.3.0_mpi_O.bat.o94150
+	build-gfortran_10.3.0_mpi_O.bat.o94187
+	build-gfortran_10.3.0_mpi_O.bat.o94207
+	build-gfortran_10.3.0_mpi_O.bat.o94215
 	getres-build.sh
 	getres-test.sh
 	nuopc-app-prototypes/
 	runpython.sh
 	test-gfortran_10.3.0_mpi_O.bat
-	test-gfortran_10.3.0_mpi_O.bat.e93522
-	test-gfortran_10.3.0_mpi_O.bat.e93986
-	test-gfortran_10.3.0_mpi_O.bat.o93522
-	test-gfortran_10.3.0_mpi_O.bat.o93986
+	test-gfortran_10.3.0_mpi_O.bat.e94151
+	test-gfortran_10.3.0_mpi_O.bat.e94188
+	test-gfortran_10.3.0_mpi_O.bat.e94208
+	test-gfortran_10.3.0_mpi_O.bat.e94216
+	test-gfortran_10.3.0_mpi_O.bat.o94151
+	test-gfortran_10.3.0_mpi_O.bat.o94188
+	test-gfortran_10.3.0_mpi_O.bat.o94208
+	test-gfortran_10.3.0_mpi_O.bat.o94216
 
 no changes added to commit (use "git add" and/or "git commit -a")
 --------------------------------------------------------------
@@ -110,16 +117,7 @@ NetCDF Fortran version: netCDF-Fortran 4.5.3
  
 --------------------------------------------------------------
  * User set ESMF environment variables *
-ESMF_BOPT=O
-ESMF_COMM=mpi
-ESMF_COMPILER=gfortran
-ESMF_CXXLINKOPTS=-fPIC -lnetcdff -lnetcdff
-ESMF_DIR=/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_O_develop
-ESMF_F90COMPILEOPTS=-fallow-argument-mismatch -fallow-invalid-boz
-ESMF_MPIRUN=mpirun.unicos
-ESMF_NETCDF=nc-config
-ESMF_TESTEXHAUSTIVE=ON
-ESMF_TESTWITHTHREADS=ON
+cat: envecho.out: No such file or directory
  
 --------------------------------------------------------------
  * ESMF environment variables *
@@ -207,7 +205,7 @@ Fortran compiler flags:
 ESMF_F90COMPILER: ftn
 ESMF_F90COMPILEOPTS: -fallow-argument-mismatch -fallow-invalid-boz -O -fPIC  -pthread -ffree-line-length-none  -fopenmp
 ESMF_F90COMPILEPATHS: -I/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_O_develop/mod/modO/Unicos.gfortran.64.mpi.default -I/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_O_develop/src/include -I/apps/prod/netcdf-hdf5parallel/4.7.4/gcc/10.2.0/cray-mpich/8.1.4/include -I/apps/prod/netcdf-hdf5parallel/4.7.4/gcc/10.2.0/cray-mpich/8.1.4/include
-ESMF_F90COMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v8.4.0b02' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DS64=1 -DESMF_OS_Unicos=1 -DESMF_COMM=mpi -DESMF_DIR=/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_O_develop
+ESMF_F90COMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v8.4.0b02-7-g9328c9b05f' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DS64=1 -DESMF_OS_Unicos=1 -DESMF_COMM=mpi -DESMF_DIR=/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_O_develop
 ESMF_F90COMPILEFREECPP: 
 ESMF_F90COMPILEFREENOCPP: -ffree-form
 ESMF_F90COMPILEFIXCPP: -cpp -ffixed-form
@@ -224,7 +222,7 @@ C++ compiler flags:
 ESMF_CXXCOMPILER: CC
 ESMF_CXXCOMPILEOPTS: -std=c++11 -O -DNDEBUG -fPIC -DESMF_LOWERCASE_SINGLEUNDERSCORE -pthread  -fopenmp
 ESMF_CXXCOMPILEPATHS:  -I/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_O_develop/src/include  -I/apps/prod/netcdf-hdf5parallel/4.7.4/gcc/10.2.0/cray-mpich/8.1.4/include -I/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_O_develop/src/prologue/yaml-cpp/include
-ESMF_CXXCOMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v8.4.0b02' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DS64=1 -DESMF_OS_Unicos=1 -DESMF_COMM=mpi -DESMF_DIR=/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_O_develop -D__SDIR__='' -DESMF_CXXSTD=11 -DESMF_NO_POSIXIPC
+ESMF_CXXCOMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v8.4.0b02-7-g9328c9b05f' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DS64=1 -DESMF_OS_Unicos=1 -DESMF_COMM=mpi -DESMF_DIR=/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_O_develop -D__SDIR__='' -DESMF_CXXSTD=11 -DESMF_NO_POSIXIPC
 
 C++ linker flags:
 ESMF_CXXLINKOPTS: -fPIC -lnetcdff -lnetcdff   -pthread  -fopenmp
@@ -237,7 +235,7 @@ C compiler flags:
 ESMF_CCOMPILER: cc
 ESMF_CCOMPILEOPTS:  -O -DNDEBUG -fPIC
 ESMF_CCOMPILEPATHS:  -I/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_O_develop/src/include  
-ESMF_CCOMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v8.4.0b02' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DS64=1 -DESMF_OS_Unicos=1 -DESMF_COMM=mpi -DESMF_DIR=/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_O_develop -D__SDIR__=''
+ESMF_CCOMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v8.4.0b02-7-g9328c9b05f' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DS64=1 -DESMF_OS_Unicos=1 -DESMF_COMM=mpi -DESMF_DIR=/lfs/h1/emc/ptmp/Mark.Potts/gfortran_10.3.0_mpi_O_develop -D__SDIR__=''
 
 C linker flags:
 ESMF_CLINKOPTS:  
@@ -260,8 +258,13 @@ ESMF_TRACE_STATICLINKLIBS=-lesmftrace_static
 
 
 --------------------------------------------------------------
-Compiling on Fri Jul 1 16:18:56 UTC 2022 on nid001010
-Machine characteristics: Linux nid001010 5.3.18-150300.59.63-default #1 SMP Tue Apr 5 12:47:31 UTC 2022 (d77db66) x86_64 x86_64 x86_64 GNU/Linux
+Compiling on Tue Jul 5 12:45:14 UTC 2022 on nid001021
+Machine characteristics: Linux nid001021 5.3.18-150300.59.63-default #1 SMP Tue Apr 5 12:47:31 UTC 2022 (d77db66) x86_64 x86_64 x86_64 GNU/Linux
+==============================================================
+ 
+--------------------------
+Compiling on Tue Jul 5 12:45:14 UTC 2022 on nid001013
+Machine characteristics: Linux nid001013 5.3.18-150300.59.63-default #1 SMP Tue Apr 5 12:47:31 UTC 2022 (d77db66) x86_64 x86_64 x86_64 GNU/Linux
 ==============================================================
 
 
