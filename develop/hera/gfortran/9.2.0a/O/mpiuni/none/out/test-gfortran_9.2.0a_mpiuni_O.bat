@@ -1,4 +1,4 @@
-Fri Jul 8 05:57:04 UTC 2022
+Fri Jul 8 06:16:06 UTC 2022
 #!/bin/sh -l
 #SBATCH --account=nems
 #SBATCH -o test-gfortran_9.2.0a_mpiuni_O.bat_%j.o
