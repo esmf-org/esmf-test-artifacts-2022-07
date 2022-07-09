@@ -1,0 +1,39 @@
+build time -- 2022-07-09 08:19:00
+  Beginning Test, file ESMF_XGridUTest.F90, line 54
+  NUMBER_OF_PROCESSORS            2
+  Beginning Test, file ESMF_XGridUTest.F90, line 54
+  NUMBER_OF_PROCESSORS            2
+[h12c53:189786:0:189786] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x4f1b591)
+[h12c53:189787:0:189787] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x4f1b591)
+==== backtrace (tid: 189786) ====
+ 0 0x000000000004d455 ucs_debug_print_backtrace()  ???:0
+ 1 0x00000000010b0a24 ESMCI::LogErr::MsgFoundError()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_develop/src/Infrastructure/LogErr/src/ESMCI_LogErr.C:586
+ 2 0x00000000012e73d1 ESMCI::MeshCap::meshcreatenodedistgrid()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_develop/src/Infrastructure/Mesh/src/ESMCI_MeshCap.C:1754
+ 3 0x00000000013d16e7 c_esmc_meshcreatenodedistgrid_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_develop/src/Infrastructure/Mesh/interface/ESMCI_Mesh_F.C:247
+ 4 0x0000000001e755d8 esmf_meshmod_esmf_meshcreatefrompointer_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_develop/src/Infrastructure/Mesh/interface/ESMF_Mesh.F90:3091
+ 5 0x0000000001d58520 esmf_gridutilmod_esmf_gridtomesh_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_develop/src/Infrastructure/GridUtil/interface/ESMF_GridUtil.F90:453
+ 6 0x0000000001f346a9 esmf_xgridcreatemod_esmf_xgridcreate_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_develop/src/Infrastructure/XGrid/src/ESMF_XGridCreate.F90:950
+ 7 0x000000000045177c esmf_xgridutest_test_side_and_elem_info()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_develop/src/Infrastructure/XGrid/tests/ESMF_XGridUTest.F90:5382
+ 8 0x0000000000404806 MAIN_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_develop/src/Infrastructure/XGrid/tests/ESMF_XGridUTest.F90:64
+ 9 0x0000000000404483 main()  ???:0
+10 0x0000000000022555 __libc_start_main()  ???:0
+11 0x0000000000404389 _start()  ???:0
+=================================
+==== backtrace (tid: 189787) ====
+ 0 0x000000000004d455 ucs_debug_print_backtrace()  ???:0
+ 1 0x00000000010b0a24 ESMCI::LogErr::MsgFoundError()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_develop/src/Infrastructure/LogErr/src/ESMCI_LogErr.C:586
+ 2 0x00000000012e73d1 ESMCI::MeshCap::meshcreatenodedistgrid()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_develop/src/Infrastructure/Mesh/src/ESMCI_MeshCap.C:1754
+ 3 0x00000000013d16e7 c_esmc_meshcreatenodedistgrid_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_develop/src/Infrastructure/Mesh/interface/ESMCI_Mesh_F.C:247
+ 4 0x0000000001e755d8 esmf_meshmod_esmf_meshcreatefrompointer_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_develop/src/Infrastructure/Mesh/interface/ESMF_Mesh.F90:3091
+ 5 0x0000000001d58520 esmf_gridutilmod_esmf_gridtomesh_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_develop/src/Infrastructure/GridUtil/interface/ESMF_GridUtil.F90:453
+ 6 0x0000000001f346a9 esmf_xgridcreatemod_esmf_xgridcreate_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_develop/src/Infrastructure/XGrid/src/ESMF_XGridCreate.F90:950
+ 7 0x000000000045177c esmf_xgridutest_test_side_and_elem_info()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_develop/src/Infrastructure/XGrid/tests/ESMF_XGridUTest.F90:5382
+ 8 0x0000000000404806 MAIN_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_develop/src/Infrastructure/XGrid/tests/ESMF_XGridUTest.F90:64
+ 9 0x0000000000404483 main()  ???:0
+10 0x0000000000022555 __libc_start_main()  ???:0
+11 0x0000000000404389 _start()  ???:0
+=================================
+srun: error: h12c53: task 1: Segmentation fault (core dumped)
+srun: launch/slurm: _step_signal: Terminating StepId=33573148.110
+slurmstepd: error: *** STEP 33573148.110 ON h12c53 CANCELLED AT 2022-07-09T09:36:35 ***
+srun: error: h12c53: task 0: Segmentation fault (core dumped)
