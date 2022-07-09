@@ -1,4 +1,4 @@
-Fri Jul 8 06:07:45 UTC 2022
+Sat Jul 9 06:17:31 UTC 2022
  
 --------------------------------------------------------------
 ESMF_VERSION_STRING:    8.4.0 beta snapshot
@@ -11,8 +11,8 @@ Untracked files:
   (use "git add <file>..." to include in what will be committed)
 
 	build-intel_18.0.5b_intelmpi_O.bat
-	build-intel_18.0.5b_intelmpi_O.bat_33545259.e
-	build-intel_18.0.5b_intelmpi_O.bat_33545259.o
+	build-intel_18.0.5b_intelmpi_O.bat_33572612.e
+	build-intel_18.0.5b_intelmpi_O.bat_33572612.o
 	getres-build.sh
 	getres-test.sh
 	nuopc-app-prototypes/
@@ -222,15 +222,15 @@ ESMF_TRACE_STATICLINKLIBS=-lesmftrace_static
 
 
 --------------------------------------------------------------
-Compiling on Fri Jul 8 05:52:47 UTC 2022 on h12c47
-Machine characteristics: Linux h12c47 3.10.0-1160.66.1.el7.x86_64 #1 SMP Wed May 18 16:02:34 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+Compiling on Sat Jul 9 06:02:13 UTC 2022 on h2c27
+Machine characteristics: Linux h2c27 3.10.0-1160.66.1.el7.x86_64 #1 SMP Wed May 18 16:02:34 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
 ==============================================================
  
 make[1]: Entering directory `/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop'
 Making directory /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/lib/libO/Linux.intel.64.intelmpi.default for library
 Making directory /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include for include files
 Making directory /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/mod/modO/Linux.intel.64.intelmpi.default for *.mod files
-Making directory /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/obj/objO/Linux.intel.64.intelmpi.default for build-intel_18.0.5b_intelmpi_O.bat_33545259.o files
+Making directory /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/obj/objO/Linux.intel.64.intelmpi.default for build-intel_18.0.5b_intelmpi_O.bat_33572612.o files
 cd /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop ;\
 make ACTION=tree_include tree
 make[2]: Entering directory `/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop'
@@ -1382,7 +1382,7 @@ mpiicpc -c -std=c++11 -O -DNDEBUG -fPIC -debug minimal -m64 -mcmodel=small -pthr
 In file included from /usr/include/c++/4.8.5/backward/strstream(51),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/VM/interface/../include/ESMCI_VMKernel.h(28),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/VM/interface/../include/ESMCI_VM.h(41),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/VM/interface/ESMCI_VM_F.C(20):
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/VM/interface/ESMC_VM.C(32):
 /usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -1390,7 +1390,7 @@ In file included from /usr/include/c++/4.8.5/backward/strstream(51),
 In file included from /usr/include/c++/4.8.5/backward/strstream(51),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/VM/interface/../include/ESMCI_VMKernel.h(28),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/VM/interface/../include/ESMCI_VM.h(41),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/VM/interface/ESMC_VM.C(32):
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/VM/interface/ESMCI_VM_F.C(20):
 /usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -1449,7 +1449,7 @@ In file included from /usr/include/c++/4.8.5/backward/strstream(51),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_Base.h(27),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_Comp.h(32),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Trace/src/../include/ESMCI_Trace.h(17),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Trace/src/ESMCI_TraceMetadata.C(17):
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Trace/src/ESMCI_TraceWrap.C(13):
 /usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -1460,7 +1460,7 @@ In file included from /usr/include/c++/4.8.5/backward/strstream(51),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_Base.h(27),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_Comp.h(32),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Trace/src/../include/ESMCI_Trace.h(17),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Trace/src/ESMCI_TraceWrap.C(13):
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Trace/src/ESMCI_TraceMetadata.C(17):
 /usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -1536,7 +1536,7 @@ In file included from /usr/include/c++/4.8.5/backward/strstream(51),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VMKernel.h(28),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VM.h(41),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Base/src/../include/ESMCI_Base.h(27),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Base/src/ESMC_InfoCDef.C(26):
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Base/src/ESMCI_Base.C(33):
 /usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -1554,7 +1554,7 @@ In file included from /usr/include/c++/4.8.5/backward/strstream(51),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VMKernel.h(28),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VM.h(41),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Base/src/../include/ESMCI_Base.h(27),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Base/src/ESMCI_Base.C(33):
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Base/src/ESMC_InfoCDef.C(26):
 /usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -1929,7 +1929,7 @@ In file included from /usr/include/c++/4.8.5/backward/strstream(51),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VM.h(41),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_Base.h(27),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Route/interface/../include/ESMCI_RHandle.h(39),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Route/interface/ESMC_RHandle.C(31):
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Route/interface/ESMCI_RHandle_F.C(23):
 /usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -1939,7 +1939,7 @@ In file included from /usr/include/c++/4.8.5/backward/strstream(51),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VM.h(41),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_Base.h(27),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Route/interface/../include/ESMCI_RHandle.h(39),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Route/interface/ESMCI_RHandle_F.C(23):
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Route/interface/ESMC_RHandle.C(31):
 /usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -2295,7 +2295,7 @@ CMAKE_EXE_LINKER_FLAGS
 # General
 -------
 PIO Version:		2.5.7
-Configured On:		Fri Jul  8 05:58:17 UTC 2022
+Configured On:		Sat Jul  9 06:07:57 UTC 2022
 Host System:		x86_64-Linux-3.10.0-1160.66.1.el7.x86_64
 Build Directory: 	/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/IO/PIO/Build
 Install Prefix:         /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/IO/PIO/Install
@@ -2435,51 +2435,51 @@ In file included from /usr/include/c++/4.8.5/backward/strstream(51),
    ^
 
 In file included from /usr/include/c++/4.8.5/backward/strstream(51),
+In file included from /usr/include/c++/4.8.5/backward/strstream(51),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VMKernel.h(28),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VMKernel.h(28),
+In file included from /usr/include/c++/4.8.5/backward/strstream(51),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VM.h(41),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VM.h(41),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VMKernel.h(28),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_Base.h(27),
+In file included from /usr/include/c++/4.8.5/backward/strstream(51),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_Base.h(27),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VM.h(41),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/IO/src/../include/ESMCI_IO_Gridspec.h(32),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/IO/src/../include/ESMCI_IO_NetCDF.h(39),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VMKernel.h(28),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_Base.h(27),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/IO/src/ESMCI_IO_Gridspec.C(24):
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/IO/src/ESMCI_IO_NetCDF.C(24):
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VM.h(41),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/IO/src/../include/ESMCI_IO.h(34),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_Base.h(27),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/IO/src/ESMCI_IO.C(24):
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/IO/src/../include/ESMCI_IO_Scrip.h(32),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/IO/src/ESMCI_IO_Scrip.C(24):
+/usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
+  #warning \
+   ^
+
+/usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
+  #warning \
+   ^
+
+/usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
+  #warning \
+   ^
+
+/usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
+  #warning \
+   ^
+
+In file included from /usr/include/c++/4.8.5/backward/strstream(51),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VMKernel.h(28),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VM.h(41),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_Base.h(27),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/IO/src/../include/ESMCI_IO_Handler.h(38),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/IO/src/ESMCI_IO_Handler.C(24):
-/usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
-  #warning \
-   ^
-
-In file included from /usr/include/c++/4.8.5/backward/strstream(51),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VMKernel.h(28),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VM.h(41),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_Base.h(27),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/IO/src/../include/ESMCI_IO_NetCDF.h(39),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/IO/src/ESMCI_IO_NetCDF.C(24):
-/usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
-  #warning \
-   ^
-
-In file included from /usr/include/c++/4.8.5/backward/strstream(51),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VMKernel.h(28),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VM.h(41),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_Base.h(27),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/IO/src/../include/ESMCI_IO_Gridspec.h(32),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/IO/src/ESMCI_IO_Gridspec.C(24):
-/usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
-  #warning \
-   ^
-
-In file included from /usr/include/c++/4.8.5/backward/strstream(51),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VMKernel.h(28),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VM.h(41),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_Base.h(27),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/IO/src/../include/ESMCI_IO.h(34),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/IO/src/ESMCI_IO.C(24):
-/usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
-  #warning \
-   ^
-
-In file included from /usr/include/c++/4.8.5/backward/strstream(51),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VMKernel.h(28),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VM.h(41),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_Base.h(27),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/IO/src/../include/ESMCI_IO_Scrip.h(32),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/IO/src/ESMCI_IO_Scrip.C(24):
 /usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -2703,17 +2703,17 @@ mpiicpc -c -std=c++11 -O -DNDEBUG -fPIC -debug minimal -m64 -mcmodel=small -pthr
 mpiicpc -c -std=c++11 -O -DNDEBUG -fPIC -debug minimal -m64 -mcmodel=small -pthread  -qopenmp -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/../include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/build_config/Linux.intel.default -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Superstructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/stubs/pthread  -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include  -I/apps/spack/linux-centos7-x86_64/intel-18.0.5/netcdf-c-4.7.4-hfnffse7ukc2dmi6u5hd3ofv6r6vxheg/include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.4.0b03-3-g14a79d558f"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=intelmpi -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop -D__SDIR__='"src/Infrastructure/Mesh/src"' -DESMF_CXXSTD=11 -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Moab -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Moab/parallel -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Moab/LocalDiscretization /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/ESMCI_MBMesh_ShapeFunc.C -o /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/obj/objO/Linux.intel.64.intelmpi.default/ESMCI_MBMesh_ShapeFunc.o
 mpiicpc -c -std=c++11 -O -DNDEBUG -fPIC -debug minimal -m64 -mcmodel=small -pthread  -qopenmp -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/../include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/build_config/Linux.intel.default -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Superstructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/stubs/pthread  -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include  -I/apps/spack/linux-centos7-x86_64/intel-18.0.5/netcdf-c-4.7.4-hfnffse7ukc2dmi6u5hd3ofv6r6vxheg/include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.4.0b03-3-g14a79d558f"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=intelmpi -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop -D__SDIR__='"src/Infrastructure/Mesh/src"' -DESMF_CXXSTD=11 -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Moab -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Moab/parallel -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Moab/LocalDiscretization /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Util.C -o /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/obj/objO/Linux.intel.64.intelmpi.default/ESMCI_MBMesh_Util.o
 In file included from /usr/include/c++/4.8.5/backward/strstream(51),
-In file included from /usr/include/c++/4.8.5/backward/strstream(51),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VMKernel.h(28),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VM.h(41),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VMKernel.h(28),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/ESMCI_ClumpPnts.C(21):
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VM.h(41),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C(28):
 /usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
 
+In file included from /usr/include/c++/4.8.5/backward/strstream(51),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VMKernel.h(28),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VM.h(41),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C(28):
 /usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -2731,8 +2731,8 @@ In file included from /usr/include/c++/4.8.5/backward/strstream(51),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VM.h(41),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_Base.h(27),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_Grid.h(35),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/ESMCI_GToM_Util.h(26),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/ESMCI_GToM_Util.C(24):
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/../include/ESMCI_Mesh_GToM_Glue.h(23),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Glue.C(23):
 /usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -2742,8 +2742,8 @@ In file included from /usr/include/c++/4.8.5/backward/strstream(51),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VM.h(41),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_Base.h(27),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_Grid.h(35),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/../include/ESMCI_Mesh_GToM_Glue.h(23),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Glue.C(23):
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/ESMCI_GToM_Util.h(26),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/ESMCI_GToM_Util.C(24):
 /usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -2769,23 +2769,7 @@ In file included from /usr/include/c++/4.8.5/backward/strstream(51),
 In file included from /usr/include/c++/4.8.5/backward/strstream(51),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VMKernel.h(28),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VM.h(41),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/ESMCI_ESMFMesh_Util.C(29):
-/usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
-  #warning \
-   ^
-
-In file included from /usr/include/c++/4.8.5/backward/strstream(51),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VMKernel.h(28),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VM.h(41),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/ESMCI_UGRID_Util.C(29):
-/usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
-  #warning \
-   ^
-
-In file included from /usr/include/c++/4.8.5/backward/strstream(51),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VMKernel.h(28),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VM.h(41),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/ESMCI_FileIO_Util.C(29):
 /usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -2801,7 +2785,7 @@ In file included from /usr/include/c++/4.8.5/backward/strstream(51),
 In file included from /usr/include/c++/4.8.5/backward/strstream(51),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VMKernel.h(28),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VM.h(41),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Dual.C(17):
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/ESMCI_ESMFMesh_Util.C(29):
 /usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -2810,6 +2794,22 @@ In file included from /usr/include/c++/4.8.5/backward/strstream(51),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VMKernel.h(28),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VM.h(41),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C(33):
+/usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
+  #warning \
+   ^
+
+In file included from /usr/include/c++/4.8.5/backward/strstream(51),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VMKernel.h(28),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VM.h(41),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Dual.C(17):
+/usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
+  #warning \
+   ^
+
+In file included from /usr/include/c++/4.8.5/backward/strstream(51),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VMKernel.h(28),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VM.h(41),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/ESMCI_FileIO_Util.C(29):
 /usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -2828,6 +2828,16 @@ In file included from /usr/include/c++/4.8.5/backward/strstream(51),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_Base.h(27),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_Grid.h(35),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/ESMCI_MBMesh_GToM_Glue.C(25):
+/usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
+  #warning \
+   ^
+
+In file included from /usr/include/c++/4.8.5/backward/strstream(51),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VMKernel.h(28),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VM.h(41),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_Base.h(27),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_Grid.h(35),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Regrid_Glue.C(27):
 /usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -2863,8 +2873,20 @@ In file included from /usr/include/c++/4.8.5/backward/strstream(51),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VMKernel.h(28),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VM.h(41),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_Base.h(27),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_Grid.h(35),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Regrid_Glue.C(27):
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h(22),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/ESMCI_MBMesh_BBox.h(18),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/ESMCI_MBMesh_BBox.C(16):
+/usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
+  #warning \
+   ^
+
+In file included from /usr/include/c++/4.8.5/backward/strstream(51),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VMKernel.h(28),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VM.h(41),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_Base.h(27),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h(22),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/ESMCI_MBMesh_Mapping.h(30),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Mapping.C(19):
 /usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -2895,28 +2917,6 @@ In file included from /usr/include/c++/4.8.5/backward/strstream(51),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VM.h(41),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_Base.h(27),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h(22),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/ESMCI_MBMesh_BBox.h(18),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/ESMCI_MBMesh_BBox.C(16):
-/usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
-  #warning \
-   ^
-
-In file included from /usr/include/c++/4.8.5/backward/strstream(51),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VMKernel.h(28),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VM.h(41),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_Base.h(27),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h(22),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/ESMCI_MBMesh_Mapping.h(30),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Mapping.C(19):
-/usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
-  #warning \
-   ^
-
-In file included from /usr/include/c++/4.8.5/backward/strstream(51),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VMKernel.h(28),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VM.h(41),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_Base.h(27),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h(22),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/ESMCI_MBMesh_Util.h(27),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redist.C(17):
 /usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
@@ -2930,92 +2930,6 @@ In file included from /usr/include/c++/4.8.5/backward/strstream(51),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h(22),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/ESMCI_MBMesh_Util.h(27),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Rendez_EtoP.C(17):
-/usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
-  #warning \
-   ^
-
-In file included from /usr/include/c++/4.8.5/backward/strstream(51),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VMKernel.h(28),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VM.h(41),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_Base.h(27),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_RHandle.h(39),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Field/include/ESMCI_Field.h(42),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/../include/ESMCI_Mesh.h(23),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/ESMCI_MeshCap.C(29):
-/usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
-  #warning \
-   ^
-
-In file included from /usr/include/c++/4.8.5/backward/strstream(51),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VMKernel.h(28),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VM.h(41),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_Base.h(27),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_RHandle.h(39),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Field/include/ESMCI_Field.h(42),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/ESMCI_Mesh.h(23),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/ESMCI_Mesh.C(13):
-/usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
-  #warning \
-   ^
-
-In file included from /usr/include/c++/4.8.5/backward/strstream(51),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VMKernel.h(28),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VM.h(41),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_Base.h(27),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h(22),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h(19),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/ESMCI_Search_Nearest.h(20),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/ESMCI_Search_NearestNPnts.C(12):
-/usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
-  #warning \
-   ^
-
-In file included from /usr/include/c++/4.8.5/backward/strstream(51),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VMKernel.h(28),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VM.h(41),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_Base.h(27),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h(22),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h(19),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/ESMCI_Search_Nearest.h(20),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/ESMCI_Regrid_Nearest.C(18):
-/usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
-  #warning \
-   ^
-
-In file included from /usr/include/c++/4.8.5/backward/strstream(51),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VMKernel.h(28),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VM.h(41),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_Base.h(27),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_RHandle.h(39),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Field/include/ESMCI_Field.h(42),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/ESMCI_Mesh.h(23),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h(17),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/ESMCI_MathUtil.C(15):
-/usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
-  #warning \
-   ^
-
-In file included from /usr/include/c++/4.8.5/backward/strstream(51),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VMKernel.h(28),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VM.h(41),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_Base.h(27),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h(22),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h(19),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/ESMCI_Search_Nearest.h(20),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/ESMCI_Search_Nearest.C(13):
-/usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
-  #warning \
-   ^
-
-In file included from /usr/include/c++/4.8.5/backward/strstream(51),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VMKernel.h(28),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VM.h(41),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_Base.h(27),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h(22),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h(19),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h(22),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h(16),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Bilinear.C(16):
 /usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -3050,9 +2964,82 @@ In file included from /usr/include/c++/4.8.5/backward/strstream(51),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_Base.h(27),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h(22),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h(19),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h(22),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h(16),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Patch.C(16):
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/ESMCI_Search_Nearest.h(20),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/ESMCI_Search_Nearest.C(13):
+/usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
+  #warning \
+   ^
+
+In file included from /usr/include/c++/4.8.5/backward/strstream(51),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VMKernel.h(28),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VM.h(41),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_Base.h(27),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h(22),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h(19),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/ESMCI_Search_Nearest.h(20),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/ESMCI_Regrid_Nearest.C(18):
+/usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
+  #warning \
+   ^
+
+In file included from /usr/include/c++/4.8.5/backward/strstream(51),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VMKernel.h(28),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VM.h(41),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_Base.h(27),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_RHandle.h(39),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Field/include/ESMCI_Field.h(42),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/ESMCI_Mesh.h(23),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/ESMCI_Mesh.C(13):
+/usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
+  #warning \
+   ^
+
+In file included from /usr/include/c++/4.8.5/backward/strstream(51),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VMKernel.h(28),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VM.h(41),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_Base.h(27),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h(22),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h(19),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/ESMCI_Search_Nearest.h(20),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/ESMCI_Search_NearestNPnts.C(12):
+/usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
+  #warning \
+   ^
+
+In file included from /usr/include/c++/4.8.5/backward/strstream(51),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VMKernel.h(28),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VM.h(41),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_Base.h(27),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_RHandle.h(39),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Field/include/ESMCI_Field.h(42),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/ESMCI_Mesh.h(23),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h(17),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/ESMCI_MathUtil.C(15):
+/usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
+  #warning \
+   ^
+
+In file included from /usr/include/c++/4.8.5/backward/strstream(51),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VMKernel.h(28),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VM.h(41),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_Base.h(27),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_RHandle.h(39),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Field/include/ESMCI_Field.h(42),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/../include/ESMCI_Mesh.h(23),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/ESMCI_MeshCap.C(29):
+/usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
+  #warning \
+   ^
+
+In file included from /usr/include/c++/4.8.5/backward/strstream(51),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VMKernel.h(28),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VM.h(41),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_Base.h(27),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_RHandle.h(39),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Field/include/ESMCI_Field.h(42),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/ESMCI_Mesh.h(23),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h(17),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Search_EtoE.C(18):
 /usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -3065,7 +3052,7 @@ In file included from /usr/include/c++/4.8.5/backward/strstream(51),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h(19),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h(22),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h(16),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/ESMCI_XGridUtil.C(12):
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Patch.C(16):
 /usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -3087,11 +3074,24 @@ In file included from /usr/include/c++/4.8.5/backward/strstream(51),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VMKernel.h(28),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VM.h(41),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_Base.h(27),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_RHandle.h(39),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Field/include/ESMCI_Field.h(42),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/ESMCI_Mesh.h(23),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h(17),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Search_EtoE.C(18):
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h(22),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h(19),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h(22),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h(16),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/ESMCI_XGridUtil.C(12):
+/usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
+  #warning \
+   ^
+
+In file included from /usr/include/c++/4.8.5/backward/strstream(51),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VMKernel.h(28),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VM.h(41),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_Base.h(27),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h(22),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h(19),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h(22),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h(16),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Bilinear.C(16):
 /usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -3156,7 +3156,8 @@ In file included from /usr/include/c++/4.8.5/backward/strstream(51),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_RHandle.h(39),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Field/include/ESMCI_Field.h(42),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/ESMCI_Mesh.h(23),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/ESMCI_CommReg.C(17):
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/Legacy/ESMCI_GeomRendezvous.h(18),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/ESMCI_GeomRendezvous.C(12):
 /usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -3178,11 +3179,9 @@ In file included from /usr/include/c++/4.8.5/backward/strstream(51),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VMKernel.h(28),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VM.h(41),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_Base.h(27),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_RHandle.h(39),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Field/include/ESMCI_Field.h(42),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/ESMCI_Mesh.h(23),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/Legacy/ESMCI_GeomRendezvous.h(18),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/ESMCI_GeomRendezvous.C(12):
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_Array.h(38),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshVTK.h(16),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshVTK.C(12):
 /usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -3195,6 +3194,18 @@ In file included from /usr/include/c++/4.8.5/backward/strstream(51),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Field/include/ESMCI_Field.h(42),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/ESMCI_Mesh.h(23),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshGen.C(14):
+/usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
+  #warning \
+   ^
+
+In file included from /usr/include/c++/4.8.5/backward/strstream(51),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VMKernel.h(28),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VM.h(41),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_Base.h(27),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_RHandle.h(39),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Field/include/ESMCI_Field.h(42),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/ESMCI_Mesh.h(23),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/ESMCI_CommReg.C(17):
 /usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -3224,7 +3235,6 @@ In file included from /usr/include/c++/4.8.5/backward/strstream(51),
   #warning \
    ^
 
-mpiicpc -c -std=c++11 -O -DNDEBUG -fPIC -debug minimal -m64 -mcmodel=small -pthread  -qopenmp -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/../include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/build_config/Linux.intel.default -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Superstructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/stubs/pthread  -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include  -I/apps/spack/linux-centos7-x86_64/intel-18.0.5/netcdf-c-4.7.4-hfnffse7ukc2dmi6u5hd3ofv6r6vxheg/include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.4.0b03-3-g14a79d558f"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=intelmpi -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop -D__SDIR__='"src/Infrastructure/Mesh/src/Legacy"' -DESMF_CXXSTD=11 -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/.. -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab/parallel -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab/LocalDiscretization /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/ESMCI_Quadrature.C -o /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/obj/objO/Linux.intel.64.intelmpi.default/ESMCI_Quadrature.o
 In file included from /usr/include/c++/4.8.5/backward/strstream(51),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VMKernel.h(28),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VM.h(41),
@@ -3242,27 +3252,16 @@ In file included from /usr/include/c++/4.8.5/backward/strstream(51),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VMKernel.h(28),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VM.h(41),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_Base.h(27),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_RHandle.h(39),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Field/include/ESMCI_Field.h(42),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/ESMCI_Mesh.h(23),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h(17),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEValues.h(17),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/ESMCI_MEValues.C(12):
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h(22),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h(19),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h(22),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h(16),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshMerge.C(15):
 /usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
 
-In file included from /usr/include/c++/4.8.5/backward/strstream(51),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VMKernel.h(28),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VM.h(41),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_Base.h(27),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_Array.h(38),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshVTK.h(16),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshVTK.C(12):
-/usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
-  #warning \
-   ^
-
+mpiicpc -c -std=c++11 -O -DNDEBUG -fPIC -debug minimal -m64 -mcmodel=small -pthread  -qopenmp -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/../include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/build_config/Linux.intel.default -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Superstructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/stubs/pthread  -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include  -I/apps/spack/linux-centos7-x86_64/intel-18.0.5/netcdf-c-4.7.4-hfnffse7ukc2dmi6u5hd3ofv6r6vxheg/include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.4.0b03-3-g14a79d558f"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=intelmpi -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop -D__SDIR__='"src/Infrastructure/Mesh/src/Legacy"' -DESMF_CXXSTD=11 -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/.. -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab/parallel -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab/LocalDiscretization /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/ESMCI_Quadrature.C -o /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/obj/objO/Linux.intel.64.intelmpi.default/ESMCI_Quadrature.o
 In file included from /usr/include/c++/4.8.5/backward/strstream(51),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VMKernel.h(28),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VM.h(41),
@@ -3285,7 +3284,21 @@ In file included from /usr/include/c++/4.8.5/backward/strstream(51),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Field/include/ESMCI_Field.h(42),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/ESMCI_Mesh.h(23),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h(17),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/ESMCI_MEField.C(14):
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEValues.h(17),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/ESMCI_MEValues.C(12):
+/usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
+  #warning \
+   ^
+
+In file included from /usr/include/c++/4.8.5/backward/strstream(51),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VMKernel.h(28),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VM.h(41),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_Base.h(27),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_RHandle.h(39),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Field/include/ESMCI_Field.h(42),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/ESMCI_Mesh.h(23),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshRead.h(17),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshRead.C(12):
 /usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -3310,20 +3323,8 @@ In file included from /usr/include/c++/4.8.5/backward/strstream(51),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_RHandle.h(39),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Field/include/ESMCI_Field.h(42),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/ESMCI_Mesh.h(23),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshNC.h(16),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshNC.C(12):
-/usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
-  #warning \
-   ^
-
-In file included from /usr/include/c++/4.8.5/backward/strstream(51),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VMKernel.h(28),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VM.h(41),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_Base.h(27),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_RHandle.h(39),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Field/include/ESMCI_Field.h(42),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/ESMCI_Mesh.h(23),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/ESMCI_HAdapt.C(13):
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h(17),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/ESMCI_MEField.C(14):
 /usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -3341,34 +3342,7 @@ In file included from /usr/include/c++/4.8.5/backward/strstream(51),
   #warning \
    ^
 
-In file included from /usr/include/c++/4.8.5/backward/strstream(51),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VMKernel.h(28),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VM.h(41),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_Base.h(27),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_RHandle.h(39),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Field/include/ESMCI_Field.h(42),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/ESMCI_Mesh.h(23),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h(17),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshRefine.C(18):
-/usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
-  #warning \
-   ^
-
 mpiicpc -c -std=c++11 -O -DNDEBUG -fPIC -debug minimal -m64 -mcmodel=small -pthread  -qopenmp -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/../include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/build_config/Linux.intel.default -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Superstructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/stubs/pthread  -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include  -I/apps/spack/linux-centos7-x86_64/intel-18.0.5/netcdf-c-4.7.4-hfnffse7ukc2dmi6u5hd3ofv6r6vxheg/include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.4.0b03-3-g14a79d558f"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=intelmpi -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop -D__SDIR__='"src/Infrastructure/Mesh/src/Legacy"' -DESMF_CXXSTD=11 -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/.. -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab/parallel -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab/LocalDiscretization /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/ESMCI_RefineTopo.C -o /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/obj/objO/Linux.intel.64.intelmpi.default/ESMCI_RefineTopo.o
-mpiicpc -c -std=c++11 -O -DNDEBUG -fPIC -debug minimal -m64 -mcmodel=small -pthread  -qopenmp -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/../include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/build_config/Linux.intel.default -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Superstructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/stubs/pthread  -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include  -I/apps/spack/linux-centos7-x86_64/intel-18.0.5/netcdf-c-4.7.4-hfnffse7ukc2dmi6u5hd3ofv6r6vxheg/include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.4.0b03-3-g14a79d558f"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=intelmpi -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop -D__SDIR__='"src/Infrastructure/Mesh/src/Legacy"' -DESMF_CXXSTD=11 -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/.. -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab/parallel -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab/LocalDiscretization /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/ESMCI_SFuncAdaptor.C -o /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/obj/objO/Linux.intel.64.intelmpi.default/ESMCI_SFuncAdaptor.o
-In file included from /usr/include/c++/4.8.5/backward/strstream(51),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VMKernel.h(28),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VM.h(41),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_Base.h(27),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h(22),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h(19),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h(22),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h(16),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshMerge.C(15):
-/usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
-  #warning \
-   ^
-
 In file included from /usr/include/c++/4.8.5/backward/strstream(51),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VMKernel.h(28),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VM.h(41),
@@ -3376,13 +3350,12 @@ In file included from /usr/include/c++/4.8.5/backward/strstream(51),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_RHandle.h(39),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Field/include/ESMCI_Field.h(42),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/ESMCI_Mesh.h(23),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshRead.h(17),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshRead.C(12):
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshNC.h(16),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshNC.C(12):
 /usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
 
-mpiicpc -c -std=c++11 -O -DNDEBUG -fPIC -debug minimal -m64 -mcmodel=small -pthread  -qopenmp -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/../include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/build_config/Linux.intel.default -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Superstructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/stubs/pthread  -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include  -I/apps/spack/linux-centos7-x86_64/intel-18.0.5/netcdf-c-4.7.4-hfnffse7ukc2dmi6u5hd3ofv6r6vxheg/include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.4.0b03-3-g14a79d558f"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=intelmpi -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop -D__SDIR__='"src/Infrastructure/Mesh/src/Legacy"' -DESMF_CXXSTD=11 -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/.. -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab/parallel -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab/LocalDiscretization /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/ESMCI_ShapeLagrange.C -o /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/obj/objO/Linux.intel.64.intelmpi.default/ESMCI_ShapeLagrange.o
 In file included from /usr/include/c++/4.8.5/backward/strstream(51),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VMKernel.h(28),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VM.h(41),
@@ -3396,12 +3369,39 @@ In file included from /usr/include/c++/4.8.5/backward/strstream(51),
   #warning \
    ^
 
+mpiicpc -c -std=c++11 -O -DNDEBUG -fPIC -debug minimal -m64 -mcmodel=small -pthread  -qopenmp -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/../include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/build_config/Linux.intel.default -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Superstructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/stubs/pthread  -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include  -I/apps/spack/linux-centos7-x86_64/intel-18.0.5/netcdf-c-4.7.4-hfnffse7ukc2dmi6u5hd3ofv6r6vxheg/include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.4.0b03-3-g14a79d558f"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=intelmpi -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop -D__SDIR__='"src/Infrastructure/Mesh/src/Legacy"' -DESMF_CXXSTD=11 -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/.. -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab/parallel -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab/LocalDiscretization /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/ESMCI_SFuncAdaptor.C -o /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/obj/objO/Linux.intel.64.intelmpi.default/ESMCI_SFuncAdaptor.o
+mpiicpc -c -std=c++11 -O -DNDEBUG -fPIC -debug minimal -m64 -mcmodel=small -pthread  -qopenmp -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/../include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/build_config/Linux.intel.default -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Superstructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/stubs/pthread  -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include  -I/apps/spack/linux-centos7-x86_64/intel-18.0.5/netcdf-c-4.7.4-hfnffse7ukc2dmi6u5hd3ofv6r6vxheg/include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.4.0b03-3-g14a79d558f"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=intelmpi -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop -D__SDIR__='"src/Infrastructure/Mesh/src/Legacy"' -DESMF_CXXSTD=11 -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/.. -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab/parallel -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab/LocalDiscretization /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/ESMCI_ShapeLagrange.C -o /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/obj/objO/Linux.intel.64.intelmpi.default/ESMCI_ShapeLagrange.o
+In file included from /usr/include/c++/4.8.5/backward/strstream(51),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VMKernel.h(28),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VM.h(41),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_Base.h(27),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_RHandle.h(39),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Field/include/ESMCI_Field.h(42),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/ESMCI_Mesh.h(23),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h(17),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshRefine.C(18):
+/usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
+  #warning \
+   ^
+
 mpiicpc -c -std=c++11 -O -DNDEBUG -fPIC -debug minimal -m64 -mcmodel=small -pthread  -qopenmp -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/../include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/build_config/Linux.intel.default -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Superstructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/stubs/pthread  -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include  -I/apps/spack/linux-centos7-x86_64/intel-18.0.5/netcdf-c-4.7.4-hfnffse7ukc2dmi6u5hd3ofv6r6vxheg/include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.4.0b03-3-g14a79d558f"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=intelmpi -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop -D__SDIR__='"src/Infrastructure/Mesh/src/Legacy"' -DESMF_CXXSTD=11 -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/.. -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab/parallel -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab/LocalDiscretization /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/ESMCI_SmallAlloc.C -o /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/obj/objO/Linux.intel.64.intelmpi.default/ESMCI_SmallAlloc.o
 mpiicpc -c -std=c++11 -O -DNDEBUG -fPIC -debug minimal -m64 -mcmodel=small -pthread  -qopenmp -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/../include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/build_config/Linux.intel.default -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Superstructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/stubs/pthread  -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include  -I/apps/spack/linux-centos7-x86_64/intel-18.0.5/netcdf-c-4.7.4-hfnffse7ukc2dmi6u5hd3ofv6r6vxheg/include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.4.0b03-3-g14a79d558f"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=intelmpi -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop -D__SDIR__='"src/Infrastructure/Mesh/src/Legacy"' -DESMF_CXXSTD=11 -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/.. -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab/parallel -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab/LocalDiscretization /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/ESMCI_SparseMsg.C -o /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/obj/objO/Linux.intel.64.intelmpi.default/ESMCI_SparseMsg.o
 mpiicpc -c -std=c++11 -O -DNDEBUG -fPIC -debug minimal -m64 -mcmodel=small -pthread  -qopenmp -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/../include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/build_config/Linux.intel.default -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Superstructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/stubs/pthread  -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include  -I/apps/spack/linux-centos7-x86_64/intel-18.0.5/netcdf-c-4.7.4-hfnffse7ukc2dmi6u5hd3ofv6r6vxheg/include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.4.0b03-3-g14a79d558f"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=intelmpi -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop -D__SDIR__='"src/Infrastructure/Mesh/src/Legacy"' -DESMF_CXXSTD=11 -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/.. -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab/parallel -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab/LocalDiscretization /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/ESMCI_WriteWeights.C -o /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/obj/objO/Linux.intel.64.intelmpi.default/ESMCI_WriteWeights.o
 mpiicpc -c -std=c++11 -O -DNDEBUG -fPIC -debug minimal -m64 -mcmodel=small -pthread  -qopenmp -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/../include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/build_config/Linux.intel.default -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Superstructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/stubs/pthread  -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include  -I/apps/spack/linux-centos7-x86_64/intel-18.0.5/netcdf-c-4.7.4-hfnffse7ukc2dmi6u5hd3ofv6r6vxheg/include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.4.0b03-3-g14a79d558f"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=intelmpi -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop -D__SDIR__='"src/Infrastructure/Mesh/src/Legacy"' -DESMF_CXXSTD=11 -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/.. -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab/parallel -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab/LocalDiscretization /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/ESMCI_WriteWeightsPar.C -o /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/obj/objO/Linux.intel.64.intelmpi.default/ESMCI_WriteWeightsPar.o
 mpiicpc -c -std=c++11 -O -DNDEBUG -fPIC -debug minimal -m64 -mcmodel=small -pthread  -qopenmp -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/../include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/build_config/Linux.intel.default -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Superstructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/stubs/pthread  -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include  -I/apps/spack/linux-centos7-x86_64/intel-18.0.5/netcdf-c-4.7.4-hfnffse7ukc2dmi6u5hd3ofv6r6vxheg/include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.4.0b03-3-g14a79d558f"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=intelmpi -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop -D__SDIR__='"src/Infrastructure/Mesh/src/Legacy"' -DESMF_CXXSTD=11 -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/.. -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab/parallel -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab/LocalDiscretization /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/ESMCI_FindPnts.C -o /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/obj/objO/Linux.intel.64.intelmpi.default/ESMCI_FindPnts.o
 mpiicpc -c -std=c++11 -O -DNDEBUG -fPIC -debug minimal -m64 -mcmodel=small -pthread  -qopenmp -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/../include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/build_config/Linux.intel.default -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Superstructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/stubs/pthread  -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include  -I/apps/spack/linux-centos7-x86_64/intel-18.0.5/netcdf-c-4.7.4-hfnffse7ukc2dmi6u5hd3ofv6r6vxheg/include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.4.0b03-3-g14a79d558f"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=intelmpi -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop -D__SDIR__='"src/Infrastructure/Mesh/src/Legacy"' -DESMF_CXXSTD=11 -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/.. -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab/parallel -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/../Moab/LocalDiscretization /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/ESMCI_SM.C -o /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/obj/objO/Linux.intel.64.intelmpi.default/ESMCI_SM.o
+In file included from /usr/include/c++/4.8.5/backward/strstream(51),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VMKernel.h(28),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VM.h(41),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_Base.h(27),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_RHandle.h(39),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Field/include/ESMCI_Field.h(42),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/ESMCI_Mesh.h(23),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/ESMCI_HAdapt.C(13):
+/usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
+  #warning \
+   ^
+
 In file included from /usr/include/c++/4.8.5/backward/strstream(51),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VMKernel.h(28),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VM.h(41),
@@ -3444,11 +3444,11 @@ In file included from /usr/include/c++/4.8.5/backward/strstream(51),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VMKernel.h(28),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VM.h(41),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_Base.h(27),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h(22),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h(19),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h(22),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h(16),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/ESMCI_WriteWeights.C(13):
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_RHandle.h(39),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Field/include/ESMCI_Field.h(42),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/ESMCI_Mesh.h(23),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h(17),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/ESMCI_SM.C(15):
 /usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -3457,11 +3457,11 @@ In file included from /usr/include/c++/4.8.5/backward/strstream(51),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VMKernel.h(28),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VM.h(41),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_Base.h(27),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_RHandle.h(39),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Field/include/ESMCI_Field.h(42),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/ESMCI_Mesh.h(23),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h(17),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/ESMCI_SM.C(15):
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h(22),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h(19),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h(22),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h(16),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Legacy/ESMCI_WriteWeights.C(13):
 /usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -3522,18 +3522,6 @@ In file included from /usr/include/c++/4.8.5/backward/strstream(51),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h(22),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h(19),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h(22),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/ESMCI_Search.C(12):
-/usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
-  #warning \
-   ^
-
-In file included from /usr/include/c++/4.8.5/backward/strstream(51),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VMKernel.h(28),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VM.h(41),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_Base.h(27),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h(22),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h(19),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h(22),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h(16),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C(12):
 /usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
@@ -3557,10 +3545,36 @@ In file included from /usr/include/c++/4.8.5/backward/strstream(51),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VMKernel.h(28),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VM.h(41),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_Base.h(27),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_RHandle.h(39),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Field/include/ESMCI_Field.h(42),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/ESMCI_Mesh.h(23),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_MeshRegrid.h(15),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/ESMCI_MeshRegrid.C(13):
+/usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
+  #warning \
+   ^
+
+In file included from /usr/include/c++/4.8.5/backward/strstream(51),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VMKernel.h(28),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VM.h(41),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_Base.h(27),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h(22),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h(19),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h(22),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestLGC.C(12):
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/ESMCI_Search.C(12):
+/usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
+  #warning \
+   ^
+
+In file included from /usr/include/c++/4.8.5/backward/strstream(51),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VMKernel.h(28),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VM.h(41),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_Base.h(27),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_RHandle.h(39),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Field/include/ESMCI_Field.h(42),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/ESMCI_Mesh.h(23),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_MeshRegrid.h(15),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/ESMCI_Extrap.C(13):
 /usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -3588,7 +3602,7 @@ In file included from /usr/include/c++/4.8.5/backward/strstream(51),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Field/include/ESMCI_Field.h(42),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/ESMCI_Mesh.h(23),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h(17),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C(15):
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C(15):
 /usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -3601,7 +3615,7 @@ In file included from /usr/include/c++/4.8.5/backward/strstream(51),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Field/include/ESMCI_Field.h(42),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/ESMCI_Mesh.h(23),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h(17),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C(15):
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C(15):
 /usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -3622,11 +3636,22 @@ In file included from /usr/include/c++/4.8.5/backward/strstream(51),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VMKernel.h(28),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VM.h(41),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_Base.h(27),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_RHandle.h(39),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Field/include/ESMCI_Field.h(42),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/ESMCI_Mesh.h(23),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_MeshRegrid.h(15),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/ESMCI_MeshRegrid.C(13):
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h(22),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h(19),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h(22),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestDToSLGC.C(12):
+/usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
+  #warning \
+   ^
+
+In file included from /usr/include/c++/4.8.5/backward/strstream(51),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VMKernel.h(28),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VM.h(41),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_Base.h(27),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h(22),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h(19),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h(22),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestLGC.C(12):
 /usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -3651,31 +3676,6 @@ In file included from /usr/include/c++/4.8.5/backward/strstream(51),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/ESMCI_Mesh.h(23),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h(17),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/ESMCI_PatchRecovery.C(15):
-/usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
-  #warning \
-   ^
-
-In file included from /usr/include/c++/4.8.5/backward/strstream(51),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VMKernel.h(28),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VM.h(41),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_Base.h(27),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h(22),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h(19),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h(22),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestDToSLGC.C(12):
-/usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
-  #warning \
-   ^
-
-In file included from /usr/include/c++/4.8.5/backward/strstream(51),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VMKernel.h(28),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VM.h(41),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_Base.h(27),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_RHandle.h(39),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Field/include/ESMCI_Field.h(42),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/ESMCI_Mesh.h(23),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/include/Regridding/ESMCI_MeshRegrid.h(15),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Mesh/src/Regridding/ESMCI_Extrap.C(13):
 /usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -4446,7 +4446,7 @@ In file included from /usr/include/c++/4.8.5/backward/strstream(51),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_Base.h(27),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_RHandle.h(39),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/XGrid/interface/../include/ESMCI_XGrid.h(42),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/XGrid/interface/ESMC_XGrid.C(28):
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/XGrid/interface/ESMCI_XGrid.C(27):
 /usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -4457,7 +4457,7 @@ In file included from /usr/include/c++/4.8.5/backward/strstream(51),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_Base.h(27),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_RHandle.h(39),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/XGrid/interface/../include/ESMCI_XGrid.h(42),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/XGrid/interface/ESMCI_XGrid.C(27):
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/XGrid/interface/ESMC_XGrid.C(28):
 /usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -4654,28 +4654,28 @@ mpiicpc -c -std=c++11 -O -DNDEBUG -fPIC -debug minimal -m64 -mcmodel=small -pthr
 mpiicpc -c -std=c++11 -O -DNDEBUG -fPIC -debug minimal -m64 -mcmodel=small -pthread  -qopenmp -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Field/interface -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Field/interface/../include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/build_config/Linux.intel.default -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Superstructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/stubs/pthread  -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include  -I/apps/spack/linux-centos7-x86_64/intel-18.0.5/netcdf-c-4.7.4-hfnffse7ukc2dmi6u5hd3ofv6r6vxheg/include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/prologue/yaml-cpp/include -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.4.0b03-3-g14a79d558f"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=intelmpi -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop -D__SDIR__='"src/Infrastructure/Field/interface"' -DESMF_CXXSTD=11 /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Field/interface/ESMCI_Field.C -o /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/obj/objO/Linux.intel.64.intelmpi.default/ESMCI_Field.o
 mpiicpc -c -std=c++11 -O -DNDEBUG -fPIC -debug minimal -m64 -mcmodel=small -pthread  -qopenmp -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Field/interface -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Field/interface/../include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/build_config/Linux.intel.default -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Superstructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/stubs/pthread  -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include  -I/apps/spack/linux-centos7-x86_64/intel-18.0.5/netcdf-c-4.7.4-hfnffse7ukc2dmi6u5hd3ofv6r6vxheg/include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/prologue/yaml-cpp/include -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.4.0b03-3-g14a79d558f"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=intelmpi -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop -D__SDIR__='"src/Infrastructure/Field/interface"' -DESMF_CXXSTD=11 /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Field/interface/ESMC_Field.C -o /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/obj/objO/Linux.intel.64.intelmpi.default/ESMC_Field.o
 In file included from /usr/include/c++/4.8.5/backward/strstream(51),
-In file included from /usr/include/c++/4.8.5/backward/strstream(51),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VMKernel.h(28),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VMKernel.h(28),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VM.h(41),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VM.h(41),
-In file included from /usr/include/c++/4.8.5/backward/strstream(51),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_Base.h(27),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_Base.h(27),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_RHandle.h(39),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Field/interface/ESMCI_Field_F.C(25):
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VMKernel.h(28),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Field/interface/../include/ESMCI_Field.h(42),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VM.h(41),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Field/interface/ESMCI_Field.C(27):
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_Base.h(27),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_RHandle.h(39),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Field/interface/../include/ESMCI_Field.h(42),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Field/interface/ESMC_Field.C(28):
 /usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
 
+In file included from /usr/include/c++/4.8.5/backward/strstream(51),
+In file included from /usr/include/c++/4.8.5/backward/strstream(51),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VMKernel.h(28),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VMKernel.h(28),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VM.h(41),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VM.h(41),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_Base.h(27),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_Base.h(27),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_RHandle.h(39),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_RHandle.h(39),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Field/interface/../include/ESMCI_Field.h(42),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Field/interface/../include/ESMCI_Field.h(42),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Field/interface/ESMC_Field.C(28):
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Field/interface/ESMCI_Field.C(27):
 /usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -4863,8 +4863,8 @@ In file included from /usr/include/c++/4.8.5/backward/strstream(51),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_Array.h(38),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Superstructure/State/interface/../include/ESMCI_State.h(37),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Superstructure/State/interface/../include/ESMCI_State.h(37),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Superstructure/State/interface/ESMCI_State.C(27):
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Superstructure/State/interface/ESMCI_State_F.C(24):
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Superstructure/State/interface/ESMCI_State.C(27):
 /usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -5048,6 +5048,11 @@ mpiicpc -c -std=c++11 -O -DNDEBUG -fPIC -debug minimal -m64 -mcmodel=small -pthr
 mpiicpc -c -std=c++11 -O -DNDEBUG -fPIC -debug minimal -m64 -mcmodel=small -pthread  -qopenmp -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Superstructure/InfoAPI/src -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Superstructure/InfoAPI/src/../include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/build_config/Linux.intel.default -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Superstructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/stubs/pthread  -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include  -I/apps/spack/linux-centos7-x86_64/intel-18.0.5/netcdf-c-4.7.4-hfnffse7ukc2dmi6u5hd3ofv6r6vxheg/include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/prologue/yaml-cpp/include -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.4.0b03-3-g14a79d558f"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=intelmpi -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop -D__SDIR__='"src/Superstructure/InfoAPI/src"' -DESMF_CXXSTD=11 /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Superstructure/InfoAPI/src/ESMC_InfoCacheCDef.C -o /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/obj/objO/Linux.intel.64.intelmpi.default/ESMC_InfoCacheCDef.o
 In file included from /usr/include/c++/4.8.5/backward/strstream(51),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VMKernel.h(28),
+In file included from /usr/include/c++/4.8.5/backward/strstream(51),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VM.h(41),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_Base.h(27),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VMKernel.h(28),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Superstructure/InfoAPI/src/ESMC_InfoCacheCDef.C(19):
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VM.h(41),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_Base.h(27),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Superstructure/InfoAPI/src/ESMC_InfoDescribeCDef.C(14):
@@ -5055,11 +5060,6 @@ In file included from /usr/include/c++/4.8.5/backward/strstream(51),
   #warning \
    ^
 
-In file included from /usr/include/c++/4.8.5/backward/strstream(51),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VMKernel.h(28),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VM.h(41),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_Base.h(27),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Superstructure/InfoAPI/src/ESMC_InfoCacheCDef.C(19):
 /usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -5854,23 +5854,23 @@ mpiicpc -c -std=c++11 -O -DNDEBUG -fPIC -debug minimal -m64 -mcmodel=small -pthr
 mpiicpc -c -std=c++11 -O -DNDEBUG -fPIC -debug minimal -m64 -mcmodel=small -pthread  -qopenmp -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Trace/preload -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Trace/preload/../include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/build_config/Linux.intel.default -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Superstructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/stubs/pthread  -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include  -I/apps/spack/linux-centos7-x86_64/intel-18.0.5/netcdf-c-4.7.4-hfnffse7ukc2dmi6u5hd3ofv6r6vxheg/include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/prologue/yaml-cpp/include -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.4.0b03-3-g14a79d558f"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=intelmpi -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop -D__SDIR__='"src/Infrastructure/Trace/preload"' -DESMF_CXXSTD=11 wrappers_mpi.C -o wrappers_mpi.o
 mpiicpc -c -std=c++11 -O -DNDEBUG -fPIC -debug minimal -m64 -mcmodel=small -pthread  -qopenmp -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Trace/preload -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Trace/preload/../include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/build_config/Linux.intel.default -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Superstructure -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/stubs/pthread  -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include  -I/apps/spack/linux-centos7-x86_64/intel-18.0.5/netcdf-c-4.7.4-hfnffse7ukc2dmi6u5hd3ofv6r6vxheg/include -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/prologue/yaml-cpp/include -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='"v8.4.0b03-3-g14a79d558f"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=intelmpi -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop -D__SDIR__='"src/Infrastructure/Trace/preload"' -DESMF_CXXSTD=11 wrappers.C -o wrappers.o
 In file included from /usr/include/c++/4.8.5/backward/strstream(51),
-In file included from /usr/include/c++/4.8.5/backward/strstream(51),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VMKernel.h(28),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VMKernel.h(28),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VM.h(41),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VM.h(41),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_Base.h(27),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_Base.h(27),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_Comp.h(32),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_Comp.h(32),
                  from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Trace/preload/../include/ESMCI_Trace.h(17),
-                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Trace/preload/../include/ESMCI_Trace.h(17),
-                 from wrappers.C(8):
                  from wrappers_mpi.C(19):
 /usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
 
+In file included from /usr/include/c++/4.8.5/backward/strstream(51),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VMKernel.h(28),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_VM.h(41),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_Base.h(27),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/include/ESMCI_Comp.h(32),
+                 from /scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop/src/Infrastructure/Trace/preload/../include/ESMCI_Trace.h(17),
+                 from wrappers.C(8):
 /usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -5936,6 +5936,6 @@ make[2]: Leaving directory `/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b
 make[1]: Leaving directory `/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop'
 make[1]: Entering directory `/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop'
 make[1]: Leaving directory `/scratch1/NCEPDEV/stmp2/role.esmfmaint/intel_18.0.5b_intelmpi_O_develop'
-ESMF library built successfully on Fri Jul 8 06:07:13 UTC 2022
+ESMF library built successfully on Sat Jul 9 06:17:19 UTC 2022
 To verify, build and run the unit and system tests with: make check
  or the more extensive: make all_tests
