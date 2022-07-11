@@ -1,4 +1,4 @@
-Sun Jul 10 03:57:24 GMT 2022
+Mon Jul 11 04:01:27 GMT 2022
 #!/bin/sh -l
 #SBATCH --account=hfv3gfs
 #SBATCH -o build-gfortran_9.2.0_openmpi_g.bat_%j.o
