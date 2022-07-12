@@ -1,4 +1,4 @@
-Mon Jul 11 03:12:41 MDT 2022
+Tue Jul 12 02:26:37 MDT 2022
 #!/bin/sh -l
 #PBS -N test-gfortran_9.1.0_openmpi_g.bat
 #PBS -l walltime=2:00:00
