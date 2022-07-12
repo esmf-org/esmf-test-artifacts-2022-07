@@ -1,4 +1,4 @@
-Mon Jul 11 01:54:26 UTC 2022
+Tue Jul 12 01:33:25 UTC 2022
 #!/bin/sh -l
 #PBS -N test-intel_19.1.3_mpi_g.bat
 #PBS -l walltime=1:00:00
