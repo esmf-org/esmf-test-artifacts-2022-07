@@ -4,10 +4,10 @@ Build for = intel_19.1.2_mpi_O_develop, mpi version 7.7.19 on cori esmf_os: Unic
 Build time = 2022-07-15 04:13:31
 git hash = v8.4.0b04-2-gc831a7c
 
-unit test results   	-1 -1
-system test results 	-1 -1
-example test results 	-1 -1
-nuopc test results 	PASS -1 	FAIL -1
+unit test results   	PASS 13666	FAIL 0
+system test results 	PASS 49 	FAIL 0
+example test results 	PASS 80 	FAIL 0
+nuopc test results 	PASS 50 	FAIL 0
 
 
 ===================================================================
@@ -47,12 +47,19 @@ Your branch is up to date with 'origin/develop'.
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
 	build-intel_19.1.2_mpi_O.bat
+	build-intel_19.1.2_mpi_O.bat_61100154.e
+	build-intel_19.1.2_mpi_O.bat_61100154.o
 	getres-build.sh
 	getres-test.sh
 	nuopc-app-prototypes/
+	src/Infrastructure/Trace/tests/ESMF_SimpleComp.o
+	src/Infrastructure/Trace/tests/ESMF_TraceUTest.o
+	src/Infrastructure/Trace/tests/simplecomp.mod
 	test-intel_19.1.2_mpi_O.bat
 	test-intel_19.1.2_mpi_O.bat_61077149.e
 	test-intel_19.1.2_mpi_O.bat_61077149.o
+	test-intel_19.1.2_mpi_O.bat_61100155.e
+	test-intel_19.1.2_mpi_O.bat_61100155.o
 
 nothing added to commit but untracked files present (use "git add" to track)
 --------------------------------------------------------------
@@ -251,8 +258,8 @@ ESMF_TRACE_STATICLINKLIBS=-lesmftrace_static
 
 
 --------------------------------------------------------------
-Compiling on Fri Jul 15 03:36:54 PDT 2022 on nid02195
-Machine characteristics: Linux nid02195 5.3.18-24.46_6.0.29-cray_ari_c #1 SMP Mon Mar 14 09:11:41 UTC 2022 (6c38a31) x86_64 x86_64 x86_64 GNU/Linux
+Compiling on Fri Jul 15 07:45:40 PDT 2022 on nid01783
+Machine characteristics: Linux nid01783 5.3.18-24.46_6.0.29-cray_ari_c #1 SMP Mon Mar 14 09:11:41 UTC 2022 (6c38a31) x86_64 x86_64 x86_64 GNU/Linux
 ==============================================================
 
 
