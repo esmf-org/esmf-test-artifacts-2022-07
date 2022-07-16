@@ -1,0 +1,25 @@
+build time -- 2022-07-16 11:28:47
+Beginning Test, file ESMC_FieldUTest.C, line 76
+Beginning Test, file ESMC_FieldUTest.C, line 76NUMBER_OF_PROCESSORS 1
+PASS MeshCreate, ESMC_FieldUTest.C, line 88
+PASS MeshVTKHeader, ESMC_FieldUTest.C, line 97
+PASS MeshVTKBody, ESMC_FieldUTest.C, line 116
+PASS MeshAddNodes, ESMC_FieldUTest.C, line 136
+PASS MeshAddElements, ESMC_FieldUTest.C, line 146
+PASS ArraySpecSet, ESMC_FieldUTest.C, line 154
+PASS Set up gridToFieldMap, ESMC_FieldUTest.C, line 164
+PASS Set up ungriddedLBound, ESMC_FieldUTest.C, line 175
+PASS Set up ungriddedUBound, ESMC_FieldUTest.C, line 186
+[h14c04:93883:0:93883] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x4f1b591)
+==== backtrace (tid:  93883) ====
+ 0 0x000000000004d455 ucs_debug_print_backtrace()  ???:0
+ 1 0x0000000000680f83 ESMCI::LogErr::MsgFoundError()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_feature_named-alias/src/Infrastructure/LogErr/src/ESMCI_LogErr.C:586
+ 2 0x000000000083e371 c_esmc_meshcreatenodedistgrid_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_feature_named-alias/src/Infrastructure/Mesh/interface/ESMCI_Mesh_F.C:248
+ 3 0x0000000000e1615c esmf_meshmod_esmf_meshcreatefromintptr_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_feature_named-alias/src/Infrastructure/Mesh/interface/ESMF_Mesh.F90:3158
+ 4 0x0000000000ce20d8 f_esmf_fieldcreatemeshas_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_feature_named-alias/src/Infrastructure/Field/interface/ESMF_Field_C.F90:236
+ 5 0x00000000005a5bb2 ESMCI::Field::create()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_feature_named-alias/src/Infrastructure/Field/interface/ESMCI_Field.C:620
+ 6 0x000000000097f816 ESMC_FieldCreateMeshArraySpec()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_feature_named-alias/src/Infrastructure/Field/interface/ESMC_Field.C:116
+ 7 0x0000000000401bb2 main()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_O_feature_named-alias/src/Infrastructure/Field/tests/ESMC_FieldUTest.C:193
+=================================
+srun: error: h14c04: task 0: Segmentation fault (core dumped)
+srun: launch/slurm: _step_signal: Terminating StepId=33766002.114
