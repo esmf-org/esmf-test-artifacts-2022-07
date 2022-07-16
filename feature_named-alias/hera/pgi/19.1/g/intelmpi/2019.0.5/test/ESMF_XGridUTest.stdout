@@ -1,0 +1,39 @@
+build time -- 2022-07-16 11:32:56
+  Beginning Test, file ESMF_XGridUTest.F90, line 54
+  Beginning Test, file ESMF_XGridUTest.F90, line 54
+  NUMBER_OF_PROCESSORS            2
+  NUMBER_OF_PROCESSORS            2
+[h34m52:162763:0:162763] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x4f1b591)
+[h34m52:162764:0:162764] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x4f1b591)
+==== backtrace (tid: 162764) ====
+ 0 0x000000000004d455 ucs_debug_print_backtrace()  ???:0
+ 1 0x00000000010b4084 ESMCI::LogErr::MsgFoundError()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_feature_named-alias/src/Infrastructure/LogErr/src/ESMCI_LogErr.C:586
+ 2 0x00000000012eaa31 ESMCI::MeshCap::meshcreatenodedistgrid()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_feature_named-alias/src/Infrastructure/Mesh/src/ESMCI_MeshCap.C:1754
+ 3 0x00000000013d4d47 c_esmc_meshcreatenodedistgrid_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_feature_named-alias/src/Infrastructure/Mesh/interface/ESMCI_Mesh_F.C:247
+ 4 0x0000000001e78998 esmf_meshmod_esmf_meshcreatefrompointer_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_feature_named-alias/src/Infrastructure/Mesh/interface/ESMF_Mesh.F90:3091
+ 5 0x0000000001d5be10 esmf_gridutilmod_esmf_gridtomesh_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_feature_named-alias/src/Infrastructure/GridUtil/interface/ESMF_GridUtil.F90:453
+ 6 0x0000000001f3a849 esmf_xgridcreatemod_esmf_xgridcreate_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_feature_named-alias/src/Infrastructure/XGrid/src/ESMF_XGridCreate.F90:950
+ 7 0x0000000000451f2c esmf_xgridutest_test_side_and_elem_info()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_feature_named-alias/src/Infrastructure/XGrid/tests/ESMF_XGridUTest.F90:5382
+ 8 0x0000000000404816 MAIN_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_feature_named-alias/src/Infrastructure/XGrid/tests/ESMF_XGridUTest.F90:64
+ 9 0x0000000000404493 main()  ???:0
+10 0x0000000000022555 __libc_start_main()  ???:0
+11 0x0000000000404399 _start()  ???:0
+=================================
+==== backtrace (tid: 162763) ====
+ 0 0x000000000004d455 ucs_debug_print_backtrace()  ???:0
+ 1 0x00000000010b4084 ESMCI::LogErr::MsgFoundError()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_feature_named-alias/src/Infrastructure/LogErr/src/ESMCI_LogErr.C:586
+ 2 0x00000000012eaa31 ESMCI::MeshCap::meshcreatenodedistgrid()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_feature_named-alias/src/Infrastructure/Mesh/src/ESMCI_MeshCap.C:1754
+ 3 0x00000000013d4d47 c_esmc_meshcreatenodedistgrid_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_feature_named-alias/src/Infrastructure/Mesh/interface/ESMCI_Mesh_F.C:247
+ 4 0x0000000001e78998 esmf_meshmod_esmf_meshcreatefrompointer_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_feature_named-alias/src/Infrastructure/Mesh/interface/ESMF_Mesh.F90:3091
+ 5 0x0000000001d5be10 esmf_gridutilmod_esmf_gridtomesh_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_feature_named-alias/src/Infrastructure/GridUtil/interface/ESMF_GridUtil.F90:453
+ 6 0x0000000001f3a849 esmf_xgridcreatemod_esmf_xgridcreate_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_feature_named-alias/src/Infrastructure/XGrid/src/ESMF_XGridCreate.F90:950
+ 7 0x0000000000451f2c esmf_xgridutest_test_side_and_elem_info()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_feature_named-alias/src/Infrastructure/XGrid/tests/ESMF_XGridUTest.F90:5382
+ 8 0x0000000000404816 MAIN_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_feature_named-alias/src/Infrastructure/XGrid/tests/ESMF_XGridUTest.F90:64
+ 9 0x0000000000404493 main()  ???:0
+10 0x0000000000022555 __libc_start_main()  ???:0
+11 0x0000000000404399 _start()  ???:0
+=================================
+srun: error: h34m52: task 0: Segmentation fault (core dumped)
+srun: launch/slurm: _step_signal: Terminating StepId=33766291.110
+slurmstepd: error: *** STEP 33766291.110 ON h34m52 CANCELLED AT 2022-07-16T15:16:23 ***
+srun: error: h34m52: task 1: Segmentation fault (core dumped)
