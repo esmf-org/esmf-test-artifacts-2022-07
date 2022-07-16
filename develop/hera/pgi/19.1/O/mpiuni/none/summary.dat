@@ -1,13 +1,13 @@
 
 ===================================================================
 Build for = pgi_19.1_mpiuni_O_develop, mpi version None on hera esmf_os: Linux
-Build time = 2022-07-13 06:21:10
-git hash = v8.4.0b03-3-g14a79d5
+Build time = 10:51:56
+git hash = v8.4.0b04-2-gc831a7c
 
-unit test results   	PASS 11516	FAIL 626
-system test results 	PASS 6 	FAIL 2
-example test results 	PASS 40 	FAIL 3
-nuopc test results 	PASS 0 	FAIL 50
+unit test results   	Build did not complete successfully
+system test results 	Build did not complete successfully
+example test results 	Build did not complete successfully
+nuopc test results 	PASS Build did not complete successfully 	FAIL Build did not complete successfully
 
 
 ===================================================================
@@ -21,23 +21,34 @@ Currently Loaded Modules:
  
 --------------------------------------------------------------
 ESMF_VERSION_STRING:    8.4.0 beta snapshot
-v8.4.0b03-3-g14a79d558f
 --------------------------------------------------------------
-On branch develop
+ 
+--------------------------------------------------------------
+Make version:
+GNU Make 3.82
+Built for x86_64-redhat-linux-gnu
+Copyright (C) 2010  Free Software Foundation, Inc.
+License GPLv3+: GNU GPL vOn branch develop
 Your branch is up to date with 'origin/develop'.
 
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
 
 	build-pgi_19.1_mpiuni_O.bat
-	build-pgi_19.1_mpiuni_O.bat_33676251.e
-	build-pgi_19.1_mpiuni_O.bat_33676251.o
+	build-pgi_19.1_mpiuni_O.bat_33704112.e
+	build-pgi_19.1_mpiuni_O.bat_33704112.o
+	build-pgi_19.1_mpiuni_O.bat_33732668.e
+	build-pgi_19.1_mpiuni_O.bat_33732668.o
+	build-pgi_19.1_mpiuni_O.bat_33765930.e
+	build-pgi_19.1_mpiuni_O.bat_33765930.o
 	getres-build.sh
 	getres-test.sh
 	nuopc-app-prototypes/
 	test-pgi_19.1_mpiuni_O.bat
-	test-pgi_19.1_mpiuni_O.bat_33676252.e
-	test-pgi_19.1_mpiuni_O.bat_33676252.o
+	test-pgi_19.1_mpiuni_O.bat_33704113.e
+	test-pgi_19.1_mpiuni_O.bat_33704113.o
+	test-pgi_19.1_mpiuni_O.bat_33732669.e
+	test-pgi_19.1_mpiuni_O.bat_33732669.o
 
 nothing added to commit but untracked files present (use "git add" to track)
 --------------------------------------------------------------
@@ -88,12 +99,7 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  
 --------------------------------------------------------------
  * User set ESMF environment variables *
-ESMF_BOPT=O
-ESMF_COMM=mpiuni
-ESMF_COMPILER=pgi
-ESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop
-ESMF_TESTEXHAUSTIVE=ON
-ESMF_TESTWITHTHREADS=ON
+cat: envecho.out: No such file or directory
  
 --------------------------------------------------------------
  * ESMF environment variables *
@@ -171,7 +177,7 @@ Fortran compiler flags:
 ESMF_F90COMPILER: pgf90
 ESMF_F90COMPILEOPTS: -O -fpic -Mallocatable=03 -lpthread
 ESMF_F90COMPILEPATHS: -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/mod/modO/Linux.pgi.64.mpiuni.default -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/src/include 
-ESMF_F90COMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v8.4.0b03-3-g14a79d558f' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop -DESMF_MPIUNI -DESMF_PGIVERSION_MAJOR=19 -DESMF_PGIVERSION_MINOR=10 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE
+ESMF_F90COMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v8.4.0b04-2-gc831a7cd4a' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop -DESMF_MPIUNI -DESMF_PGIVERSION_MAJOR=19 -DESMF_PGIVERSION_MINOR=10 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE
 ESMF_F90COMPILEFREECPP: 
 ESMF_F90COMPILEFREENOCPP: -Mfreeform
 ESMF_F90COMPILEFIXCPP: -Mpreprocess -Mnofreeform
@@ -188,7 +194,7 @@ C++ compiler flags:
 ESMF_CXXCOMPILER: pgc++
 ESMF_CXXCOMPILEOPTS: -std=c++11 -O -DNDEBUG -fpic -lpthread
 ESMF_CXXCOMPILEPATHS:  -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/src/include   -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/src/Infrastructure/stubs/mpiuni -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/src/prologue/yaml-cpp/include
-ESMF_CXXCOMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v8.4.0b03-3-g14a79d558f' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop -D__SDIR__='' -DESMF_CXXSTD=11 -DESMF_MPIUNI -DESMF_PGIVERSION_MAJOR=19 -DESMF_PGIVERSION_MINOR=10 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE
+ESMF_CXXCOMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v8.4.0b04-2-gc831a7cd4a' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop -D__SDIR__='' -DESMF_CXXSTD=11 -DESMF_MPIUNI -DESMF_PGIVERSION_MAJOR=19 -DESMF_PGIVERSION_MINOR=10 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE
 
 C++ linker flags:
 ESMF_CXXLINKOPTS:   -lpthread -Wl,--no-as-needed
@@ -201,7 +207,7 @@ C compiler flags:
 ESMF_CCOMPILER: pgcc
 ESMF_CCOMPILEOPTS:  -O -DNDEBUG -fpic
 ESMF_CCOMPILEPATHS:  -I/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop/src/include  
-ESMF_CCOMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v8.4.0b03-3-g14a79d558f' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop -D__SDIR__=''
+ESMF_CCOMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_VERSION_STRING_GIT='v8.4.0b04-2-gc831a7cd4a' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_mpiuni_O_develop -D__SDIR__=''
 
 C linker flags:
 ESMF_CLINKOPTS:  
@@ -224,8 +230,8 @@ ESMF_TRACE_STATICLINKLIBS=-lesmftrace_static
 
 
 --------------------------------------------------------------
-Compiling on Wed Jul 13 06:22:13 UTC 2022 on h13c22
-Machine characteristics: Linux h13c22 3.10.0-1160.66.1.el7.x86_64 #1 SMP Wed May 18 16:02:34 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+Compiling on Sat Jul 16 10:48:05 UTC 2022 on h20c51
+Machine characteristics: Linux h20c51 3.10.0-1160.66.1.el7.x86_64 #1 SMP Wed May 18 16:02:34 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
 ==============================================================
 
 
