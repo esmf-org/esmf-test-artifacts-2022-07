@@ -1,4 +1,4 @@
-Mon Jul 18 03:57:00 GMT 2022
+Mon Jul 18 03:57:49 GMT 2022
 #!/bin/sh -l
 #SBATCH --account=hfv3gfs
 #SBATCH -o test-intel_2020.2_mvapich2_g.bat_%j.o
@@ -23,7 +23,7 @@ module list >& module-test.log
 set -x
 export ESMF_NETCDF=nc-config
 
-export ESMF_DIR=/mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/intel_2020.2_mvapich2_g_develop
+export ESMF_DIR=/mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/intel_2020.2_mvapich2_g_feature_named-alias
 export ESMF_COMPILER=intel
 export ESMF_COMM=mvapich2
 export ESMF_BOPT='g'

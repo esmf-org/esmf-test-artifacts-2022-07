@@ -1,8 +1,8 @@
-Mon Jul 18 03:58:44 GMT 2022
+Mon Jul 18 03:54:38 GMT 2022
 #!/bin/sh -l
 #SBATCH --account=hfv3gfs
-#SBATCH -o build-gfortran_9.2.0_openmpi_g.bat_%j.o
-#SBATCH -e build-gfortran_9.2.0_openmpi_g.bat_%j.e
+#SBATCH -o build-gfortran_9.2.0_openmpi_O.bat_%j.o
+#SBATCH -e build-gfortran_9.2.0_openmpi_O.bat_%j.e
 #SBATCH --time=1:00:00
 #SBATCH --partition=xjet
 #SBATCH --qos=batch
@@ -20,10 +20,10 @@ module list >& module-build.log
 set -x
 export ESMF_NETCDF=nc-config
 
-export ESMF_DIR=/mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/gfortran_9.2.0_openmpi_g_develop
+export ESMF_DIR=/mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/gfortran_9.2.0_openmpi_O_feature_named-alias
 export ESMF_COMPILER=gfortran
 export ESMF_COMM=openmpi
-export ESMF_BOPT='g'
+export ESMF_BOPT='O'
 export ESMF_TESTEXHAUSTIVE='ON'
 export ESMF_TESTWITHTHREADS='ON'
 make -j 24 2>&1| tee build_$JOBID.log

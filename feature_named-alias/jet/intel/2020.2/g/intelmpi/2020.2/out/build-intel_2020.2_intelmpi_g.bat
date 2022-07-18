@@ -1,8 +1,8 @@
-Mon Jul 18 03:58:44 GMT 2022
+Mon Jul 18 03:56:13 GMT 2022
 #!/bin/sh -l
 #SBATCH --account=hfv3gfs
-#SBATCH -o build-gfortran_9.2.0_openmpi_g.bat_%j.o
-#SBATCH -e build-gfortran_9.2.0_openmpi_g.bat_%j.e
+#SBATCH -o build-intel_2020.2_intelmpi_g.bat_%j.o
+#SBATCH -e build-intel_2020.2_intelmpi_g.bat_%j.e
 #SBATCH --time=1:00:00
 #SBATCH --partition=xjet
 #SBATCH --qos=batch
@@ -12,17 +12,16 @@ Mon Jul 18 03:58:44 GMT 2022
 export JOBID=$SLURM_JOBID
 
 module load cmake
-export ESMF_NETCDF_LIBS="-lnetcdff -lnetcdf -lhdf5_hl -lhdf5"
-module load gnu/9.2.0 openmpi/3.1.4 netcdf/4.7.2
-module load hdf5/1.10.5 
+module load intel/2020.2 impi/2020.2 netcdf/4.7.0
+module load hdf5/1.10.6 
 module list >& module-build.log
 
 set -x
 export ESMF_NETCDF=nc-config
 
-export ESMF_DIR=/mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/gfortran_9.2.0_openmpi_g_develop
-export ESMF_COMPILER=gfortran
-export ESMF_COMM=openmpi
+export ESMF_DIR=/mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/intel_2020.2_intelmpi_g_feature_named-alias
+export ESMF_COMPILER=intel
+export ESMF_COMM=intelmpi
 export ESMF_BOPT='g'
 export ESMF_TESTEXHAUSTIVE='ON'
 export ESMF_TESTWITHTHREADS='ON'

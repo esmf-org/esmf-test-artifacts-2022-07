@@ -1,8 +1,8 @@
-Mon Jul 18 03:57:00 GMT 2022
+Mon Jul 18 03:54:38 GMT 2022
 #!/bin/sh -l
 #SBATCH --account=hfv3gfs
-#SBATCH -o test-intel_2020.2_mvapich2_g.bat_%j.o
-#SBATCH -e test-intel_2020.2_mvapich2_g.bat_%j.e
+#SBATCH -o test-gfortran_9.2.0_openmpi_O.bat_%j.o
+#SBATCH -e test-gfortran_9.2.0_openmpi_O.bat_%j.e
 #SBATCH --time=2:00:00
 #SBATCH --partition=xjet
 #SBATCH --qos=batch
@@ -12,21 +12,18 @@ Mon Jul 18 03:57:00 GMT 2022
 export JOBID=$SLURM_JOBID
 
 module load cmake
-export ESMF_MPIRUN=mpirun.srun
-export LIBRARY_PATH=$LIBRARY_PATH:/apps/mvapich2/2.3-intel/lib
-export ESMF_CXXCOMPILEOPTS="-I/apps/mvapich2/2.3-intel/include"
-export ESMF_F90COMPILEOPTS="-I/apps/mvapich2/2.3-intel/include"
-module load intel/2020.2 mvapich2/2.3 netcdf/4.7.0
-module load hdf5/1.10.6 
+export ESMF_NETCDF_LIBS="-lnetcdff -lnetcdf -lhdf5_hl -lhdf5"
+module load gnu/9.2.0 openmpi/3.1.4 netcdf/4.7.2
+module load hdf5/1.10.5 
 module list >& module-test.log
 
 set -x
 export ESMF_NETCDF=nc-config
 
-export ESMF_DIR=/mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/intel_2020.2_mvapich2_g_develop
-export ESMF_COMPILER=intel
-export ESMF_COMM=mvapich2
-export ESMF_BOPT='g'
+export ESMF_DIR=/mnt/lfs4/HFIP/hfv3gfs/Mark.Potts/gfortran_9.2.0_openmpi_O_feature_named-alias
+export ESMF_COMPILER=gfortran
+export ESMF_COMM=openmpi
+export ESMF_BOPT='O'
 export ESMF_TESTEXHAUSTIVE='ON'
 export ESMF_TESTWITHTHREADS='ON'
 make info 2>&1| tee info.log 
