@@ -1,0 +1,88 @@
+build time -- 2022-07-20 07:04:34
+Beginning Test, file ESMC_XGridUTest.C, line 63
+Beginning Test, file ESMC_XGridUTest.C, line 63NUMBER_OF_PROCESSORS 4
+Beginning Test, file ESMC_XGridUTest.C, line 63
+Beginning Test, file ESMC_XGridUTest.C, line 63NUMBER_OF_PROCESSORS 4
+Beginning Test, file ESMC_XGridUTest.C, line 63
+Beginning Test, file ESMC_XGridUTest.C, line 63NUMBER_OF_PROCESSORS 4
+Beginning Test, file ESMC_XGridUTest.C, line 63
+Beginning Test, file ESMC_XGridUTest.C, line 63NUMBER_OF_PROCESSORS 4
+PASS Create Side A Grid, ESMC_XGridUTest.C, line 102
+PASS Create Side A Grid, ESMC_XGridUTest.C, line 102
+PASS Create Side B Grid - 0, ESMC_XGridUTest.C, line 129
+PASS Create Side A Grid, ESMC_XGridUTest.C, line 102
+PASS Create Side A Grid, ESMC_XGridUTest.C, line 102
+PASS Create Side B Grid - 0, ESMC_XGridUTest.C, line 129
+PASS Create Side B Grid - 1, ESMC_XGridUTest.C, line 158
+PASS Create Side B Grid - 0, ESMC_XGridUTest.C, line 129
+PASS Create Side B Grid - 0, ESMC_XGridUTest.C, line 129
+PASS Create Side B Grid - 1, ESMC_XGridUTest.C, line 158
+PASS Create Side B Grid - 1, ESMC_XGridUTest.C, line 158
+PASS Create Side B Grid - 1, ESMC_XGridUTest.C, line 158
+[h5c50:204009:0:204009] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x4f1b591)
+[h5c50:204012:0:204012] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x4f1b591)
+[h5c50:204010:0:204010] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x4f1b591)
+[h5c50:204011:0:204011] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x4f1b591)
+==== backtrace (tid: 204011) ====
+ 0 0x000000000004d455 ucs_debug_print_backtrace()  ???:0
+ 1 0x00000000010b0d94 ESMCI::LogErr::MsgFoundError()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_develop/src/Infrastructure/LogErr/src/ESMCI_LogErr.C:586
+ 2 0x00000000012e7741 ESMCI::MeshCap::meshcreatenodedistgrid()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_develop/src/Infrastructure/Mesh/src/ESMCI_MeshCap.C:1754
+ 3 0x00000000013d4217 c_esmc_meshcreatenodedistgrid_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_develop/src/Infrastructure/Mesh/interface/ESMCI_Mesh_F.C:247
+ 4 0x0000000001e76928 esmf_meshmod_esmf_meshcreatefrompointer_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_develop/src/Infrastructure/Mesh/interface/ESMF_Mesh.F90:3091
+ 5 0x0000000001d59da0 esmf_gridutilmod_esmf_gridtomesh_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_develop/src/Infrastructure/GridUtil/interface/ESMF_GridUtil.F90:453
+ 6 0x0000000001f387d9 esmf_xgridcreatemod_esmf_xgridcreate_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_develop/src/Infrastructure/XGrid/src/ESMF_XGridCreate.F90:950
+ 7 0x0000000001f5b794 f_esmf_xgridcreate_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_develop/src/Infrastructure/XGrid/interface/ESMF_XGrid_C.F90:139
+ 8 0x000000000164e719 ESMCI::XGrid::create()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_develop/src/Infrastructure/XGrid/interface/ESMCI_XGrid.C:346
+ 9 0x00000000016ee209 ESMC_XGridCreate()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_develop/src/Infrastructure/XGrid/interface/ESMC_XGrid.C:65
+10 0x0000000000401abd main()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_develop/src/Infrastructure/XGrid/tests/ESMC_XGridUTest.C:202
+11 0x0000000000022555 __libc_start_main()  ???:0
+12 0x0000000000401349 _start()  ???:0
+=================================
+==== backtrace (tid: 204009) ====
+ 0 0x000000000004d455 ucs_debug_print_backtrace()  ???:0
+ 1 0x00000000010b0d94 ESMCI::LogErr::MsgFoundError()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_develop/src/Infrastructure/LogErr/src/ESMCI_LogErr.C:586
+ 2 0x00000000012e7741 ESMCI::MeshCap::meshcreatenodedistgrid()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_develop/src/Infrastructure/Mesh/src/ESMCI_MeshCap.C:1754
+ 3 0x00000000013d4217 c_esmc_meshcreatenodedistgrid_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_develop/src/Infrastructure/Mesh/interface/ESMCI_Mesh_F.C:247
+ 4 0x0000000001e76928 esmf_meshmod_esmf_meshcreatefrompointer_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_develop/src/Infrastructure/Mesh/interface/ESMF_Mesh.F90:3091
+ 5 0x0000000001d59da0 esmf_gridutilmod_esmf_gridtomesh_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_develop/src/Infrastructure/GridUtil/interface/ESMF_GridUtil.F90:453
+ 6 0x0000000001f387d9 esmf_xgridcreatemod_esmf_xgridcreate_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_develop/src/Infrastructure/XGrid/src/ESMF_XGridCreate.F90:950
+ 7 0x0000000001f5b794 f_esmf_xgridcreate_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_develop/src/Infrastructure/XGrid/interface/ESMF_XGrid_C.F90:139
+ 8 0x000000000164e719 ESMCI::XGrid::create()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_develop/src/Infrastructure/XGrid/interface/ESMCI_XGrid.C:346
+ 9 0x00000000016ee209 ESMC_XGridCreate()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_develop/src/Infrastructure/XGrid/interface/ESMC_XGrid.C:65
+10 0x0000000000401abd main()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_develop/src/Infrastructure/XGrid/tests/ESMC_XGridUTest.C:202
+11 0x0000000000022555 __libc_start_main()  ???:0
+12 0x0000000000401349 _start()  ???:0
+=================================
+==== backtrace (tid: 204012) ====
+ 0 0x000000000004d455 ucs_debug_print_backtrace()  ???:0
+ 1 0x00000000010b0d94 ESMCI::LogErr::MsgFoundError()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_develop/src/Infrastructure/LogErr/src/ESMCI_LogErr.C:586
+ 2 0x00000000012e7741 ESMCI::MeshCap::meshcreatenodedistgrid()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_develop/src/Infrastructure/Mesh/src/ESMCI_MeshCap.C:1754
+ 3 0x00000000013d4217 c_esmc_meshcreatenodedistgrid_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_develop/src/Infrastructure/Mesh/interface/ESMCI_Mesh_F.C:247
+ 4 0x0000000001e76928 esmf_meshmod_esmf_meshcreatefrompointer_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_develop/src/Infrastructure/Mesh/interface/ESMF_Mesh.F90:3091
+ 5 0x0000000001d59da0 esmf_gridutilmod_esmf_gridtomesh_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_develop/src/Infrastructure/GridUtil/interface/ESMF_GridUtil.F90:453
+ 6 0x0000000001f387d9 esmf_xgridcreatemod_esmf_xgridcreate_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_develop/src/Infrastructure/XGrid/src/ESMF_XGridCreate.F90:950
+ 7 0x0000000001f5b794 f_esmf_xgridcreate_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_develop/src/Infrastructure/XGrid/interface/ESMF_XGrid_C.F90:139
+ 8 0x000000000164e719 ESMCI::XGrid::create()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_develop/src/Infrastructure/XGrid/interface/ESMCI_XGrid.C:346
+ 9 0x00000000016ee209 ESMC_XGridCreate()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_develop/src/Infrastructure/XGrid/interface/ESMC_XGrid.C:65
+10 0x0000000000401abd main()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_develop/src/Infrastructure/XGrid/tests/ESMC_XGridUTest.C:202
+11 0x0000000000022555 __libc_start_main()  ???:0
+12 0x0000000000401349 _start()  ???:0
+=================================
+==== backtrace (tid: 204010) ====
+ 0 0x000000000004d455 ucs_debug_print_backtrace()  ???:0
+ 1 0x00000000010b0d94 ESMCI::LogErr::MsgFoundError()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_develop/src/Infrastructure/LogErr/src/ESMCI_LogErr.C:586
+ 2 0x00000000012e7741 ESMCI::MeshCap::meshcreatenodedistgrid()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_develop/src/Infrastructure/Mesh/src/ESMCI_MeshCap.C:1754
+ 3 0x00000000013d4217 c_esmc_meshcreatenodedistgrid_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_develop/src/Infrastructure/Mesh/interface/ESMCI_Mesh_F.C:247
+ 4 0x0000000001e76928 esmf_meshmod_esmf_meshcreatefrompointer_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_develop/src/Infrastructure/Mesh/interface/ESMF_Mesh.F90:3091
+ 5 0x0000000001d59da0 esmf_gridutilmod_esmf_gridtomesh_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_develop/src/Infrastructure/GridUtil/interface/ESMF_GridUtil.F90:453
+ 6 0x0000000001f387d9 esmf_xgridcreatemod_esmf_xgridcreate_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_develop/src/Infrastructure/XGrid/src/ESMF_XGridCreate.F90:950
+ 7 0x0000000001f5b794 f_esmf_xgridcreate_()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_develop/src/Infrastructure/XGrid/interface/ESMF_XGrid_C.F90:139
+ 8 0x000000000164e719 ESMCI::XGrid::create()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_develop/src/Infrastructure/XGrid/interface/ESMCI_XGrid.C:346
+ 9 0x00000000016ee209 ESMC_XGridCreate()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_develop/src/Infrastructure/XGrid/interface/ESMC_XGrid.C:65
+10 0x0000000000401abd main()  /scratch1/NCEPDEV/stmp2/role.esmfmaint/pgi_19.1_intelmpi_g_develop/src/Infrastructure/XGrid/tests/ESMC_XGridUTest.C:202
+11 0x0000000000022555 __libc_start_main()  ???:0
+12 0x0000000000401349 _start()  ???:0
+=================================
+srun: error: h5c50: tasks 0-2: Segmentation fault (core dumped)
+srun: launch/slurm: _step_signal: Terminating StepId=33899684.112
+srun: error: h5c50: task 3: Segmentation fault (core dumped)
