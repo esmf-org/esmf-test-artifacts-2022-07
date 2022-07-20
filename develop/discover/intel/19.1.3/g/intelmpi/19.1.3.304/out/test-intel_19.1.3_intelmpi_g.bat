@@ -1,4 +1,4 @@
-Tue Jul 19 02:06:15 EDT 2022
+Wed Jul 20 01:21:16 EDT 2022
 #!/bin/sh -l
 #SBATCH --account=s2326
 #SBATCH -o test-intel_19.1.3_intelmpi_g.bat_%j.o
